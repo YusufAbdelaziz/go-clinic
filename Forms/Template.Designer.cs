@@ -66,12 +66,12 @@
             this.logoutButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
             this.logoutButton.FlatAppearance.BorderSize = 0;
             this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logoutButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.logoutButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.logoutButton.Image = ((System.Drawing.Image)(resources.GetObject("logoutButton.Image")));
             this.logoutButton.Location = new System.Drawing.Point(0, 811);
             this.logoutButton.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(122, 123);
+            this.logoutButton.Size = new System.Drawing.Size(115, 123);
             this.logoutButton.TabIndex = 0;
             this.logoutButton.Text = "تسجيل الخروج";
             this.logoutButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -87,7 +87,7 @@
             this.helpButton.Location = new System.Drawing.Point(0, 695);
             this.helpButton.Margin = new System.Windows.Forms.Padding(0);
             this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(122, 116);
+            this.helpButton.Size = new System.Drawing.Size(115, 116);
             this.helpButton.TabIndex = 2;
             this.helpButton.Text = "المساعدة";
             this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -104,7 +104,7 @@
             this.settingsButton.Location = new System.Drawing.Point(0, 575);
             this.settingsButton.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.settingsButton.Name = "settingsButton";
-            this.settingsButton.Size = new System.Drawing.Size(119, 117);
+            this.settingsButton.Size = new System.Drawing.Size(112, 117);
             this.settingsButton.TabIndex = 1;
             this.settingsButton.Text = "الإعدادات";
             this.settingsButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -118,7 +118,7 @@
             this.namePanel.Location = new System.Drawing.Point(0, 0);
             this.namePanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 493);
             this.namePanel.Name = "namePanel";
-            this.namePanel.Size = new System.Drawing.Size(122, 79);
+            this.namePanel.Size = new System.Drawing.Size(115, 79);
             this.namePanel.TabIndex = 3;
             // 
             // nameLabel
@@ -184,6 +184,8 @@
             this.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximumSize = new System.Drawing.Size(1399, 991);
+            this.MinimumSize = new System.Drawing.Size(1399, 991);
             this.Name = "Template";
             this.Text = "GoClinic";
             this.Load += new System.EventHandler(this.Form1_Load);
