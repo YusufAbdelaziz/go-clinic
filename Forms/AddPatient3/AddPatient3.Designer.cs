@@ -1,6 +1,6 @@
 ﻿namespace goclinic
 {
-    partial class AddPatient4
+    partial class AddPatient3
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddPatient4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddPatient3));
             this.allContainer2 = new System.Windows.Forms.Panel();
-            this.backHomeButton4 = new System.Windows.Forms.Button();
-            this.confirmButton = new System.Windows.Forms.Button();
+            this.backHomeButton3 = new System.Windows.Forms.Button();
+            this.thirdNextStebButton2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -46,7 +46,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
-            this.medicalHistoryFamily = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
@@ -68,15 +68,15 @@
             this.listView9 = new System.Windows.Forms.ListView();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.step1Text2 = new System.Windows.Forms.Label();
-            this.settingsButton = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.userNameLabel = new System.Windows.Forms.Label();
-            this.stethoscopeIconPanel = new System.Windows.Forms.Panel();
-            this.logoutButton = new System.Windows.Forms.Button();
-            this.helpButton = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.sidebarLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.namePanel = new System.Windows.Forms.Panel();
             this.nameLabel = new System.Windows.Forms.Label();
+            this.logoutButton = new System.Windows.Forms.Button();
+            this.helpButton = new System.Windows.Forms.Button();
+            this.settingsButton = new System.Windows.Forms.Button();
+            this.topBarPanel = new System.Windows.Forms.Panel();
+            this.stethoscopeIconPanel = new System.Windows.Forms.Panel();
+            this.userNameLabel = new System.Windows.Forms.Label();
             this.allContainer2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -92,49 +92,50 @@
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.sidebarLayoutPanel.SuspendLayout();
             this.namePanel.SuspendLayout();
+            this.topBarPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // allContainer2
             // 
             this.allContainer2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.allContainer2.Controls.Add(this.backHomeButton4);
-            this.allContainer2.Controls.Add(this.confirmButton);
+            this.allContainer2.Controls.Add(this.backHomeButton3);
+            this.allContainer2.Controls.Add(this.thirdNextStebButton2);
             this.allContainer2.Controls.Add(this.panel1);
             this.allContainer2.Controls.Add(this.steps2Container);
             this.allContainer2.Location = new System.Drawing.Point(401, 108);
             this.allContainer2.Name = "allContainer2";
             this.allContainer2.Size = new System.Drawing.Size(1103, 824);
-            this.allContainer2.TabIndex = 3;
+            this.allContainer2.TabIndex = 2;
             // 
-            // backHomeButton4
+            // backHomeButton3
             // 
-            this.backHomeButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.backHomeButton4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.backHomeButton4.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.backHomeButton4.ForeColor = System.Drawing.Color.Black;
-            this.backHomeButton4.Location = new System.Drawing.Point(39, 718);
-            this.backHomeButton4.Name = "backHomeButton4";
-            this.backHomeButton4.Size = new System.Drawing.Size(244, 65);
-            this.backHomeButton4.TabIndex = 22;
-            this.backHomeButton4.Text = "الخطوة السابقة";
-            this.backHomeButton4.UseVisualStyleBackColor = false;
-            this.backHomeButton4.Click += new System.EventHandler(this.backHomeButton2_Click);
+            this.backHomeButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.backHomeButton3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.backHomeButton3.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.backHomeButton3.ForeColor = System.Drawing.Color.Black;
+            this.backHomeButton3.Location = new System.Drawing.Point(39, 718);
+            this.backHomeButton3.Name = "backHomeButton3";
+            this.backHomeButton3.Size = new System.Drawing.Size(244, 65);
+            this.backHomeButton3.TabIndex = 22;
+            this.backHomeButton3.Text = "الخطوة السابقة";
+            this.backHomeButton3.UseVisualStyleBackColor = false;
+            this.backHomeButton3.Click += new System.EventHandler(this.backHomeButton2_Click);
             // 
-            // confirmButton
+            // thirdNextStebButton2
             // 
-            this.confirmButton.BackColor = System.Drawing.Color.Black;
-            this.confirmButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.confirmButton.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.confirmButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.confirmButton.Location = new System.Drawing.Point(950, 718);
-            this.confirmButton.Name = "confirmButton";
-            this.confirmButton.Size = new System.Drawing.Size(114, 65);
-            this.confirmButton.TabIndex = 20;
-            this.confirmButton.Text = "تأكيد";
-            this.confirmButton.UseVisualStyleBackColor = false;
+            this.thirdNextStebButton2.BackColor = System.Drawing.Color.Black;
+            this.thirdNextStebButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.thirdNextStebButton2.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.thirdNextStebButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.thirdNextStebButton2.Location = new System.Drawing.Point(837, 718);
+            this.thirdNextStebButton2.Name = "thirdNextStebButton2";
+            this.thirdNextStebButton2.Size = new System.Drawing.Size(227, 65);
+            this.thirdNextStebButton2.TabIndex = 20;
+            this.thirdNextStebButton2.Text = "الخطوة التالية";
+            this.thirdNextStebButton2.UseVisualStyleBackColor = false;
+            this.thirdNextStebButton2.Click += new System.EventHandler(this.firstNextStebButton2_Click);
             // 
             // panel1
             // 
@@ -212,11 +213,11 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label1.Location = new System.Drawing.Point(183, 0);
+            this.label1.Location = new System.Drawing.Point(330, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(306, 60);
+            this.label1.Size = new System.Drawing.Size(159, 60);
             this.label1.TabIndex = 6;
-            this.label1.Text = "وجود نفس المرض في العائلة";
+            this.label1.Text = "وجود حساسية";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -226,11 +227,11 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Right;
             this.label2.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label2.Location = new System.Drawing.Point(700, 0);
+            this.label2.Location = new System.Drawing.Point(799, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(282, 60);
+            this.label2.Size = new System.Drawing.Size(183, 60);
             this.label2.TabIndex = 9;
-            this.label2.Text = "الأمراض الورائية في العائلة";
+            this.label2.Text = "تكرار نفس الحالة";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel9
@@ -294,11 +295,11 @@
             this.label5.Dock = System.Windows.Forms.DockStyle.Right;
             this.label5.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label5.Location = new System.Drawing.Point(178, 0);
+            this.label5.Location = new System.Drawing.Point(310, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(311, 60);
+            this.label5.Size = new System.Drawing.Size(179, 60);
             this.label5.TabIndex = 5;
-            this.label5.Text = "وجود أمراض مزمنة في العائلة";
+            this.label5.Text = "الامراض المزمنة";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
@@ -308,11 +309,11 @@
             this.label6.Dock = System.Windows.Forms.DockStyle.Right;
             this.label6.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label6.Location = new System.Drawing.Point(809, 0);
+            this.label6.Location = new System.Drawing.Point(893, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(173, 60);
+            this.label6.Size = new System.Drawing.Size(89, 60);
             this.label6.TabIndex = 4;
-            this.label6.Text = "قرابة الاب والام";
+            this.label6.Text = "الادوية";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel16
@@ -320,7 +321,7 @@
             this.tableLayoutPanel16.ColumnCount = 2;
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 492F));
-            this.tableLayoutPanel16.Controls.Add(this.medicalHistoryFamily, 1, 0);
+            this.tableLayoutPanel16.Controls.Add(this.label8, 1, 0);
             this.tableLayoutPanel16.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel16.Name = "tableLayoutPanel16";
             this.tableLayoutPanel16.RowCount = 1;
@@ -328,18 +329,18 @@
             this.tableLayoutPanel16.Size = new System.Drawing.Size(985, 69);
             this.tableLayoutPanel16.TabIndex = 10;
             // 
-            // medicalHistoryFamily
+            // label8
             // 
-            this.medicalHistoryFamily.AutoSize = true;
-            this.medicalHistoryFamily.BackColor = System.Drawing.Color.Transparent;
-            this.medicalHistoryFamily.Dock = System.Windows.Forms.DockStyle.Right;
-            this.medicalHistoryFamily.Font = new System.Drawing.Font("Cairo", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.medicalHistoryFamily.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.medicalHistoryFamily.Location = new System.Drawing.Point(651, 0);
-            this.medicalHistoryFamily.Name = "medicalHistoryFamily";
-            this.medicalHistoryFamily.Size = new System.Drawing.Size(331, 69);
-            this.medicalHistoryFamily.TabIndex = 2;
-            this.medicalHistoryFamily.Text = "التاريخ المرضي للعائلة";
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label8.Font = new System.Drawing.Font("Cairo", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
+            this.label8.Location = new System.Drawing.Point(752, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(230, 69);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "التاريخ المرضي";
             // 
             // tableLayoutPanel17
             // 
@@ -415,10 +416,9 @@
             // step4Text2
             // 
             this.step4Text2.AutoSize = true;
-            this.step4Text2.BackColor = System.Drawing.Color.Black;
             this.step4Text2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.step4Text2.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.step4Text2.ForeColor = System.Drawing.Color.White;
+            this.step4Text2.ForeColor = System.Drawing.Color.Black;
             this.step4Text2.Location = new System.Drawing.Point(3, 0);
             this.step4Text2.Name = "step4Text2";
             this.step4Text2.Size = new System.Drawing.Size(95, 94);
@@ -507,7 +507,6 @@
             // 
             // listView7
             // 
-            this.listView7.BackColor = System.Drawing.Color.Black;
             this.listView7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listView7.Location = new System.Drawing.Point(91, 50);
             this.listView7.Name = "listView7";
@@ -611,54 +610,44 @@
             this.step1Text2.Text = "خطوة 1";
             this.step1Text2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // settingsButton
+            // sidebarLayoutPanel
             // 
-            this.settingsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.settingsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.settingsButton.FlatAppearance.BorderSize = 0;
-            this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingsButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.settingsButton.Image = ((System.Drawing.Image)(resources.GetObject("settingsButton.Image")));
-            this.settingsButton.Location = new System.Drawing.Point(1790, 686);
-            this.settingsButton.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
-            this.settingsButton.Name = "settingsButton";
-            this.settingsButton.Size = new System.Drawing.Size(98, 101);
-            this.settingsButton.TabIndex = 18;
-            this.settingsButton.Text = "الإعدادات";
-            this.settingsButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.settingsButton.UseVisualStyleBackColor = false;
+            this.sidebarLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.sidebarLayoutPanel.Controls.Add(this.namePanel);
+            this.sidebarLayoutPanel.Controls.Add(this.settingsButton);
+            this.sidebarLayoutPanel.Controls.Add(this.helpButton);
+            this.sidebarLayoutPanel.Controls.Add(this.logoutButton);
+            this.sidebarLayoutPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.sidebarLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.sidebarLayoutPanel.Location = new System.Drawing.Point(1792, 0);
+            this.sidebarLayoutPanel.Name = "sidebarLayoutPanel";
+            this.sidebarLayoutPanel.Size = new System.Drawing.Size(112, 1041);
+            this.sidebarLayoutPanel.TabIndex = 3;
             // 
-            // panel2
+            // namePanel
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.panel2.Controls.Add(this.userNameLabel);
-            this.panel2.Controls.Add(this.stethoscopeIconPanel);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1774, 89);
-            this.panel2.TabIndex = 16;
+            this.namePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
+            this.namePanel.Controls.Add(this.nameLabel);
+            this.namePanel.Location = new System.Drawing.Point(0, 0);
+            this.namePanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 493);
+            this.namePanel.Name = "namePanel";
+            this.namePanel.Size = new System.Drawing.Size(112, 79);
+            this.namePanel.TabIndex = 8;
             // 
-            // userNameLabel
+            // nameLabel
             // 
-            this.userNameLabel.AutoSize = true;
-            this.userNameLabel.Font = new System.Drawing.Font("Cairo Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.userNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.userNameLabel.Location = new System.Drawing.Point(727, 17);
-            this.userNameLabel.Name = "userNameLabel";
-            this.userNameLabel.Size = new System.Drawing.Size(320, 55);
-            this.userNameLabel.TabIndex = 4;
-            this.userNameLabel.Text = "Dr. Mostaffa Mohamed";
-            // 
-            // stethoscopeIconPanel
-            // 
-            this.stethoscopeIconPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.stethoscopeIconPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("stethoscopeIconPanel.BackgroundImage")));
-            this.stethoscopeIconPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.stethoscopeIconPanel.Location = new System.Drawing.Point(0, 5);
-            this.stethoscopeIconPanel.Name = "stethoscopeIconPanel";
-            this.stethoscopeIconPanel.Size = new System.Drawing.Size(104, 79);
-            this.stethoscopeIconPanel.TabIndex = 3;
+            this.nameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.nameLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nameLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.nameLabel.Location = new System.Drawing.Point(31, 17);
+            this.nameLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(51, 45);
+            this.nameLabel.TabIndex = 3;
+            this.nameLabel.Text = "M";
+            this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // logoutButton
             // 
@@ -669,11 +658,11 @@
             this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.logoutButton.Image = ((System.Drawing.Image)(resources.GetObject("logoutButton.Image")));
-            this.logoutButton.Location = new System.Drawing.Point(1790, 894);
+            this.logoutButton.Location = new System.Drawing.Point(0, 811);
             this.logoutButton.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(98, 101);
-            this.logoutButton.TabIndex = 20;
+            this.logoutButton.Size = new System.Drawing.Size(122, 123);
+            this.logoutButton.TabIndex = 0;
             this.logoutButton.Text = "تسجيل الخروج";
             this.logoutButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.logoutButton.UseVisualStyleBackColor = false;
@@ -681,71 +670,79 @@
             // helpButton
             // 
             this.helpButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
             this.helpButton.FlatAppearance.BorderSize = 0;
             this.helpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.helpButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.helpButton.Image = ((System.Drawing.Image)(resources.GetObject("helpButton.Image")));
-            this.helpButton.Location = new System.Drawing.Point(1790, 790);
+            this.helpButton.Location = new System.Drawing.Point(0, 695);
             this.helpButton.Margin = new System.Windows.Forms.Padding(0);
             this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(98, 101);
-            this.helpButton.TabIndex = 19;
+            this.helpButton.Size = new System.Drawing.Size(122, 116);
+            this.helpButton.TabIndex = 2;
             this.helpButton.Text = "المساعدة";
             this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.helpButton.UseVisualStyleBackColor = false;
+            this.helpButton.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // settingsButton
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.panel3.Controls.Add(this.namePanel);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1774, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(130, 1041);
-            this.panel3.TabIndex = 17;
+            this.settingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.settingsButton.FlatAppearance.BorderSize = 0;
+            this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settingsButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.settingsButton.Image = ((System.Drawing.Image)(resources.GetObject("settingsButton.Image")));
+            this.settingsButton.Location = new System.Drawing.Point(0, 575);
+            this.settingsButton.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
+            this.settingsButton.Name = "settingsButton";
+            this.settingsButton.Size = new System.Drawing.Size(119, 117);
+            this.settingsButton.TabIndex = 1;
+            this.settingsButton.Text = "الإعدادات";
+            this.settingsButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.settingsButton.UseVisualStyleBackColor = true;
             // 
-            // namePanel
+            // topBarPanel
             // 
-            this.namePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
-            this.namePanel.Controls.Add(this.nameLabel);
-            this.namePanel.Location = new System.Drawing.Point(0, 0);
-            this.namePanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 493);
-            this.namePanel.Name = "namePanel";
-            this.namePanel.Size = new System.Drawing.Size(130, 89);
-            this.namePanel.TabIndex = 4;
+            this.topBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.topBarPanel.Controls.Add(this.stethoscopeIconPanel);
+            this.topBarPanel.Controls.Add(this.userNameLabel);
+            this.topBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.topBarPanel.Location = new System.Drawing.Point(0, 0);
+            this.topBarPanel.Name = "topBarPanel";
+            this.topBarPanel.Size = new System.Drawing.Size(1792, 79);
+            this.topBarPanel.TabIndex = 4;
             // 
-            // nameLabel
+            // stethoscopeIconPanel
             // 
-            this.nameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.nameLabel.Font = new System.Drawing.Font("Cairo ExtraBlack", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.nameLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.nameLabel.Location = new System.Drawing.Point(34, 8);
-            this.nameLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(62, 72);
-            this.nameLabel.TabIndex = 9;
-            this.nameLabel.Text = "M";
-            this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.stethoscopeIconPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.stethoscopeIconPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("stethoscopeIconPanel.BackgroundImage")));
+            this.stethoscopeIconPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.stethoscopeIconPanel.Location = new System.Drawing.Point(0, 0);
+            this.stethoscopeIconPanel.Name = "stethoscopeIconPanel";
+            this.stethoscopeIconPanel.Size = new System.Drawing.Size(104, 79);
+            this.stethoscopeIconPanel.TabIndex = 2;
             // 
-            // AddPatient4
+            // userNameLabel
+            // 
+            this.userNameLabel.AutoSize = true;
+            this.userNameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.userNameLabel.Location = new System.Drawing.Point(776, 24);
+            this.userNameLabel.Name = "userNameLabel";
+            this.userNameLabel.Size = new System.Drawing.Size(241, 30);
+            this.userNameLabel.TabIndex = 2;
+            this.userNameLabel.Text = "Dr. Mostaffa Mohamed";
+            // 
+            // AddPatient3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.settingsButton);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.logoutButton);
-            this.Controls.Add(this.helpButton);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.topBarPanel);
+            this.Controls.Add(this.sidebarLayoutPanel);
             this.Controls.Add(this.allContainer2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.MinimumSize = new System.Drawing.Size(1918, 1038);
-            this.Name = "AddPatient4";
+            this.Name = "AddPatient3";
             this.Text = "قائمة إضافة مريض جديد";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.allContainer2.ResumeLayout(false);
@@ -772,11 +769,11 @@
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
+            this.sidebarLayoutPanel.ResumeLayout(false);
             this.namePanel.ResumeLayout(false);
             this.namePanel.PerformLayout();
+            this.topBarPanel.ResumeLayout(false);
+            this.topBarPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -784,8 +781,8 @@
         #endregion
 
         private Panel allContainer2;
-        private Button backHomeButton4;
-        private Button confirmButton;
+        private Button backHomeButton3;
+        private Button thirdNextStebButton2;
         private Panel panel1;
         private TableLayoutPanel tableLayoutPanel1;
         private TextBox textBox6;
@@ -800,7 +797,7 @@
         private Label label5;
         private Label label6;
         private TableLayoutPanel tableLayoutPanel16;
-        private Label medicalHistoryFamily;
+        private Label label8;
         private TableLayoutPanel tableLayoutPanel17;
         private TableLayoutPanel tableLayoutPanel18;
         private TableLayoutPanel tableLayoutPanel19;
@@ -822,13 +819,13 @@
         private ListView listView9;
         private TableLayoutPanel tableLayoutPanel8;
         private Label step1Text2;
-        private Button settingsButton;
-        private Panel panel2;
-        private Label userNameLabel;
-        private Panel stethoscopeIconPanel;
+        private FlowLayoutPanel sidebarLayoutPanel;
         private Button logoutButton;
         private Button helpButton;
-        private Panel panel3;
+        private Button settingsButton;
+        private Panel topBarPanel;
+        private Panel stethoscopeIconPanel;
+        private Label userNameLabel;
         private Panel namePanel;
         private Label nameLabel;
     }

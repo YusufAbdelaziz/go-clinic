@@ -34,15 +34,15 @@
             this.logoutButton = new System.Windows.Forms.Button();
             this.helpButton = new System.Windows.Forms.Button();
             this.settingsButton = new System.Windows.Forms.Button();
-            this.topBarPanel = new System.Windows.Forms.Panel();
-            this.nameLabel = new System.Windows.Forms.Label();
-            this.userNameLabel = new System.Windows.Forms.Label();
             this.namePanel = new System.Windows.Forms.Panel();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.topBarPanel = new System.Windows.Forms.Panel();
             this.stethoscopeIconPanel = new System.Windows.Forms.Panel();
+            this.userNameLabel = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.sidebarLayoutPanel.SuspendLayout();
-            this.topBarPanel.SuspendLayout();
             this.namePanel.SuspendLayout();
+            this.topBarPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // sidebarLayoutPanel
@@ -110,16 +110,15 @@
             this.settingsButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.settingsButton.UseVisualStyleBackColor = true;
             // 
-            // topBarPanel
+            // namePanel
             // 
-            this.topBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.topBarPanel.Controls.Add(this.stethoscopeIconPanel);
-            this.topBarPanel.Controls.Add(this.userNameLabel);
-            this.topBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.topBarPanel.Location = new System.Drawing.Point(0, 0);
-            this.topBarPanel.Name = "topBarPanel";
-            this.topBarPanel.Size = new System.Drawing.Size(1269, 79);
-            this.topBarPanel.TabIndex = 1;
+            this.namePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
+            this.namePanel.Controls.Add(this.nameLabel);
+            this.namePanel.Location = new System.Drawing.Point(0, 0);
+            this.namePanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 493);
+            this.namePanel.Name = "namePanel";
+            this.namePanel.Size = new System.Drawing.Size(112, 79);
+            this.namePanel.TabIndex = 3;
             // 
             // nameLabel
             // 
@@ -136,31 +135,16 @@
             this.nameLabel.Text = "M";
             this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // userNameLabel
+            // topBarPanel
             // 
-            this.userNameLabel.AutoSize = true;
-            this.userNameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.userNameLabel.Location = new System.Drawing.Point(467, 21);
-            this.userNameLabel.Name = "userNameLabel";
-            this.userNameLabel.Size = new System.Drawing.Size(241, 30);
-            this.userNameLabel.TabIndex = 2;
-            this.userNameLabel.Text = "Dr. Mostaffa Mohamed";
-            // 
-            // namePanel
-            // 
-            this.namePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
-            this.namePanel.Controls.Add(this.nameLabel);
-            this.namePanel.Location = new System.Drawing.Point(0, 0);
-            this.namePanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 493);
-            this.namePanel.Name = "namePanel";
-            this.namePanel.Size = new System.Drawing.Size(122, 79);
-            this.namePanel.TabIndex = 3;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.topBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.topBarPanel.Controls.Add(this.stethoscopeIconPanel);
+            this.topBarPanel.Controls.Add(this.userNameLabel);
+            this.topBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.topBarPanel.Location = new System.Drawing.Point(0, 0);
+            this.topBarPanel.Name = "topBarPanel";
+            this.topBarPanel.Size = new System.Drawing.Size(1269, 79);
+            this.topBarPanel.TabIndex = 1;
             // 
             // stethoscopeIconPanel
             // 
@@ -171,6 +155,22 @@
             this.stethoscopeIconPanel.Name = "stethoscopeIconPanel";
             this.stethoscopeIconPanel.Size = new System.Drawing.Size(104, 79);
             this.stethoscopeIconPanel.TabIndex = 2;
+            // 
+            // userNameLabel
+            // 
+            this.userNameLabel.AutoSize = true;
+            this.userNameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.userNameLabel.Location = new System.Drawing.Point(467, 21);
+            this.userNameLabel.Name = "userNameLabel";
+            this.userNameLabel.Size = new System.Drawing.Size(241, 30);
+            this.userNameLabel.TabIndex = 2;
+            this.userNameLabel.Text = "Dr. Mostaffa Mohamed";
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // Template
             // 
@@ -187,10 +187,10 @@
             this.Text = "GoClinic";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.sidebarLayoutPanel.ResumeLayout(false);
-            this.topBarPanel.ResumeLayout(false);
-            this.topBarPanel.PerformLayout();
             this.namePanel.ResumeLayout(false);
             this.namePanel.PerformLayout();
+            this.topBarPanel.ResumeLayout(false);
+            this.topBarPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
