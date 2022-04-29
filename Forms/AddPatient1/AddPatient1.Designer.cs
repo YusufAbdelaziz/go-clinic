@@ -90,15 +90,15 @@
             this.tableLayoutPanel31 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel33 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.userNameLabel = new System.Windows.Forms.Label();
+            this.topBarPanel = new System.Windows.Forms.Panel();
             this.stethoscopeIconPanel = new System.Windows.Forms.Panel();
-            this.nameLabel = new System.Windows.Forms.Label();
+            this.userNameLabel = new System.Windows.Forms.Label();
+            this.sidebarLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.namePanel = new System.Windows.Forms.Panel();
+            this.nameLabel = new System.Windows.Forms.Label();
             this.settingsButton = new System.Windows.Forms.Button();
-            this.logoutButton = new System.Windows.Forms.Button();
             this.helpButton = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.logoutButton = new System.Windows.Forms.Button();
             this.allContainer2.SuspendLayout();
             this.infoContainer2.SuspendLayout();
             this.tableLayoutPanel25.SuspendLayout();
@@ -116,9 +116,9 @@
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.topBarPanel.SuspendLayout();
+            this.sidebarLayoutPanel.SuspendLayout();
             this.namePanel.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel4
@@ -928,52 +928,50 @@
             this.tableLayoutPanel33.Size = new System.Drawing.Size(200, 100);
             this.tableLayoutPanel33.TabIndex = 0;
             // 
-            // panel2
+            // topBarPanel
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.panel2.Controls.Add(this.userNameLabel);
-            this.panel2.Controls.Add(this.stethoscopeIconPanel);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1774, 89);
-            this.panel2.TabIndex = 16;
-            // 
-            // userNameLabel
-            // 
-            this.userNameLabel.AutoSize = true;
-            this.userNameLabel.Font = new System.Drawing.Font("Cairo Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.userNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.userNameLabel.Location = new System.Drawing.Point(727, 17);
-            this.userNameLabel.Name = "userNameLabel";
-            this.userNameLabel.Size = new System.Drawing.Size(320, 55);
-            this.userNameLabel.TabIndex = 4;
-            this.userNameLabel.Text = "Dr. Mostaffa Mohamed";
+            this.topBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.topBarPanel.Controls.Add(this.stethoscopeIconPanel);
+            this.topBarPanel.Controls.Add(this.userNameLabel);
+            this.topBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.topBarPanel.Location = new System.Drawing.Point(0, 0);
+            this.topBarPanel.Name = "topBarPanel";
+            this.topBarPanel.Size = new System.Drawing.Size(1792, 79);
+            this.topBarPanel.TabIndex = 3;
             // 
             // stethoscopeIconPanel
             // 
             this.stethoscopeIconPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
             this.stethoscopeIconPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("stethoscopeIconPanel.BackgroundImage")));
             this.stethoscopeIconPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.stethoscopeIconPanel.Location = new System.Drawing.Point(0, 5);
+            this.stethoscopeIconPanel.Location = new System.Drawing.Point(0, 0);
             this.stethoscopeIconPanel.Name = "stethoscopeIconPanel";
             this.stethoscopeIconPanel.Size = new System.Drawing.Size(104, 79);
-            this.stethoscopeIconPanel.TabIndex = 3;
+            this.stethoscopeIconPanel.TabIndex = 2;
             // 
-            // nameLabel
+            // userNameLabel
             // 
-            this.nameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.nameLabel.Font = new System.Drawing.Font("Cairo ExtraBlack", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.nameLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.nameLabel.Location = new System.Drawing.Point(26, 8);
-            this.nameLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(62, 72);
-            this.nameLabel.TabIndex = 9;
-            this.nameLabel.Text = "M";
-            this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.userNameLabel.AutoSize = true;
+            this.userNameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.userNameLabel.Location = new System.Drawing.Point(776, 24);
+            this.userNameLabel.Name = "userNameLabel";
+            this.userNameLabel.Size = new System.Drawing.Size(241, 30);
+            this.userNameLabel.TabIndex = 2;
+            this.userNameLabel.Text = "Dr. Mostaffa Mohamed";
+            // 
+            // sidebarLayoutPanel
+            // 
+            this.sidebarLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.sidebarLayoutPanel.Controls.Add(this.namePanel);
+            this.sidebarLayoutPanel.Controls.Add(this.settingsButton);
+            this.sidebarLayoutPanel.Controls.Add(this.helpButton);
+            this.sidebarLayoutPanel.Controls.Add(this.logoutButton);
+            this.sidebarLayoutPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.sidebarLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.sidebarLayoutPanel.Location = new System.Drawing.Point(1792, 0);
+            this.sidebarLayoutPanel.Name = "sidebarLayoutPanel";
+            this.sidebarLayoutPanel.Size = new System.Drawing.Size(112, 1041);
+            this.sidebarLayoutPanel.TabIndex = 2;
             // 
             // namePanel
             // 
@@ -982,25 +980,55 @@
             this.namePanel.Location = new System.Drawing.Point(0, 0);
             this.namePanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 493);
             this.namePanel.Name = "namePanel";
-            this.namePanel.Size = new System.Drawing.Size(114, 89);
-            this.namePanel.TabIndex = 4;
+            this.namePanel.Size = new System.Drawing.Size(112, 79);
+            this.namePanel.TabIndex = 8;
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.nameLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nameLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.nameLabel.Location = new System.Drawing.Point(31, 17);
+            this.nameLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(51, 45);
+            this.nameLabel.TabIndex = 3;
+            this.nameLabel.Text = "M";
+            this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // settingsButton
             // 
-            this.settingsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.settingsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.settingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.settingsButton.FlatAppearance.BorderSize = 0;
             this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.settingsButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.settingsButton.Image = ((System.Drawing.Image)(resources.GetObject("settingsButton.Image")));
-            this.settingsButton.Location = new System.Drawing.Point(1790, 682);
+            this.settingsButton.Location = new System.Drawing.Point(0, 575);
             this.settingsButton.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.settingsButton.Name = "settingsButton";
-            this.settingsButton.Size = new System.Drawing.Size(98, 101);
-            this.settingsButton.TabIndex = 18;
+            this.settingsButton.Size = new System.Drawing.Size(119, 117);
+            this.settingsButton.TabIndex = 1;
             this.settingsButton.Text = "الإعدادات";
             this.settingsButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.settingsButton.UseVisualStyleBackColor = false;
+            this.settingsButton.UseVisualStyleBackColor = true;
+            // 
+            // helpButton
+            // 
+            this.helpButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.helpButton.FlatAppearance.BorderSize = 0;
+            this.helpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.Image = ((System.Drawing.Image)(resources.GetObject("helpButton.Image")));
+            this.helpButton.Location = new System.Drawing.Point(0, 695);
+            this.helpButton.Margin = new System.Windows.Forms.Padding(0);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(122, 116);
+            this.helpButton.TabIndex = 2;
+            this.helpButton.Text = "المساعدة";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = true;
             // 
             // logoutButton
             // 
@@ -1011,41 +1039,14 @@
             this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.logoutButton.Image = ((System.Drawing.Image)(resources.GetObject("logoutButton.Image")));
-            this.logoutButton.Location = new System.Drawing.Point(1790, 890);
+            this.logoutButton.Location = new System.Drawing.Point(0, 811);
             this.logoutButton.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(98, 101);
-            this.logoutButton.TabIndex = 20;
+            this.logoutButton.Size = new System.Drawing.Size(122, 123);
+            this.logoutButton.TabIndex = 0;
             this.logoutButton.Text = "تسجيل الخروج";
             this.logoutButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.logoutButton.UseVisualStyleBackColor = false;
-            // 
-            // helpButton
-            // 
-            this.helpButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.helpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.helpButton.FlatAppearance.BorderSize = 0;
-            this.helpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.helpButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.helpButton.Image = ((System.Drawing.Image)(resources.GetObject("helpButton.Image")));
-            this.helpButton.Location = new System.Drawing.Point(1790, 786);
-            this.helpButton.Margin = new System.Windows.Forms.Padding(0);
-            this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(98, 101);
-            this.helpButton.TabIndex = 19;
-            this.helpButton.Text = "المساعدة";
-            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.helpButton.UseVisualStyleBackColor = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.panel3.Controls.Add(this.namePanel);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1774, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(130, 1041);
-            this.panel3.TabIndex = 17;
             // 
             // AddPatient1
             // 
@@ -1053,12 +1054,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.settingsButton);
-            this.Controls.Add(this.logoutButton);
-            this.Controls.Add(this.helpButton);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.topBarPanel);
             this.Controls.Add(this.allContainer2);
+            this.Controls.Add(this.sidebarLayoutPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.MinimumSize = new System.Drawing.Size(1918, 1038);
@@ -1091,11 +1089,11 @@
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.topBarPanel.ResumeLayout(false);
+            this.topBarPanel.PerformLayout();
+            this.sidebarLayoutPanel.ResumeLayout(false);
             this.namePanel.ResumeLayout(false);
             this.namePanel.PerformLayout();
-            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1162,14 +1160,14 @@
         private DateTimePicker dateBirthPicker;
         private Label mustFillText;
         private TableLayoutPanel tableLayoutPanel33;
-        private Panel panel2;
-        private Label userNameLabel;
+        private Panel topBarPanel;
         private Panel stethoscopeIconPanel;
-        private Label nameLabel;
-        private Panel namePanel;
-        private Button settingsButton;
+        private Label userNameLabel;
+        private FlowLayoutPanel sidebarLayoutPanel;
         private Button logoutButton;
         private Button helpButton;
-        private Panel panel3;
+        private Button settingsButton;
+        private Panel namePanel;
+        private Label nameLabel;
     }
 }
