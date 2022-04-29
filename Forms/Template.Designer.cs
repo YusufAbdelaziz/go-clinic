@@ -37,9 +37,9 @@
             this.namePanel = new System.Windows.Forms.Panel();
             this.nameLabel = new System.Windows.Forms.Label();
             this.topBarPanel = new System.Windows.Forms.Panel();
+            this.stethoscopeIconPanel = new System.Windows.Forms.Panel();
             this.userNameLabel = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.stethoscopeIconPanel = new System.Windows.Forms.Panel();
             this.sidebarLayoutPanel.SuspendLayout();
             this.namePanel.SuspendLayout();
             this.topBarPanel.SuspendLayout();
@@ -114,7 +114,6 @@
             // 
             this.namePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
             this.namePanel.Controls.Add(this.nameLabel);
-            this.namePanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.namePanel.Location = new System.Drawing.Point(0, 0);
             this.namePanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 493);
             this.namePanel.Name = "namePanel";
@@ -128,10 +127,10 @@
             this.nameLabel.BackColor = System.Drawing.Color.Transparent;
             this.nameLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nameLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.nameLabel.Location = new System.Drawing.Point(24, 9);
+            this.nameLabel.Location = new System.Drawing.Point(36, 17);
             this.nameLabel.Margin = new System.Windows.Forms.Padding(0);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(61, 54);
+            this.nameLabel.Size = new System.Drawing.Size(51, 45);
             this.nameLabel.TabIndex = 3;
             this.nameLabel.Text = "M";
             this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -139,28 +138,13 @@
             // topBarPanel
             // 
             this.topBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.topBarPanel.Controls.Add(this.stethoscopeIconPanel);
             this.topBarPanel.Controls.Add(this.userNameLabel);
             this.topBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topBarPanel.Location = new System.Drawing.Point(0, 0);
             this.topBarPanel.Name = "topBarPanel";
             this.topBarPanel.Size = new System.Drawing.Size(1269, 79);
             this.topBarPanel.TabIndex = 1;
-            // 
-            // userNameLabel
-            // 
-            this.userNameLabel.AutoSize = true;
-            this.userNameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.userNameLabel.Location = new System.Drawing.Point(467, 21);
-            this.userNameLabel.Name = "userNameLabel";
-            this.userNameLabel.Size = new System.Drawing.Size(314, 38);
-            this.userNameLabel.TabIndex = 2;
-            this.userNameLabel.Text = "Dr. Mostaffa Mohamed";
-            // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // stethoscopeIconPanel
             // 
@@ -172,13 +156,28 @@
             this.stethoscopeIconPanel.Size = new System.Drawing.Size(104, 79);
             this.stethoscopeIconPanel.TabIndex = 2;
             // 
+            // userNameLabel
+            // 
+            this.userNameLabel.AutoSize = true;
+            this.userNameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.userNameLabel.Location = new System.Drawing.Point(467, 21);
+            this.userNameLabel.Name = "userNameLabel";
+            this.userNameLabel.Size = new System.Drawing.Size(241, 30);
+            this.userNameLabel.TabIndex = 2;
+            this.userNameLabel.Text = "Dr. Mostaffa Mohamed";
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // Template
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1381, 944);
-            this.Controls.Add(this.stethoscopeIconPanel);
             this.Controls.Add(this.topBarPanel);
             this.Controls.Add(this.sidebarLayoutPanel);
             this.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -204,11 +203,11 @@
         private Button logoutButton;
         private Button helpButton;
         private Button settingsButton;
-        private Panel namePanel;
-        private Label nameLabel;
         private Panel topBarPanel;
         private Label userNameLabel;
         private ImageList imageList1;
         private Panel stethoscopeIconPanel;
+        private Label nameLabel;
+        private Panel namePanel;
     }
 }
