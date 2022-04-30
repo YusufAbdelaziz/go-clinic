@@ -1,8 +1,8 @@
 namespace goclinic
 {
-    public partial class Template : Form
+    public partial class Results : Form
     {
-        public Template()
+        public Results()
         {
             InitializeComponent();
         }
@@ -33,6 +33,11 @@ namespace goclinic
         }
 
         private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void showMoreButton_Click(object sender, EventArgs e)
         {
 
         }
