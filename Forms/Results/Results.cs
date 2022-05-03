@@ -41,5 +41,21 @@ namespace goclinic
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void searchPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void phoneNumberValue_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
