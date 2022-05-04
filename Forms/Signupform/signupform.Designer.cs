@@ -33,12 +33,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.userNameBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.openLoginButton = new System.Windows.Forms.Button();
+            this.customTextBox1 = new goclinic.customs.customTextBox();
+            this.customTextBox2 = new goclinic.customs.customTextBox();
+            this.customTextBox3 = new goclinic.customs.customTextBox();
+            this.customButton1 = new goclinic.customs.CustomButton();
+            this.openLoginButton = new goclinic.customs.CustomButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,54 +96,6 @@
             this.label3.Text = "من فضلك قم بملئ الاستمارة الأتية لإنشاء حساب جديد";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // userNameBox
-            // 
-            this.userNameBox.ForeColor = System.Drawing.Color.DimGray;
-            this.userNameBox.Location = new System.Drawing.Point(60, 190);
-            this.userNameBox.Name = "userNameBox";
-            this.userNameBox.PlaceholderText = "اسم المستخدم الجديد";
-            this.userNameBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.userNameBox.Size = new System.Drawing.Size(500, 27);
-            this.userNameBox.TabIndex = 4;
-            this.userNameBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox1
-            // 
-            this.textBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox1.Location = new System.Drawing.Point(60, 265);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "رقم الموبايل او بريد الكتروني";
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox1.Size = new System.Drawing.Size(500, 27);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox2
-            // 
-            this.textBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox2.Location = new System.Drawing.Point(60, 340);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.PlaceholderText = "كلمة السر";
-            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox2.Size = new System.Drawing.Size(500, 27);
-            this.textBox2.TabIndex = 6;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(141)))), ((int)(((byte)(145)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(60, 415);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(500, 30);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "تسجيل مستخدم جديد";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -158,17 +110,78 @@
             this.label4.Text = "لديك حساب بالفعل؟";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // customTextBox1
+            // 
+            this.customTextBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.customTextBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.customTextBox1.Location = new System.Drawing.Point(62, 168);
+            this.customTextBox1.Multiline = false;
+            this.customTextBox1.Name = "customTextBox1";
+            this.customTextBox1.Padding = new System.Windows.Forms.Padding(7);
+            this.customTextBox1.PasswordChar = false;
+            this.customTextBox1.PlaceholderText = "اسم المستخدم الجديد";
+            this.customTextBox1.Radius = 30;
+            this.customTextBox1.Size = new System.Drawing.Size(500, 50);
+            this.customTextBox1.TabIndex = 10;
+            this.customTextBox1.TextAlignRight = true;
+            // 
+            // customTextBox2
+            // 
+            this.customTextBox2.BackColor = System.Drawing.SystemColors.Window;
+            this.customTextBox2.ForeColor = System.Drawing.Color.DimGray;
+            this.customTextBox2.Location = new System.Drawing.Point(62, 255);
+            this.customTextBox2.Multiline = false;
+            this.customTextBox2.Name = "customTextBox2";
+            this.customTextBox2.Padding = new System.Windows.Forms.Padding(7);
+            this.customTextBox2.PasswordChar = false;
+            this.customTextBox2.PlaceholderText = "رقم الموبايل او بريد الكتروني";
+            this.customTextBox2.Radius = 30;
+            this.customTextBox2.Size = new System.Drawing.Size(500, 50);
+            this.customTextBox2.TabIndex = 11;
+            this.customTextBox2.TextAlignRight = true;
+            // 
+            // customTextBox3
+            // 
+            this.customTextBox3.BackColor = System.Drawing.SystemColors.Window;
+            this.customTextBox3.ForeColor = System.Drawing.Color.DimGray;
+            this.customTextBox3.Location = new System.Drawing.Point(60, 338);
+            this.customTextBox3.Multiline = false;
+            this.customTextBox3.Name = "customTextBox3";
+            this.customTextBox3.Padding = new System.Windows.Forms.Padding(7);
+            this.customTextBox3.PasswordChar = false;
+            this.customTextBox3.PlaceholderText = "كلمة السر";
+            this.customTextBox3.Radius = 30;
+            this.customTextBox3.Size = new System.Drawing.Size(500, 50);
+            this.customTextBox3.TabIndex = 12;
+            this.customTextBox3.TextAlignRight = true;
+            // 
+            // customButton1
+            // 
+            this.customButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(141)))), ((int)(((byte)(145)))));
+            this.customButton1.FlatAppearance.BorderSize = 0;
+            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.customButton1.ForeColor = System.Drawing.Color.White;
+            this.customButton1.Location = new System.Drawing.Point(62, 411);
+            this.customButton1.Name = "customButton1";
+            this.customButton1.Radius = 20;
+            this.customButton1.Size = new System.Drawing.Size(500, 40);
+            this.customButton1.TabIndex = 23;
+            this.customButton1.Text = "تسجيل مستخدم جديد";
+            this.customButton1.UseVisualStyleBackColor = false;
+            // 
             // openLoginButton
             // 
-            this.openLoginButton.BackColor = System.Drawing.Color.Black;
-            this.openLoginButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.openLoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.openLoginButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.openLoginButton.FlatAppearance.BorderSize = 0;
+            this.openLoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.openLoginButton.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.openLoginButton.ForeColor = System.Drawing.Color.Transparent;
-            this.openLoginButton.Location = new System.Drawing.Point(180, 504);
+            this.openLoginButton.ForeColor = System.Drawing.Color.White;
+            this.openLoginButton.Location = new System.Drawing.Point(187, 505);
             this.openLoginButton.Name = "openLoginButton";
+            this.openLoginButton.Radius = 20;
             this.openLoginButton.Size = new System.Drawing.Size(248, 36);
-            this.openLoginButton.TabIndex = 9;
+            this.openLoginButton.TabIndex = 24;
             this.openLoginButton.Text = "تسجيل الدخول";
             this.openLoginButton.UseVisualStyleBackColor = false;
             this.openLoginButton.Click += new System.EventHandler(this.openLoginButton_Click);
@@ -180,11 +193,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(60)))), ((int)(((byte)(67)))));
             this.ClientSize = new System.Drawing.Size(593, 564);
             this.Controls.Add(this.openLoginButton);
+            this.Controls.Add(this.customButton1);
+            this.Controls.Add(this.customTextBox3);
+            this.Controls.Add(this.customTextBox2);
+            this.Controls.Add(this.customTextBox1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.userNameBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -205,11 +218,11 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox userNameBox;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
         private Label label4;
-        private Button openLoginButton;
+        private customs.customTextBox customTextBox1;
+        private customs.customTextBox customTextBox2;
+        private customs.customTextBox customTextBox3;
+        private customs.CustomButton customButton1;
+        private customs.CustomButton openLoginButton;
     }
 }

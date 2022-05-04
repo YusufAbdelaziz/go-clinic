@@ -29,31 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Loginform));
-            this.openSignupButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.userNameBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.usernameTextBox = new goclinic.customs.customTextBox();
+            this.passwordTextBox = new goclinic.customs.customTextBox();
+            this.customButton1 = new goclinic.customs.CustomButton();
+            this.openSignupButton = new goclinic.customs.CustomButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // openSignupButton
-            // 
-            this.openSignupButton.BackColor = System.Drawing.Color.Black;
-            this.openSignupButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.openSignupButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.openSignupButton.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.openSignupButton.ForeColor = System.Drawing.Color.Transparent;
-            this.openSignupButton.Location = new System.Drawing.Point(180, 465);
-            this.openSignupButton.Name = "openSignupButton";
-            this.openSignupButton.Size = new System.Drawing.Size(248, 36);
-            this.openSignupButton.TabIndex = 19;
-            this.openSignupButton.Text = "تسجيل مستخدم جديد";
-            this.openSignupButton.UseVisualStyleBackColor = false;
-            this.openSignupButton.Click += new System.EventHandler(this.openSignupButton_Click);
             // 
             // label4
             // 
@@ -68,43 +53,6 @@
             this.label4.TabIndex = 18;
             this.label4.Text = "ليس لديك حساب بعد؟";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(141)))), ((int)(((byte)(145)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(60, 340);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(500, 30);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "دخول";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox2.Location = new System.Drawing.Point(60, 265);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.PlaceholderText = "كلمة السر";
-            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox2.Size = new System.Drawing.Size(500, 27);
-            this.textBox2.TabIndex = 16;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // userNameBox
-            // 
-            this.userNameBox.ForeColor = System.Drawing.Color.DimGray;
-            this.userNameBox.Location = new System.Drawing.Point(60, 196);
-            this.userNameBox.Name = "userNameBox";
-            this.userNameBox.PlaceholderText = "اسم المستخدم ";
-            this.userNameBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.userNameBox.Size = new System.Drawing.Size(500, 27);
-            this.userNameBox.TabIndex = 14;
-            this.userNameBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label2
             // 
@@ -146,6 +94,67 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
+            // usernameTextBox
+            // 
+            this.usernameTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.usernameTextBox.ForeColor = System.Drawing.Color.DimGray;
+            this.usernameTextBox.Location = new System.Drawing.Point(60, 164);
+            this.usernameTextBox.Multiline = false;
+            this.usernameTextBox.Name = "usernameTextBox";
+            this.usernameTextBox.Padding = new System.Windows.Forms.Padding(7);
+            this.usernameTextBox.PasswordChar = false;
+            this.usernameTextBox.PlaceholderText = "اسم المستخدم";
+            this.usernameTextBox.Radius = 30;
+            this.usernameTextBox.Size = new System.Drawing.Size(500, 50);
+            this.usernameTextBox.TabIndex = 20;
+            this.usernameTextBox.TextAlignRight = true;
+            // 
+            // passwordTextBox
+            // 
+            this.passwordTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.passwordTextBox.ForeColor = System.Drawing.Color.DimGray;
+            this.passwordTextBox.Location = new System.Drawing.Point(60, 254);
+            this.passwordTextBox.Multiline = false;
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Padding = new System.Windows.Forms.Padding(7);
+            this.passwordTextBox.PasswordChar = false;
+            this.passwordTextBox.PlaceholderText = "كلمة السر";
+            this.passwordTextBox.Radius = 30;
+            this.passwordTextBox.Size = new System.Drawing.Size(500, 50);
+            this.passwordTextBox.TabIndex = 21;
+            this.passwordTextBox.TextAlignRight = true;
+            // 
+            // customButton1
+            // 
+            this.customButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(141)))), ((int)(((byte)(145)))));
+            this.customButton1.FlatAppearance.BorderSize = 0;
+            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.customButton1.ForeColor = System.Drawing.Color.White;
+            this.customButton1.Location = new System.Drawing.Point(60, 340);
+            this.customButton1.Name = "customButton1";
+            this.customButton1.Radius = 20;
+            this.customButton1.Size = new System.Drawing.Size(500, 40);
+            this.customButton1.TabIndex = 22;
+            this.customButton1.Text = "دخول";
+            this.customButton1.UseVisualStyleBackColor = false;
+            // 
+            // openSignupButton
+            // 
+            this.openSignupButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.openSignupButton.FlatAppearance.BorderSize = 0;
+            this.openSignupButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openSignupButton.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.openSignupButton.ForeColor = System.Drawing.Color.White;
+            this.openSignupButton.Location = new System.Drawing.Point(180, 465);
+            this.openSignupButton.Name = "openSignupButton";
+            this.openSignupButton.Radius = 20;
+            this.openSignupButton.Size = new System.Drawing.Size(248, 36);
+            this.openSignupButton.TabIndex = 23;
+            this.openSignupButton.Text = "تسجيل مستخدم جديد";
+            this.openSignupButton.UseVisualStyleBackColor = false;
+            this.openSignupButton.Click += new System.EventHandler(this.openSignupButton_Click);
+            // 
             // Loginform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -153,10 +162,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(60)))), ((int)(((byte)(67)))));
             this.ClientSize = new System.Drawing.Size(593, 564);
             this.Controls.Add(this.openSignupButton);
+            this.Controls.Add(this.customButton1);
+            this.Controls.Add(this.passwordTextBox);
+            this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.userNameBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -171,14 +180,13 @@
         }
 
         #endregion
-
-        private Button openSignupButton;
         private Label label4;
-        private Button button1;
-        private TextBox textBox2;
-        private TextBox userNameBox;
         private Label label2;
         private Label label1;
         private PictureBox pictureBox1;
+        private customs.customTextBox usernameTextBox;
+        private customs.customTextBox passwordTextBox;
+        private customs.CustomButton customButton1;
+        private customs.CustomButton openSignupButton;
     }
 }

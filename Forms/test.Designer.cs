@@ -73,7 +73,7 @@
             this.customTextBox3.Padding = new System.Windows.Forms.Padding(10);
             this.customTextBox3.PasswordChar = true;
             this.customTextBox3.PlaceholderText = "this is a place holder";
-            this.customTextBox3.Radius = 30;
+            this.customTextBox3.Radius = 40;
             this.customTextBox3.Size = new System.Drawing.Size(430, 130);
             this.customTextBox3.TabIndex = 3;
             // 
@@ -99,7 +99,7 @@
             this.customButton1.ForeColor = System.Drawing.Color.White;
             this.customButton1.Location = new System.Drawing.Point(305, 350);
             this.customButton1.Name = "customButton1";
-            this.customButton1.Radius = 30;
+            this.customButton1.Radius = 40;
             this.customButton1.Size = new System.Drawing.Size(158, 48);
             this.customButton1.TabIndex = 5;
             this.customButton1.Text = "get text";

@@ -16,6 +16,8 @@ namespace goclinic.customs
     {
         [DefaultValue(0)]
         private int radius = 0;
+        [DefaultValue(false)]
+        private bool textAlignRight;
 
 
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
@@ -41,6 +43,27 @@ namespace goclinic.customs
                 
             }
         }
+
+        [Category("Custom")]
+        public bool TextAlignRight
+        {
+            get => textAlignRight;
+            set
+            {
+                if (value)
+                {
+                    textAlignRight = value;
+                    textBox1.TextAlign = HorizontalAlignment.Right;
+                }
+                else
+                {
+                    textAlignRight = value;
+                    textBox1.TextAlign = HorizontalAlignment.Left;
+                }
+
+            }
+        }
+
 
         [Category("Custom")]
         public string PlaceholderText
@@ -94,6 +117,7 @@ namespace goclinic.customs
             }
         }
 
+        
 
         [System.Runtime.InteropServices.DllImport("gdi32.dll")]
        private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect,
@@ -124,9 +148,9 @@ namespace goclinic.customs
             {
                 int txtHeight = TextRenderer.MeasureText("Text", this.Font).Height + 1;
                 textBox1.Multiline = true;
-                textBox1.MinimumSize = new Size(0, txtHeight);
+                textBox1.MinimumSize = new Size(0,36);
                 textBox1.Multiline = false;
-                this.Height = textBox1.Height + this.Padding.Top + this.Padding.Bottom;
+                this.Height = 36 + this.Padding.Top + this.Padding.Bottom;
             }
         }
 

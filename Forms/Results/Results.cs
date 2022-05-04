@@ -1,8 +1,8 @@
 namespace goclinic
 {
-    public partial class Template : Form
+    public partial class Results : Form
     {
-        public Template()
+        public Results()
         {
             InitializeComponent();
         }
@@ -36,5 +36,26 @@ namespace goclinic
         {
 
         }
+
+        private void showMoreButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void searchPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void phoneNumberValue_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
