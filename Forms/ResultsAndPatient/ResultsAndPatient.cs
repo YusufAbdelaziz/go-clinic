@@ -1,8 +1,8 @@
 namespace goclinic
 {
-    public partial class Results : Form
+    public partial class ResultsAndPatient : Form
     {
-        public Results()
+        public ResultsAndPatient()
         {
             InitializeComponent();
         }
@@ -57,5 +57,9 @@ namespace goclinic
 
         }
 
+        private void tableLayoutPanel13_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
