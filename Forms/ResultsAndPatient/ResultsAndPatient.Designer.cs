@@ -110,8 +110,9 @@
             this.addPatientButton = new System.Windows.Forms.PictureBox();
             this.backButton = new System.Windows.Forms.PictureBox();
             this.searchPanel = new System.Windows.Forms.Panel();
-            this.phoneNumberValue = new System.Windows.Forms.TextBox();
+            this.searchButton = new System.Windows.Forms.Panel();
             this.seachIcon = new System.Windows.Forms.PictureBox();
+            this.phoneNumberValue = new System.Windows.Forms.TextBox();
             this.patientDetailsPanel = new System.Windows.Forms.Panel();
             this.editPatientInfoButton = new System.Windows.Forms.Button();
             this.medicalHistoryPanel = new System.Windows.Forms.Panel();
@@ -119,19 +120,12 @@
             this.surgicalHistoryPanel = new System.Windows.Forms.Panel();
             this.surgicalHistoryLabel = new System.Windows.Forms.Label();
             this.generalPatientDetailsPanel = new System.Windows.Forms.Panel();
-            this.patientBloodType = new System.Windows.Forms.Label();
-            this.patientBloodTypeLabel = new System.Windows.Forms.Label();
-            this.patientGender = new System.Windows.Forms.Label();
-            this.patientGenderLabel = new System.Windows.Forms.Label();
-            this.patientPhoneNumber = new System.Windows.Forms.Label();
-            this.patientPhoneNumberLabel = new System.Windows.Forms.Label();
-            this.patientFullName = new System.Windows.Forms.Label();
-            this.patientFullNameLabel = new System.Windows.Forms.Label();
             this.generalDetailsLabel = new System.Windows.Forms.Label();
             this.generalComplaintHistoryPanel = new System.Windows.Forms.Panel();
             this.patientCompliantHistoryLabel = new System.Windows.Forms.Label();
             this.familyMedicalHistoryPanel = new System.Windows.Forms.Panel();
             this.familyMedicalHistoryLabel = new System.Windows.Forms.Label();
+            this.noResultsFoundLabel = new System.Windows.Forms.Label();
             this.sidebarLayoutPanel.SuspendLayout();
             this.namePanel.SuspendLayout();
             this.topBarPanel.SuspendLayout();
@@ -166,6 +160,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.addPatientButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backButton)).BeginInit();
             this.searchPanel.SuspendLayout();
+            this.searchButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.seachIcon)).BeginInit();
             this.patientDetailsPanel.SuspendLayout();
             this.medicalHistoryPanel.SuspendLayout();
@@ -273,9 +268,9 @@
             this.topBarPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.topBarPanel.Controls.Add(this.stethoscopeIconPanel);
             this.topBarPanel.Controls.Add(this.userNameLabel);
-            this.topBarPanel.Location = new System.Drawing.Point(-2, -5);
+            this.topBarPanel.Location = new System.Drawing.Point(-1, 0);
             this.topBarPanel.Name = "topBarPanel";
-            this.topBarPanel.Size = new System.Drawing.Size(1266, 84);
+            this.topBarPanel.Size = new System.Drawing.Size(1267, 84);
             this.topBarPanel.TabIndex = 1;
             // 
             // stethoscopeIconPanel
@@ -1213,8 +1208,8 @@
             // 
             this.searchPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.searchPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.searchPanel.Controls.Add(this.searchButton);
             this.searchPanel.Controls.Add(this.phoneNumberValue);
-            this.searchPanel.Controls.Add(this.seachIcon);
             this.searchPanel.Location = new System.Drawing.Point(-1, 79);
             this.searchPanel.Margin = new System.Windows.Forms.Padding(0);
             this.searchPanel.Name = "searchPanel";
@@ -1222,26 +1217,35 @@
             this.searchPanel.TabIndex = 6;
             this.searchPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.searchPanel_Paint);
             // 
-            // phoneNumberValue
+            // searchButton
             // 
-            this.phoneNumberValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.phoneNumberValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.phoneNumberValue.Location = new System.Drawing.Point(63, 6);
-            this.phoneNumberValue.MaxLength = 11;
-            this.phoneNumberValue.Name = "phoneNumberValue";
-            this.phoneNumberValue.Size = new System.Drawing.Size(1198, 36);
-            this.phoneNumberValue.TabIndex = 0;
-            this.phoneNumberValue.TextChanged += new System.EventHandler(this.phoneNumberValue_TextChanged);
+            this.searchButton.Controls.Add(this.seachIcon);
+            this.searchButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.searchButton.Location = new System.Drawing.Point(3, 6);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(81, 42);
+            this.searchButton.TabIndex = 8;
             // 
             // seachIcon
             // 
             this.seachIcon.Image = ((System.Drawing.Image)(resources.GetObject("seachIcon.Image")));
-            this.seachIcon.Location = new System.Drawing.Point(12, 13);
+            this.seachIcon.Location = new System.Drawing.Point(16, 7);
             this.seachIcon.Name = "seachIcon";
             this.seachIcon.Size = new System.Drawing.Size(38, 29);
             this.seachIcon.TabIndex = 1;
             this.seachIcon.TabStop = false;
             this.seachIcon.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // phoneNumberValue
+            // 
+            this.phoneNumberValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.phoneNumberValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.phoneNumberValue.Location = new System.Drawing.Point(95, 6);
+            this.phoneNumberValue.MaxLength = 11;
+            this.phoneNumberValue.Name = "phoneNumberValue";
+            this.phoneNumberValue.Size = new System.Drawing.Size(1166, 36);
+            this.phoneNumberValue.TabIndex = 0;
+            this.phoneNumberValue.TextChanged += new System.EventHandler(this.phoneNumberValue_TextChanged);
             // 
             // patientDetailsPanel
             // 
@@ -1326,114 +1330,21 @@
             // 
             this.generalPatientDetailsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.generalPatientDetailsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.generalPatientDetailsPanel.Controls.Add(this.patientBloodType);
-            this.generalPatientDetailsPanel.Controls.Add(this.patientBloodTypeLabel);
-            this.generalPatientDetailsPanel.Controls.Add(this.patientGender);
-            this.generalPatientDetailsPanel.Controls.Add(this.patientGenderLabel);
-            this.generalPatientDetailsPanel.Controls.Add(this.patientPhoneNumber);
-            this.generalPatientDetailsPanel.Controls.Add(this.patientPhoneNumberLabel);
-            this.generalPatientDetailsPanel.Controls.Add(this.patientFullName);
-            this.generalPatientDetailsPanel.Controls.Add(this.patientFullNameLabel);
             this.generalPatientDetailsPanel.Controls.Add(this.generalDetailsLabel);
+            this.generalPatientDetailsPanel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.generalPatientDetailsPanel.Location = new System.Drawing.Point(702, 7);
             this.generalPatientDetailsPanel.Name = "generalPatientDetailsPanel";
             this.generalPatientDetailsPanel.Size = new System.Drawing.Size(428, 226);
             this.generalPatientDetailsPanel.TabIndex = 2;
-            // 
-            // patientBloodType
-            // 
-            this.patientBloodType.AutoSize = true;
-            this.patientBloodType.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.patientBloodType.Location = new System.Drawing.Point(260, 182);
-            this.patientBloodType.Name = "patientBloodType";
-            this.patientBloodType.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.patientBloodType.Size = new System.Drawing.Size(50, 28);
-            this.patientBloodType.TabIndex = 8;
-            this.patientBloodType.Text = "AB+";
-            // 
-            // patientBloodTypeLabel
-            // 
-            this.patientBloodTypeLabel.AutoSize = true;
-            this.patientBloodTypeLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.patientBloodTypeLabel.Location = new System.Drawing.Point(305, 182);
-            this.patientBloodTypeLabel.Name = "patientBloodTypeLabel";
-            this.patientBloodTypeLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.patientBloodTypeLabel.Size = new System.Drawing.Size(114, 28);
-            this.patientBloodTypeLabel.TabIndex = 7;
-            this.patientBloodTypeLabel.Text = "فصيلة الدم :\r\n";
-            // 
-            // patientGender
-            // 
-            this.patientGender.AutoSize = true;
-            this.patientGender.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.patientGender.Location = new System.Drawing.Point(270, 138);
-            this.patientGender.Name = "patientGender";
-            this.patientGender.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.patientGender.Size = new System.Drawing.Size(40, 28);
-            this.patientGender.TabIndex = 6;
-            this.patientGender.Text = "ذكر";
-            // 
-            // patientGenderLabel
-            // 
-            this.patientGenderLabel.AutoSize = true;
-            this.patientGenderLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.patientGenderLabel.Location = new System.Drawing.Point(357, 138);
-            this.patientGenderLabel.Name = "patientGenderLabel";
-            this.patientGenderLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.patientGenderLabel.Size = new System.Drawing.Size(62, 28);
-            this.patientGenderLabel.TabIndex = 5;
-            this.patientGenderLabel.Text = "النوع :";
-            // 
-            // patientPhoneNumber
-            // 
-            this.patientPhoneNumber.AutoSize = true;
-            this.patientPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.patientPhoneNumber.Location = new System.Drawing.Point(177, 96);
-            this.patientPhoneNumber.Name = "patientPhoneNumber";
-            this.patientPhoneNumber.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.patientPhoneNumber.Size = new System.Drawing.Size(133, 28);
-            this.patientPhoneNumber.TabIndex = 4;
-            this.patientPhoneNumber.Text = "01004895720";
-            // 
-            // patientPhoneNumberLabel
-            // 
-            this.patientPhoneNumberLabel.AutoSize = true;
-            this.patientPhoneNumberLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.patientPhoneNumberLabel.Location = new System.Drawing.Point(316, 96);
-            this.patientPhoneNumberLabel.Name = "patientPhoneNumberLabel";
-            this.patientPhoneNumberLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.patientPhoneNumberLabel.Size = new System.Drawing.Size(108, 28);
-            this.patientPhoneNumberLabel.TabIndex = 3;
-            this.patientPhoneNumberLabel.Text = "رقم الهاتف :";
-            // 
-            // patientFullName
-            // 
-            this.patientFullName.AutoSize = true;
-            this.patientFullName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.patientFullName.Location = new System.Drawing.Point(138, 57);
-            this.patientFullName.Name = "patientFullName";
-            this.patientFullName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.patientFullName.Size = new System.Drawing.Size(172, 28);
-            this.patientFullName.TabIndex = 2;
-            this.patientFullName.Text = "جرجس عادل جرجس";
-            // 
-            // patientFullNameLabel
-            // 
-            this.patientFullNameLabel.AutoSize = true;
-            this.patientFullNameLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.patientFullNameLabel.Location = new System.Drawing.Point(357, 57);
-            this.patientFullNameLabel.Name = "patientFullNameLabel";
-            this.patientFullNameLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.patientFullNameLabel.Size = new System.Drawing.Size(67, 28);
-            this.patientFullNameLabel.TabIndex = 1;
-            this.patientFullNameLabel.Text = "الإسم :\r\n";
+            this.generalPatientDetailsPanel.Click += new System.EventHandler(this.GeneralPatientDetailsPanelClick);
+            this.generalPatientDetailsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.generalPatientDetailsPanel_Paint);
             // 
             // generalDetailsLabel
             // 
             this.generalDetailsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.generalDetailsLabel.AutoSize = true;
             this.generalDetailsLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.generalDetailsLabel.Location = new System.Drawing.Point(142, 14);
+            this.generalDetailsLabel.Location = new System.Drawing.Point(142, 107);
             this.generalDetailsLabel.Name = "generalDetailsLabel";
             this.generalDetailsLabel.Size = new System.Drawing.Size(150, 31);
             this.generalDetailsLabel.TabIndex = 0;
@@ -1454,7 +1365,7 @@
             this.patientCompliantHistoryLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.patientCompliantHistoryLabel.AutoSize = true;
             this.patientCompliantHistoryLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.patientCompliantHistoryLabel.Location = new System.Drawing.Point(75, 14);
+            this.patientCompliantHistoryLabel.Location = new System.Drawing.Point(75, 107);
             this.patientCompliantHistoryLabel.Name = "patientCompliantHistoryLabel";
             this.patientCompliantHistoryLabel.Size = new System.Drawing.Size(212, 32);
             this.patientCompliantHistoryLabel.TabIndex = 0;
@@ -1475,11 +1386,23 @@
             this.familyMedicalHistoryLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.familyMedicalHistoryLabel.AutoSize = true;
             this.familyMedicalHistoryLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.familyMedicalHistoryLabel.Location = new System.Drawing.Point(50, 9);
+            this.familyMedicalHistoryLabel.Location = new System.Drawing.Point(48, 107);
             this.familyMedicalHistoryLabel.Name = "familyMedicalHistoryLabel";
             this.familyMedicalHistoryLabel.Size = new System.Drawing.Size(228, 32);
             this.familyMedicalHistoryLabel.TabIndex = 1;
             this.familyMedicalHistoryLabel.Text = "التاريخ المرضي للعائلة";
+            // 
+            // noResultsFoundLabel
+            // 
+            this.noResultsFoundLabel.BackColor = System.Drawing.Color.Transparent;
+            this.noResultsFoundLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.noResultsFoundLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.noResultsFoundLabel.Location = new System.Drawing.Point(78, 150);
+            this.noResultsFoundLabel.Name = "noResultsFoundLabel";
+            this.noResultsFoundLabel.Size = new System.Drawing.Size(1161, 661);
+            this.noResultsFoundLabel.TabIndex = 8;
+            this.noResultsFoundLabel.Text = "لا يوجد نتائج";
+            this.noResultsFoundLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ResultsAndPatient
             // 
@@ -1493,6 +1416,7 @@
             this.Controls.Add(this.topBarPanel);
             this.Controls.Add(this.sidebarLayoutPanel);
             this.Controls.Add(this.patientDetailsPanel);
+            this.Controls.Add(this.noResultsFoundLabel);
             this.Controls.Add(this.resultsFlowLayoutPanel);
             this.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1552,6 +1476,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.backButton)).EndInit();
             this.searchPanel.ResumeLayout(false);
             this.searchPanel.PerformLayout();
+            this.searchButton.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.seachIcon)).EndInit();
             this.patientDetailsPanel.ResumeLayout(false);
             this.medicalHistoryPanel.ResumeLayout(false);
@@ -1660,18 +1585,12 @@
         private Label generalDetailsLabel;
         private Panel generalComplaintHistoryPanel;
         private Panel familyMedicalHistoryPanel;
-        private Label patientFullNameLabel;
-        private Label patientBloodType;
-        private Label patientBloodTypeLabel;
-        private Label patientGender;
-        private Label patientGenderLabel;
-        private Label patientPhoneNumber;
-        private Label patientPhoneNumberLabel;
-        private Label patientFullName;
         private Label medicalHistoryLabel;
         private Label surgicalHistoryLabel;
         private Label patientCompliantHistoryLabel;
         private Label familyMedicalHistoryLabel;
         private Button editPatientInfoButton;
+        private Panel searchButton;
+        private Label noResultsFoundLabel;
     }
 }
