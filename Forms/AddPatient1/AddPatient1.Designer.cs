@@ -41,6 +41,7 @@
             this.allContainer2 = new System.Windows.Forms.Panel();
             this.infoContainer2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
+            this.genderComboBox2 = new System.Windows.Forms.ComboBox();
             this.bloodComboBox = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel26 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel27 = new System.Windows.Forms.TableLayoutPanel();
@@ -48,6 +49,7 @@
             this.dateBirthPicker = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel30 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
+            this.phoneTextBox = new goclinic.customs.customTextBox();
             this.nameTextBox = new goclinic.customs.customTextBox();
             this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
             this.nameText = new System.Windows.Forms.Label();
@@ -97,8 +99,6 @@
             this.settingsButton = new System.Windows.Forms.Button();
             this.helpButton = new System.Windows.Forms.Button();
             this.logoutButton = new System.Windows.Forms.Button();
-            this.phoneTextBox = new goclinic.customs.customTextBox();
-            this.genderComboBox2 = new System.Windows.Forms.ComboBox();
             this.allContainer2.SuspendLayout();
             this.infoContainer2.SuspendLayout();
             this.tableLayoutPanel25.SuspendLayout();
@@ -295,6 +295,29 @@
             this.tableLayoutPanel25.Size = new System.Drawing.Size(1126, 92);
             this.tableLayoutPanel25.TabIndex = 18;
             // 
+            // genderComboBox2
+            // 
+            this.genderComboBox2.BackColor = System.Drawing.Color.White;
+            this.genderComboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.genderComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.genderComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.genderComboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.genderComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
+            this.genderComboBox2.FormattingEnabled = true;
+            this.genderComboBox2.ImeMode = System.Windows.Forms.ImeMode.Alpha;
+            this.genderComboBox2.IntegralHeight = false;
+            this.genderComboBox2.Items.AddRange(new object[] {
+            "أنثى",
+            "ذكر"});
+            this.genderComboBox2.Location = new System.Drawing.Point(567, 4);
+            this.genderComboBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.genderComboBox2.MaxDropDownItems = 2;
+            this.genderComboBox2.Name = "genderComboBox2";
+            this.genderComboBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.genderComboBox2.Size = new System.Drawing.Size(556, 47);
+            this.genderComboBox2.Sorted = true;
+            this.genderComboBox2.TabIndex = 5;
+            // 
             // bloodComboBox
             // 
             this.bloodComboBox.BackColor = System.Drawing.Color.White;
@@ -411,6 +434,21 @@
             this.tableLayoutPanel20.Size = new System.Drawing.Size(1126, 92);
             this.tableLayoutPanel20.TabIndex = 14;
             // 
+            // phoneTextBox
+            // 
+            this.phoneTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.phoneTextBox.ForeColor = System.Drawing.Color.DimGray;
+            this.phoneTextBox.Location = new System.Drawing.Point(3, 3);
+            this.phoneTextBox.Multiline = false;
+            this.phoneTextBox.Name = "phoneTextBox";
+            this.phoneTextBox.Padding = new System.Windows.Forms.Padding(7);
+            this.phoneTextBox.PasswordChar = false;
+            this.phoneTextBox.PlaceholderText = "";
+            this.phoneTextBox.Radius = 30;
+            this.phoneTextBox.Size = new System.Drawing.Size(557, 50);
+            this.phoneTextBox.TabIndex = 4;
+            this.phoneTextBox.TextAlignRight = false;
+            // 
             // nameTextBox
             // 
             this.nameTextBox.BackColor = System.Drawing.SystemColors.Window;
@@ -424,6 +462,7 @@
             this.nameTextBox.Radius = 30;
             this.nameTextBox.Size = new System.Drawing.Size(557, 50);
             this.nameTextBox.TabIndex = 3;
+            this.nameTextBox.TextAlignRight = false;
             // 
             // tableLayoutPanel23
             // 
@@ -1049,43 +1088,6 @@
             this.logoutButton.Text = "تسجيل الخروج";
             this.logoutButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.logoutButton.UseVisualStyleBackColor = false;
-            // 
-            // phoneTextBox
-            // 
-            this.phoneTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.phoneTextBox.ForeColor = System.Drawing.Color.DimGray;
-            this.phoneTextBox.Location = new System.Drawing.Point(3, 3);
-            this.phoneTextBox.Multiline = false;
-            this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Padding = new System.Windows.Forms.Padding(7);
-            this.phoneTextBox.PasswordChar = false;
-            this.phoneTextBox.PlaceholderText = "";
-            this.phoneTextBox.Radius = 30;
-            this.phoneTextBox.Size = new System.Drawing.Size(557, 50);
-            this.phoneTextBox.TabIndex = 4;
-            // 
-            // genderComboBox2
-            // 
-            this.genderComboBox2.BackColor = System.Drawing.Color.White;
-            this.genderComboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.genderComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.genderComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genderComboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.genderComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.genderComboBox2.FormattingEnabled = true;
-            this.genderComboBox2.ImeMode = System.Windows.Forms.ImeMode.Alpha;
-            this.genderComboBox2.IntegralHeight = false;
-            this.genderComboBox2.Items.AddRange(new object[] {
-            "أنثى",
-            "ذكر"});
-            this.genderComboBox2.Location = new System.Drawing.Point(567, 4);
-            this.genderComboBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.genderComboBox2.MaxDropDownItems = 2;
-            this.genderComboBox2.Name = "genderComboBox2";
-            this.genderComboBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.genderComboBox2.Size = new System.Drawing.Size(556, 47);
-            this.genderComboBox2.Sorted = true;
-            this.genderComboBox2.TabIndex = 5;
             // 
             // AddPatient1
             // 
