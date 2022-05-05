@@ -49,8 +49,6 @@
             this.dateBirthPicker = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel30 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
-            this.phoneTextBox = new goclinic.customs.customTextBox();
-            this.nameTextBox = new goclinic.customs.customTextBox();
             this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
             this.nameText = new System.Windows.Forms.Label();
             this.tableLayoutPanel29 = new System.Windows.Forms.TableLayoutPanel();
@@ -105,7 +103,6 @@
             this.tableLayoutPanel26.SuspendLayout();
             this.tableLayoutPanel27.SuspendLayout();
             this.tableLayoutPanel30.SuspendLayout();
-            this.tableLayoutPanel20.SuspendLayout();
             this.tableLayoutPanel23.SuspendLayout();
             this.tableLayoutPanel29.SuspendLayout();
             this.steps2Container.SuspendLayout();
@@ -424,8 +421,6 @@
             this.tableLayoutPanel20.ColumnCount = 2;
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 563F));
-            this.tableLayoutPanel20.Controls.Add(this.phoneTextBox, 0, 0);
-            this.tableLayoutPanel20.Controls.Add(this.nameTextBox, 1, 0);
             this.tableLayoutPanel20.Location = new System.Drawing.Point(3, 192);
             this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel20.Name = "tableLayoutPanel20";
@@ -433,36 +428,6 @@
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel20.Size = new System.Drawing.Size(1126, 92);
             this.tableLayoutPanel20.TabIndex = 14;
-            // 
-            // phoneTextBox
-            // 
-            this.phoneTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.phoneTextBox.ForeColor = System.Drawing.Color.DimGray;
-            this.phoneTextBox.Location = new System.Drawing.Point(3, 3);
-            this.phoneTextBox.Multiline = false;
-            this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Padding = new System.Windows.Forms.Padding(7);
-            this.phoneTextBox.PasswordChar = false;
-            this.phoneTextBox.PlaceholderText = "";
-            this.phoneTextBox.Radius = 30;
-            this.phoneTextBox.Size = new System.Drawing.Size(557, 50);
-            this.phoneTextBox.TabIndex = 4;
-            this.phoneTextBox.TextAlignRight = false;
-            // 
-            // nameTextBox
-            // 
-            this.nameTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.nameTextBox.ForeColor = System.Drawing.Color.DimGray;
-            this.nameTextBox.Location = new System.Drawing.Point(566, 3);
-            this.nameTextBox.Multiline = false;
-            this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Padding = new System.Windows.Forms.Padding(7);
-            this.nameTextBox.PasswordChar = false;
-            this.nameTextBox.PlaceholderText = "";
-            this.nameTextBox.Radius = 30;
-            this.nameTextBox.Size = new System.Drawing.Size(557, 50);
-            this.nameTextBox.TabIndex = 3;
-            this.nameTextBox.TextAlignRight = false;
             // 
             // tableLayoutPanel23
             // 
@@ -1101,7 +1066,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximumSize = new System.Drawing.Size(2192, 1424);
-            this.MinimumSize = new System.Drawing.Size(1918, 1078);
+            this.MinimumSize = new System.Drawing.Size(1918, 1028);
             this.Name = "AddPatient1";
             this.Text = "قائمة إضافة مريض جديد";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -1113,7 +1078,6 @@
             this.tableLayoutPanel27.ResumeLayout(false);
             this.tableLayoutPanel30.ResumeLayout(false);
             this.tableLayoutPanel30.PerformLayout();
-            this.tableLayoutPanel20.ResumeLayout(false);
             this.tableLayoutPanel23.ResumeLayout(false);
             this.tableLayoutPanel23.PerformLayout();
             this.tableLayoutPanel29.ResumeLayout(false);
