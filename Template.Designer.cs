@@ -34,14 +34,11 @@
             this.logoutButton = new System.Windows.Forms.Button();
             this.helpButton = new System.Windows.Forms.Button();
             this.settingsButton = new System.Windows.Forms.Button();
-            this.namePanel = new System.Windows.Forms.Panel();
-            this.nameLabel = new System.Windows.Forms.Label();
             this.topBarPanel = new System.Windows.Forms.Panel();
             this.stethoscopeIconPanel = new System.Windows.Forms.Panel();
             this.userNameLabel = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.sidebarLayoutPanel.SuspendLayout();
-            this.namePanel.SuspendLayout();
             this.topBarPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +48,6 @@
             this.sidebarLayoutPanel.Controls.Add(this.logoutButton);
             this.sidebarLayoutPanel.Controls.Add(this.helpButton);
             this.sidebarLayoutPanel.Controls.Add(this.settingsButton);
-            this.sidebarLayoutPanel.Controls.Add(this.namePanel);
             this.sidebarLayoutPanel.Dock = System.Windows.Forms.DockStyle.Right;
             this.sidebarLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
             this.sidebarLayoutPanel.Location = new System.Drawing.Point(1269, 0);
@@ -110,31 +106,6 @@
             this.settingsButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.settingsButton.UseVisualStyleBackColor = true;
             // 
-            // namePanel
-            // 
-            this.namePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
-            this.namePanel.Controls.Add(this.nameLabel);
-            this.namePanel.Location = new System.Drawing.Point(0, 0);
-            this.namePanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 493);
-            this.namePanel.Name = "namePanel";
-            this.namePanel.Size = new System.Drawing.Size(112, 79);
-            this.namePanel.TabIndex = 3;
-            // 
-            // nameLabel
-            // 
-            this.nameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.nameLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.nameLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.nameLabel.Location = new System.Drawing.Point(36, 17);
-            this.nameLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(51, 45);
-            this.nameLabel.TabIndex = 3;
-            this.nameLabel.Text = "M";
-            this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // topBarPanel
             // 
             this.topBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
@@ -187,8 +158,6 @@
             this.Text = "GoClinic";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.sidebarLayoutPanel.ResumeLayout(false);
-            this.namePanel.ResumeLayout(false);
-            this.namePanel.PerformLayout();
             this.topBarPanel.ResumeLayout(false);
             this.topBarPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -205,7 +174,5 @@
         private Label userNameLabel;
         private ImageList imageList1;
         private Panel stethoscopeIconPanel;
-        private Label nameLabel;
-        private Panel namePanel;
     }
 }
