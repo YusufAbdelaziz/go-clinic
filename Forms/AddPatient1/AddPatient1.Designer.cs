@@ -566,7 +566,7 @@
             this.steps2Container.Controls.Add(this.tableLayoutPanel6, 3, 0);
             this.steps2Container.Controls.Add(this.tableLayoutPanel3, 1, 0);
             this.steps2Container.Controls.Add(this.tableLayoutPanel8, 0, 0);
-            this.steps2Container.Location = new System.Drawing.Point(165, 24);
+            this.steps2Container.Location = new System.Drawing.Point(174, 24);
             this.steps2Container.Name = "steps2Container";
             this.steps2Container.RowCount = 1;
             this.steps2Container.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
