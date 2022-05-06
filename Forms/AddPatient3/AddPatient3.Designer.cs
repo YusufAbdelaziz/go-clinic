@@ -1022,27 +1022,12 @@
             // 
             // tableLayoutPanel42
             // 
-            this.tableLayoutPanel42.ColumnCount = 7;
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel42.Controls.Add(this.tableLayoutPanel43, 6, 0);
-            this.tableLayoutPanel42.Controls.Add(this.tableLayoutPanel44, 4, 0);
-            this.tableLayoutPanel42.Controls.Add(this.tableLayoutPanel45, 2, 0);
-            this.tableLayoutPanel42.Controls.Add(this.tableLayoutPanel46, 5, 0);
-            this.tableLayoutPanel42.Controls.Add(this.tableLayoutPanel47, 3, 0);
-            this.tableLayoutPanel42.Controls.Add(this.tableLayoutPanel48, 1, 0);
-            this.tableLayoutPanel42.Controls.Add(this.tableLayoutPanel49, 0, 0);
-            this.tableLayoutPanel42.Location = new System.Drawing.Point(164, 21);
-            this.tableLayoutPanel42.Name = "tableLayoutPanel42";
-            this.tableLayoutPanel42.RowCount = 1;
-            this.tableLayoutPanel42.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel42.Size = new System.Drawing.Size(714, 56);
-            this.tableLayoutPanel42.TabIndex = 12;
+            this.listView7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView7.Location = new System.Drawing.Point(91, 50);
+            this.listView7.Name = "listView7";
+            this.listView7.Size = new System.Drawing.Size(83, 11);
+            this.listView7.TabIndex = 7;
+            this.listView7.UseCompatibleStateImageBehavior = false;
             // 
             // tableLayoutPanel43
             // 
