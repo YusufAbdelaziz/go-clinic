@@ -29,16 +29,25 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddPatient4));
-            this.allContainer2 = new System.Windows.Forms.Panel();
-            this.backHomeButton4 = new System.Windows.Forms.Button();
-            this.confirmButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.namePanel = new System.Windows.Forms.Panel();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.settingsButton = new System.Windows.Forms.Button();
+            this.helpButton = new System.Windows.Forms.Button();
+            this.logoutButton = new System.Windows.Forms.Button();
+            this.sidebarLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.userNameLabel = new System.Windows.Forms.Label();
+            this.stethoscopeIconPanel = new System.Windows.Forms.Panel();
+            this.topBarPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -50,106 +59,217 @@
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
-            this.steps2Container = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
-            this.step4Text2 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.step3Text2 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.step2Text2 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.listView11 = new System.Windows.Forms.ListView();
-            this.listView7 = new System.Windows.Forms.ListView();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.listView8 = new System.Windows.Forms.ListView();
-            this.listView10 = new System.Windows.Forms.ListView();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.listView6 = new System.Windows.Forms.ListView();
-            this.listView9 = new System.Windows.Forms.ListView();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.step1Text2 = new System.Windows.Forms.Label();
-            this.sidebarLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.namePanel = new System.Windows.Forms.Panel();
-            this.nameLabel = new System.Windows.Forms.Label();
-            this.helpButton = new System.Windows.Forms.Button();
-            this.logoutButton = new System.Windows.Forms.Button();
-            this.settingsButton = new System.Windows.Forms.Button();
-            this.topBarPanel = new System.Windows.Forms.Panel();
-            this.stethoscopeIconPanel = new System.Windows.Forms.Panel();
-            this.userNameLabel = new System.Windows.Forms.Label();
-            this.allContainer2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.firstNextStebButton2 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel42 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel43 = new System.Windows.Forms.TableLayoutPanel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel44 = new System.Windows.Forms.TableLayoutPanel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel45 = new System.Windows.Forms.TableLayoutPanel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel46 = new System.Windows.Forms.TableLayoutPanel();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.tableLayoutPanel47 = new System.Windows.Forms.TableLayoutPanel();
+            this.listView3 = new System.Windows.Forms.ListView();
+            this.listView5 = new System.Windows.Forms.ListView();
+            this.tableLayoutPanel48 = new System.Windows.Forms.TableLayoutPanel();
+            this.listView12 = new System.Windows.Forms.ListView();
+            this.listView13 = new System.Windows.Forms.ListView();
+            this.tableLayoutPanel49 = new System.Windows.Forms.TableLayoutPanel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.namePanel.SuspendLayout();
+            this.sidebarLayoutPanel.SuspendLayout();
+            this.topBarPanel.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             this.tableLayoutPanel16.SuspendLayout();
-            this.steps2Container.SuspendLayout();
-            this.tableLayoutPanel13.SuspendLayout();
-            this.tableLayoutPanel12.SuspendLayout();
-            this.tableLayoutPanel10.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel8.SuspendLayout();
-            this.sidebarLayoutPanel.SuspendLayout();
-            this.namePanel.SuspendLayout();
-            this.topBarPanel.SuspendLayout();
+            this.tableLayoutPanel42.SuspendLayout();
+            this.tableLayoutPanel43.SuspendLayout();
+            this.tableLayoutPanel44.SuspendLayout();
+            this.tableLayoutPanel45.SuspendLayout();
+            this.tableLayoutPanel46.SuspendLayout();
+            this.tableLayoutPanel47.SuspendLayout();
+            this.tableLayoutPanel48.SuspendLayout();
+            this.tableLayoutPanel49.SuspendLayout();
             this.SuspendLayout();
             // 
-            // allContainer2
+            // label1
             // 
-            this.allContainer2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.allContainer2.Controls.Add(this.backHomeButton4);
-            this.allContainer2.Controls.Add(this.confirmButton);
-            this.allContainer2.Controls.Add(this.panel1);
-            this.allContainer2.Controls.Add(this.steps2Container);
-            this.allContainer2.Location = new System.Drawing.Point(401, 108);
-            this.allContainer2.Name = "allContainer2";
-            this.allContainer2.Size = new System.Drawing.Size(1103, 824);
-            this.allContainer2.TabIndex = 3;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(1303, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 45);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "M";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // backHomeButton4
+            // namePanel
             // 
-            this.backHomeButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.backHomeButton4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.backHomeButton4.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.backHomeButton4.ForeColor = System.Drawing.Color.Black;
-            this.backHomeButton4.Location = new System.Drawing.Point(39, 718);
-            this.backHomeButton4.Name = "backHomeButton4";
-            this.backHomeButton4.Size = new System.Drawing.Size(244, 65);
-            this.backHomeButton4.TabIndex = 22;
-            this.backHomeButton4.Text = "الخطوة السابقة";
-            this.backHomeButton4.UseVisualStyleBackColor = false;
-            this.backHomeButton4.Click += new System.EventHandler(this.backHomeButton2_Click);
+            this.namePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
+            this.namePanel.Controls.Add(this.nameLabel);
+            this.namePanel.Location = new System.Drawing.Point(122, 210);
+            this.namePanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 493);
+            this.namePanel.Name = "namePanel";
+            this.namePanel.Size = new System.Drawing.Size(112, 79);
+            this.namePanel.TabIndex = 3;
             // 
-            // confirmButton
+            // nameLabel
             // 
-            this.confirmButton.BackColor = System.Drawing.Color.Black;
-            this.confirmButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.confirmButton.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.confirmButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.confirmButton.Location = new System.Drawing.Point(950, 718);
-            this.confirmButton.Name = "confirmButton";
-            this.confirmButton.Size = new System.Drawing.Size(114, 65);
-            this.confirmButton.TabIndex = 20;
-            this.confirmButton.Text = "تأكيد";
-            this.confirmButton.UseVisualStyleBackColor = false;
+            this.nameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.nameLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nameLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.nameLabel.Location = new System.Drawing.Point(36, -5);
+            this.nameLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(51, 45);
+            this.nameLabel.TabIndex = 3;
+            this.nameLabel.Text = "M";
+            this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // settingsButton
+            // 
+            this.settingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.settingsButton.FlatAppearance.BorderSize = 0;
+            this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settingsButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.settingsButton.Image = ((System.Drawing.Image)(resources.GetObject("settingsButton.Image")));
+            this.settingsButton.Location = new System.Drawing.Point(0, 413);
+            this.settingsButton.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
+            this.settingsButton.Name = "settingsButton";
+            this.settingsButton.Size = new System.Drawing.Size(119, 117);
+            this.settingsButton.TabIndex = 1;
+            this.settingsButton.Text = "الإعدادات";
+            this.settingsButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.settingsButton.UseVisualStyleBackColor = true;
+            // 
+            // helpButton
+            // 
+            this.helpButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.helpButton.FlatAppearance.BorderSize = 0;
+            this.helpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.Image = ((System.Drawing.Image)(resources.GetObject("helpButton.Image")));
+            this.helpButton.Location = new System.Drawing.Point(0, 533);
+            this.helpButton.Margin = new System.Windows.Forms.Padding(0);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(122, 116);
+            this.helpButton.TabIndex = 2;
+            this.helpButton.Text = "المساعدة";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.helpButton.UseVisualStyleBackColor = true;
+            // 
+            // logoutButton
+            // 
+            this.logoutButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.logoutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.logoutButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.logoutButton.FlatAppearance.BorderSize = 0;
+            this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.logoutButton.Image = ((System.Drawing.Image)(resources.GetObject("logoutButton.Image")));
+            this.logoutButton.Location = new System.Drawing.Point(0, 649);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Size = new System.Drawing.Size(122, 123);
+            this.logoutButton.TabIndex = 0;
+            this.logoutButton.Text = "تسجيل الخروج";
+            this.logoutButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.logoutButton.UseVisualStyleBackColor = false;
+            // 
+            // sidebarLayoutPanel
+            // 
+            this.sidebarLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.sidebarLayoutPanel.Controls.Add(this.logoutButton);
+            this.sidebarLayoutPanel.Controls.Add(this.helpButton);
+            this.sidebarLayoutPanel.Controls.Add(this.settingsButton);
+            this.sidebarLayoutPanel.Controls.Add(this.namePanel);
+            this.sidebarLayoutPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.sidebarLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
+            this.sidebarLayoutPanel.Location = new System.Drawing.Point(1272, 79);
+            this.sidebarLayoutPanel.Name = "sidebarLayoutPanel";
+            this.sidebarLayoutPanel.Size = new System.Drawing.Size(112, 782);
+            this.sidebarLayoutPanel.TabIndex = 4;
+            // 
+            // userNameLabel
+            // 
+            this.userNameLabel.AutoSize = true;
+            this.userNameLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.userNameLabel.Location = new System.Drawing.Point(508, 17);
+            this.userNameLabel.Name = "userNameLabel";
+            this.userNameLabel.Size = new System.Drawing.Size(369, 45);
+            this.userNameLabel.TabIndex = 2;
+            this.userNameLabel.Text = "Dr. Mostaffa Mohamed";
+            // 
+            // stethoscopeIconPanel
+            // 
+            this.stethoscopeIconPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.stethoscopeIconPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("stethoscopeIconPanel.BackgroundImage")));
+            this.stethoscopeIconPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.stethoscopeIconPanel.Location = new System.Drawing.Point(0, 0);
+            this.stethoscopeIconPanel.Name = "stethoscopeIconPanel";
+            this.stethoscopeIconPanel.Size = new System.Drawing.Size(104, 79);
+            this.stethoscopeIconPanel.TabIndex = 2;
+            // 
+            // topBarPanel
+            // 
+            this.topBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.topBarPanel.Controls.Add(this.panel1);
+            this.topBarPanel.Controls.Add(this.stethoscopeIconPanel);
+            this.topBarPanel.Controls.Add(this.userNameLabel);
+            this.topBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.topBarPanel.Location = new System.Drawing.Point(0, 0);
+            this.topBarPanel.Name = "topBarPanel";
+            this.topBarPanel.Size = new System.Drawing.Size(1384, 79);
+            this.topBarPanel.TabIndex = 5;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.tableLayoutPanel1);
-            this.panel1.Controls.Add(this.tableLayoutPanel2);
-            this.panel1.Controls.Add(this.tableLayoutPanel9);
-            this.panel1.Controls.Add(this.tableLayoutPanel11);
-            this.panel1.Controls.Add(this.tableLayoutPanel16);
-            this.panel1.Controls.Add(this.tableLayoutPanel17);
-            this.panel1.Controls.Add(this.tableLayoutPanel18);
-            this.panel1.Controls.Add(this.tableLayoutPanel19);
-            this.panel1.Location = new System.Drawing.Point(54, 181);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
+            this.panel1.Location = new System.Drawing.Point(1272, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 493);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(991, 493);
-            this.panel1.TabIndex = 19;
+            this.panel1.Size = new System.Drawing.Size(112, 79);
+            this.panel1.TabIndex = 4;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.panel10.Controls.Add(this.panel2);
+            this.panel10.Controls.Add(this.firstNextStebButton2);
+            this.panel10.Controls.Add(this.button7);
+            this.panel10.Controls.Add(this.tableLayoutPanel42);
+            this.panel10.Location = new System.Drawing.Point(121, 126);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1029, 686);
+            this.panel10.TabIndex = 8;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.tableLayoutPanel1);
+            this.panel2.Controls.Add(this.tableLayoutPanel2);
+            this.panel2.Controls.Add(this.tableLayoutPanel9);
+            this.panel2.Controls.Add(this.tableLayoutPanel11);
+            this.panel2.Controls.Add(this.tableLayoutPanel16);
+            this.panel2.Controls.Add(this.tableLayoutPanel17);
+            this.panel2.Controls.Add(this.tableLayoutPanel18);
+            this.panel2.Controls.Add(this.tableLayoutPanel19);
+            this.panel2.Location = new System.Drawing.Point(19, 97);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(991, 493);
+            this.panel2.TabIndex = 29;
             // 
             // tableLayoutPanel1
             // 
@@ -196,28 +316,14 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 493F));
-            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label3, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 288);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(985, 60);
             this.tableLayoutPanel2.TabIndex = 17;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label1.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label1.Location = new System.Drawing.Point(183, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(306, 60);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "وجود نفس المرض في العائلة";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -226,12 +332,26 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Right;
             this.label2.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label2.Location = new System.Drawing.Point(700, 0);
+            this.label2.Location = new System.Drawing.Point(183, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(282, 60);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "الأمراض الورائية في العائلة";
+            this.label2.Size = new System.Drawing.Size(306, 60);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "وجود نفس المرض في العائلة";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label3.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
+            this.label3.Location = new System.Drawing.Point(700, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(282, 60);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "الأمراض الورائية في العائلة";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel9
             // 
@@ -374,380 +494,296 @@
             this.tableLayoutPanel19.Size = new System.Drawing.Size(985, 63);
             this.tableLayoutPanel19.TabIndex = 0;
             // 
-            // steps2Container
+            // firstNextStebButton2
             // 
-            this.steps2Container.ColumnCount = 7;
-            this.steps2Container.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.31353F));
-            this.steps2Container.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.68647F));
-            this.steps2Container.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 107F));
-            this.steps2Container.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 188F));
-            this.steps2Container.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 106F));
-            this.steps2Container.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
-            this.steps2Container.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 106F));
-            this.steps2Container.Controls.Add(this.tableLayoutPanel13, 6, 0);
-            this.steps2Container.Controls.Add(this.tableLayoutPanel12, 4, 0);
-            this.steps2Container.Controls.Add(this.tableLayoutPanel10, 2, 0);
-            this.steps2Container.Controls.Add(this.tableLayoutPanel7, 5, 0);
-            this.steps2Container.Controls.Add(this.tableLayoutPanel6, 3, 0);
-            this.steps2Container.Controls.Add(this.tableLayoutPanel3, 1, 0);
-            this.steps2Container.Controls.Add(this.tableLayoutPanel8, 0, 0);
-            this.steps2Container.Location = new System.Drawing.Point(54, 39);
-            this.steps2Container.Name = "steps2Container";
-            this.steps2Container.RowCount = 1;
-            this.steps2Container.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.steps2Container.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.steps2Container.Size = new System.Drawing.Size(994, 100);
-            this.steps2Container.TabIndex = 3;
+            this.firstNextStebButton2.BackColor = System.Drawing.Color.Black;
+            this.firstNextStebButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.firstNextStebButton2.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.firstNextStebButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.firstNextStebButton2.Location = new System.Drawing.Point(22, 614);
+            this.firstNextStebButton2.Name = "firstNextStebButton2";
+            this.firstNextStebButton2.Size = new System.Drawing.Size(77, 50);
+            this.firstNextStebButton2.TabIndex = 28;
+            this.firstNextStebButton2.Text = "تأكيد";
+            this.firstNextStebButton2.UseVisualStyleBackColor = false;
             // 
-            // tableLayoutPanel13
+            // button7
             // 
-            this.tableLayoutPanel13.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel13.ColumnCount = 1;
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel13.Controls.Add(this.step4Text2, 0, 0);
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(890, 3);
-            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
-            this.tableLayoutPanel13.RowCount = 1;
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(101, 94);
-            this.tableLayoutPanel13.TabIndex = 13;
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button7.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button7.ForeColor = System.Drawing.Color.Black;
+            this.button7.Location = new System.Drawing.Point(821, 613);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(185, 50);
+            this.button7.TabIndex = 26;
+            this.button7.Text = "الخطوة السابقة";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.backHomeButton2_Click);
             // 
-            // step4Text2
+            // tableLayoutPanel42
             // 
-            this.step4Text2.AutoSize = true;
-            this.step4Text2.BackColor = System.Drawing.Color.Black;
-            this.step4Text2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step4Text2.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.step4Text2.ForeColor = System.Drawing.Color.White;
-            this.step4Text2.Location = new System.Drawing.Point(3, 0);
-            this.step4Text2.Name = "step4Text2";
-            this.step4Text2.Size = new System.Drawing.Size(95, 94);
-            this.step4Text2.TabIndex = 1;
-            this.step4Text2.Text = "خطوة 4";
-            this.step4Text2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tableLayoutPanel42.ColumnCount = 7;
+            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel42.Controls.Add(this.tableLayoutPanel43, 6, 0);
+            this.tableLayoutPanel42.Controls.Add(this.tableLayoutPanel44, 4, 0);
+            this.tableLayoutPanel42.Controls.Add(this.tableLayoutPanel45, 2, 0);
+            this.tableLayoutPanel42.Controls.Add(this.tableLayoutPanel46, 5, 0);
+            this.tableLayoutPanel42.Controls.Add(this.tableLayoutPanel47, 3, 0);
+            this.tableLayoutPanel42.Controls.Add(this.tableLayoutPanel48, 1, 0);
+            this.tableLayoutPanel42.Controls.Add(this.tableLayoutPanel49, 0, 0);
+            this.tableLayoutPanel42.Location = new System.Drawing.Point(164, 22);
+            this.tableLayoutPanel42.Name = "tableLayoutPanel42";
+            this.tableLayoutPanel42.RowCount = 1;
+            this.tableLayoutPanel42.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel42.Size = new System.Drawing.Size(714, 56);
+            this.tableLayoutPanel42.TabIndex = 12;
             // 
-            // tableLayoutPanel12
+            // tableLayoutPanel43
             // 
-            this.tableLayoutPanel12.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel12.ColumnCount = 1;
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Controls.Add(this.step3Text2, 0, 0);
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(601, 3);
-            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
-            this.tableLayoutPanel12.RowCount = 1;
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(100, 94);
-            this.tableLayoutPanel12.TabIndex = 12;
+            this.tableLayoutPanel43.BackColor = System.Drawing.Color.White;
+            this.tableLayoutPanel43.ColumnCount = 1;
+            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel43.Controls.Add(this.label15, 0, 0);
+            this.tableLayoutPanel43.Location = new System.Drawing.Point(611, 3);
+            this.tableLayoutPanel43.Name = "tableLayoutPanel43";
+            this.tableLayoutPanel43.RowCount = 1;
+            this.tableLayoutPanel43.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel43.Size = new System.Drawing.Size(101, 50);
+            this.tableLayoutPanel43.TabIndex = 13;
             // 
-            // step3Text2
+            // label15
             // 
-            this.step3Text2.AutoSize = true;
-            this.step3Text2.BackColor = System.Drawing.Color.Black;
-            this.step3Text2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step3Text2.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.step3Text2.ForeColor = System.Drawing.Color.White;
-            this.step3Text2.Location = new System.Drawing.Point(3, 0);
-            this.step3Text2.Name = "step3Text2";
-            this.step3Text2.Size = new System.Drawing.Size(94, 94);
-            this.step3Text2.TabIndex = 1;
-            this.step3Text2.Text = "خطوة 3";
-            this.step3Text2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Black;
+            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label15.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(3, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(95, 50);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "خطوة 4";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tableLayoutPanel10
+            // tableLayoutPanel44
             // 
-            this.tableLayoutPanel10.BackColor = System.Drawing.Color.Black;
-            this.tableLayoutPanel10.ColumnCount = 1;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.Controls.Add(this.step2Text2, 0, 0);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(306, 3);
-            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-            this.tableLayoutPanel10.RowCount = 1;
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(101, 94);
-            this.tableLayoutPanel10.TabIndex = 11;
+            this.tableLayoutPanel44.BackColor = System.Drawing.Color.White;
+            this.tableLayoutPanel44.ColumnCount = 1;
+            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel44.Controls.Add(this.label16, 0, 0);
+            this.tableLayoutPanel44.Location = new System.Drawing.Point(409, 3);
+            this.tableLayoutPanel44.Name = "tableLayoutPanel44";
+            this.tableLayoutPanel44.RowCount = 1;
+            this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel44.Size = new System.Drawing.Size(100, 50);
+            this.tableLayoutPanel44.TabIndex = 12;
             // 
-            // step2Text2
+            // label16
             // 
-            this.step2Text2.AutoSize = true;
-            this.step2Text2.BackColor = System.Drawing.Color.Black;
-            this.step2Text2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step2Text2.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.step2Text2.ForeColor = System.Drawing.Color.White;
-            this.step2Text2.Location = new System.Drawing.Point(3, 0);
-            this.step2Text2.Name = "step2Text2";
-            this.step2Text2.Size = new System.Drawing.Size(95, 94);
-            this.step2Text2.TabIndex = 1;
-            this.step2Text2.Text = "خطوة 2";
-            this.step2Text2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Black;
+            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label16.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(3, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(94, 50);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "خطوة 3";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tableLayoutPanel7
+            // tableLayoutPanel45
             // 
-            this.tableLayoutPanel7.ColumnCount = 2;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Controls.Add(this.listView11, 0, 1);
-            this.tableLayoutPanel7.Controls.Add(this.listView7, 1, 1);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(707, 3);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 2;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(177, 94);
-            this.tableLayoutPanel7.TabIndex = 9;
+            this.tableLayoutPanel45.BackColor = System.Drawing.Color.White;
+            this.tableLayoutPanel45.ColumnCount = 1;
+            this.tableLayoutPanel45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel45.Controls.Add(this.label17, 0, 0);
+            this.tableLayoutPanel45.Location = new System.Drawing.Point(206, 3);
+            this.tableLayoutPanel45.Name = "tableLayoutPanel45";
+            this.tableLayoutPanel45.RowCount = 1;
+            this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel45.Size = new System.Drawing.Size(101, 50);
+            this.tableLayoutPanel45.TabIndex = 11;
             // 
-            // listView11
+            // label17
             // 
-            this.listView11.BackColor = System.Drawing.Color.Black;
-            this.listView11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listView11.Location = new System.Drawing.Point(3, 50);
-            this.listView11.Name = "listView11";
-            this.listView11.Size = new System.Drawing.Size(82, 11);
-            this.listView11.TabIndex = 8;
-            this.listView11.UseCompatibleStateImageBehavior = false;
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Black;
+            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label17.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(3, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(95, 50);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "خطوة 2";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // listView7
+            // tableLayoutPanel46
             // 
-            this.listView7.BackColor = System.Drawing.Color.Black;
-            this.listView7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listView7.Location = new System.Drawing.Point(91, 50);
-            this.listView7.Name = "listView7";
-            this.listView7.Size = new System.Drawing.Size(83, 11);
-            this.listView7.TabIndex = 7;
-            this.listView7.UseCompatibleStateImageBehavior = false;
+            this.tableLayoutPanel46.ColumnCount = 2;
+            this.tableLayoutPanel46.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel46.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel46.Controls.Add(this.listView1, 0, 1);
+            this.tableLayoutPanel46.Controls.Add(this.listView2, 1, 1);
+            this.tableLayoutPanel46.Location = new System.Drawing.Point(515, 3);
+            this.tableLayoutPanel46.Name = "tableLayoutPanel46";
+            this.tableLayoutPanel46.RowCount = 3;
+            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel46.Size = new System.Drawing.Size(90, 50);
+            this.tableLayoutPanel46.TabIndex = 9;
             // 
-            // tableLayoutPanel6
+            // listView1
             // 
-            this.tableLayoutPanel6.ColumnCount = 2;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.listView8, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.listView10, 1, 1);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(413, 3);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 2;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(182, 94);
-            this.tableLayoutPanel6.TabIndex = 8;
+            this.listView1.BackColor = System.Drawing.Color.Black;
+            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView1.Location = new System.Drawing.Point(3, 18);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(39, 9);
+            this.listView1.TabIndex = 8;
+            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // listView8
+            // listView2
             // 
-            this.listView8.BackColor = System.Drawing.Color.Black;
-            this.listView8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listView8.Location = new System.Drawing.Point(3, 50);
-            this.listView8.Name = "listView8";
-            this.listView8.Size = new System.Drawing.Size(85, 11);
-            this.listView8.TabIndex = 6;
-            this.listView8.UseCompatibleStateImageBehavior = false;
+            this.listView2.BackColor = System.Drawing.Color.Black;
+            this.listView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView2.Location = new System.Drawing.Point(48, 18);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(39, 9);
+            this.listView2.TabIndex = 7;
+            this.listView2.UseCompatibleStateImageBehavior = false;
             // 
-            // listView10
+            // tableLayoutPanel47
             // 
-            this.listView10.BackColor = System.Drawing.Color.Black;
-            this.listView10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listView10.Location = new System.Drawing.Point(94, 50);
-            this.listView10.Name = "listView10";
-            this.listView10.Size = new System.Drawing.Size(85, 11);
-            this.listView10.TabIndex = 7;
-            this.listView10.UseCompatibleStateImageBehavior = false;
+            this.tableLayoutPanel47.ColumnCount = 2;
+            this.tableLayoutPanel47.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel47.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel47.Controls.Add(this.listView3, 0, 1);
+            this.tableLayoutPanel47.Controls.Add(this.listView5, 1, 1);
+            this.tableLayoutPanel47.Location = new System.Drawing.Point(313, 3);
+            this.tableLayoutPanel47.Name = "tableLayoutPanel47";
+            this.tableLayoutPanel47.RowCount = 3;
+            this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel47.Size = new System.Drawing.Size(90, 50);
+            this.tableLayoutPanel47.TabIndex = 8;
             // 
-            // tableLayoutPanel3
+            // listView3
             // 
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.listView6, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.listView9, 1, 1);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(110, 3);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(190, 94);
-            this.tableLayoutPanel3.TabIndex = 7;
+            this.listView3.BackColor = System.Drawing.Color.Black;
+            this.listView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView3.Location = new System.Drawing.Point(3, 18);
+            this.listView3.Name = "listView3";
+            this.listView3.Size = new System.Drawing.Size(39, 9);
+            this.listView3.TabIndex = 6;
+            this.listView3.UseCompatibleStateImageBehavior = false;
             // 
-            // listView6
+            // listView5
             // 
-            this.listView6.BackColor = System.Drawing.Color.Black;
-            this.listView6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listView6.Location = new System.Drawing.Point(3, 50);
-            this.listView6.Name = "listView6";
-            this.listView6.Size = new System.Drawing.Size(89, 11);
-            this.listView6.TabIndex = 6;
-            this.listView6.UseCompatibleStateImageBehavior = false;
+            this.listView5.BackColor = System.Drawing.Color.Black;
+            this.listView5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView5.Location = new System.Drawing.Point(48, 18);
+            this.listView5.Name = "listView5";
+            this.listView5.Size = new System.Drawing.Size(39, 9);
+            this.listView5.TabIndex = 7;
+            this.listView5.UseCompatibleStateImageBehavior = false;
             // 
-            // listView9
+            // tableLayoutPanel48
             // 
-            this.listView9.BackColor = System.Drawing.Color.Black;
-            this.listView9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listView9.Location = new System.Drawing.Point(98, 50);
-            this.listView9.Name = "listView9";
-            this.listView9.Size = new System.Drawing.Size(89, 11);
-            this.listView9.TabIndex = 7;
-            this.listView9.UseCompatibleStateImageBehavior = false;
+            this.tableLayoutPanel48.ColumnCount = 2;
+            this.tableLayoutPanel48.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel48.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel48.Controls.Add(this.listView12, 0, 1);
+            this.tableLayoutPanel48.Controls.Add(this.listView13, 1, 1);
+            this.tableLayoutPanel48.Location = new System.Drawing.Point(110, 3);
+            this.tableLayoutPanel48.Name = "tableLayoutPanel48";
+            this.tableLayoutPanel48.RowCount = 3;
+            this.tableLayoutPanel48.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel48.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel48.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel48.Size = new System.Drawing.Size(90, 50);
+            this.tableLayoutPanel48.TabIndex = 7;
             // 
-            // tableLayoutPanel8
+            // listView12
             // 
-            this.tableLayoutPanel8.BackColor = System.Drawing.Color.Black;
-            this.tableLayoutPanel8.ColumnCount = 1;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Controls.Add(this.step1Text2, 0, 0);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 1;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(101, 94);
-            this.tableLayoutPanel8.TabIndex = 10;
+            this.listView12.BackColor = System.Drawing.Color.Black;
+            this.listView12.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView12.Location = new System.Drawing.Point(3, 18);
+            this.listView12.Name = "listView12";
+            this.listView12.Size = new System.Drawing.Size(39, 9);
+            this.listView12.TabIndex = 6;
+            this.listView12.UseCompatibleStateImageBehavior = false;
             // 
-            // step1Text2
+            // listView13
             // 
-            this.step1Text2.AutoSize = true;
-            this.step1Text2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step1Text2.Font = new System.Drawing.Font("Cairo", 16.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.step1Text2.ForeColor = System.Drawing.Color.White;
-            this.step1Text2.Location = new System.Drawing.Point(3, 0);
-            this.step1Text2.Name = "step1Text2";
-            this.step1Text2.Size = new System.Drawing.Size(95, 94);
-            this.step1Text2.TabIndex = 0;
-            this.step1Text2.Text = "خطوة 1";
-            this.step1Text2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.listView13.BackColor = System.Drawing.Color.Black;
+            this.listView13.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView13.Location = new System.Drawing.Point(48, 18);
+            this.listView13.Name = "listView13";
+            this.listView13.Size = new System.Drawing.Size(39, 9);
+            this.listView13.TabIndex = 7;
+            this.listView13.UseCompatibleStateImageBehavior = false;
             // 
-            // sidebarLayoutPanel
+            // tableLayoutPanel49
             // 
-            this.sidebarLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.sidebarLayoutPanel.Controls.Add(this.namePanel);
-            this.sidebarLayoutPanel.Controls.Add(this.settingsButton);
-            this.sidebarLayoutPanel.Controls.Add(this.helpButton);
-            this.sidebarLayoutPanel.Controls.Add(this.logoutButton);
-            this.sidebarLayoutPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidebarLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.sidebarLayoutPanel.Location = new System.Drawing.Point(1792, 0);
-            this.sidebarLayoutPanel.Name = "sidebarLayoutPanel";
-            this.sidebarLayoutPanel.Size = new System.Drawing.Size(112, 1041);
-            this.sidebarLayoutPanel.TabIndex = 4;
+            this.tableLayoutPanel49.BackColor = System.Drawing.Color.Black;
+            this.tableLayoutPanel49.ColumnCount = 1;
+            this.tableLayoutPanel49.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel49.Controls.Add(this.label18, 0, 0);
+            this.tableLayoutPanel49.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel49.Name = "tableLayoutPanel49";
+            this.tableLayoutPanel49.RowCount = 1;
+            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel49.Size = new System.Drawing.Size(101, 50);
+            this.tableLayoutPanel49.TabIndex = 10;
             // 
-            // namePanel
+            // label18
             // 
-            this.namePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
-            this.namePanel.Controls.Add(this.nameLabel);
-            this.namePanel.Location = new System.Drawing.Point(0, 0);
-            this.namePanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 493);
-            this.namePanel.Name = "namePanel";
-            this.namePanel.Size = new System.Drawing.Size(112, 79);
-            this.namePanel.TabIndex = 8;
-            // 
-            // nameLabel
-            // 
-            this.nameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.nameLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.nameLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.nameLabel.Location = new System.Drawing.Point(31, 17);
-            this.nameLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(51, 45);
-            this.nameLabel.TabIndex = 3;
-            this.nameLabel.Text = "M";
-            this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // helpButton
-            // 
-            this.helpButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.helpButton.FlatAppearance.BorderSize = 0;
-            this.helpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.helpButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.helpButton.Image = ((System.Drawing.Image)(resources.GetObject("helpButton.Image")));
-            this.helpButton.Location = new System.Drawing.Point(0, 695);
-            this.helpButton.Margin = new System.Windows.Forms.Padding(0);
-            this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(122, 116);
-            this.helpButton.TabIndex = 2;
-            this.helpButton.Text = "المساعدة";
-            this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.helpButton.UseVisualStyleBackColor = true;
-            // 
-            // logoutButton
-            // 
-            this.logoutButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.logoutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.logoutButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.logoutButton.FlatAppearance.BorderSize = 0;
-            this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logoutButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.logoutButton.Image = ((System.Drawing.Image)(resources.GetObject("logoutButton.Image")));
-            this.logoutButton.Location = new System.Drawing.Point(0, 811);
-            this.logoutButton.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(122, 123);
-            this.logoutButton.TabIndex = 0;
-            this.logoutButton.Text = "تسجيل الخروج";
-            this.logoutButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.logoutButton.UseVisualStyleBackColor = false;
-            // 
-            // settingsButton
-            // 
-            this.settingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.settingsButton.FlatAppearance.BorderSize = 0;
-            this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingsButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.settingsButton.Image = ((System.Drawing.Image)(resources.GetObject("settingsButton.Image")));
-            this.settingsButton.Location = new System.Drawing.Point(0, 575);
-            this.settingsButton.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
-            this.settingsButton.Name = "settingsButton";
-            this.settingsButton.Size = new System.Drawing.Size(119, 117);
-            this.settingsButton.TabIndex = 1;
-            this.settingsButton.Text = "الإعدادات";
-            this.settingsButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.settingsButton.UseVisualStyleBackColor = true;
-            // 
-            // topBarPanel
-            // 
-            this.topBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.topBarPanel.Controls.Add(this.stethoscopeIconPanel);
-            this.topBarPanel.Controls.Add(this.userNameLabel);
-            this.topBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.topBarPanel.Location = new System.Drawing.Point(0, 0);
-            this.topBarPanel.Name = "topBarPanel";
-            this.topBarPanel.Size = new System.Drawing.Size(1792, 79);
-            this.topBarPanel.TabIndex = 5;
-            // 
-            // stethoscopeIconPanel
-            // 
-            this.stethoscopeIconPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.stethoscopeIconPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("stethoscopeIconPanel.BackgroundImage")));
-            this.stethoscopeIconPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.stethoscopeIconPanel.Location = new System.Drawing.Point(0, 0);
-            this.stethoscopeIconPanel.Name = "stethoscopeIconPanel";
-            this.stethoscopeIconPanel.Size = new System.Drawing.Size(104, 79);
-            this.stethoscopeIconPanel.TabIndex = 2;
-            // 
-            // userNameLabel
-            // 
-            this.userNameLabel.AutoSize = true;
-            this.userNameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.userNameLabel.Location = new System.Drawing.Point(776, 24);
-            this.userNameLabel.Name = "userNameLabel";
-            this.userNameLabel.Size = new System.Drawing.Size(241, 30);
-            this.userNameLabel.TabIndex = 2;
-            this.userNameLabel.Text = "Dr. Mostaffa Mohamed";
+            this.label18.AutoSize = true;
+            this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label18.Font = new System.Drawing.Font("Cairo", 16.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(3, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(95, 50);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "خطوة 1";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AddPatient4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.topBarPanel);
+            this.ClientSize = new System.Drawing.Size(1384, 861);
+            this.Controls.Add(this.panel10);
             this.Controls.Add(this.sidebarLayoutPanel);
-            this.Controls.Add(this.allContainer2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.topBarPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1920, 1080);
-            this.MinimumSize = new System.Drawing.Size(1918, 1038);
+            this.MaximumSize = new System.Drawing.Size(1400, 900);
+            this.MinimumSize = new System.Drawing.Size(1400, 900);
             this.Name = "AddPatient4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "قائمة إضافة مريض جديد";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.allContainer2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.namePanel.ResumeLayout(false);
+            this.namePanel.PerformLayout();
+            this.sidebarLayoutPanel.ResumeLayout(false);
+            this.topBarPanel.ResumeLayout(false);
+            this.topBarPanel.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -758,39 +794,64 @@
             this.tableLayoutPanel11.PerformLayout();
             this.tableLayoutPanel16.ResumeLayout(false);
             this.tableLayoutPanel16.PerformLayout();
-            this.steps2Container.ResumeLayout(false);
-            this.tableLayoutPanel13.ResumeLayout(false);
-            this.tableLayoutPanel13.PerformLayout();
-            this.tableLayoutPanel12.ResumeLayout(false);
-            this.tableLayoutPanel12.PerformLayout();
-            this.tableLayoutPanel10.ResumeLayout(false);
-            this.tableLayoutPanel10.PerformLayout();
-            this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel8.ResumeLayout(false);
-            this.tableLayoutPanel8.PerformLayout();
-            this.sidebarLayoutPanel.ResumeLayout(false);
-            this.namePanel.ResumeLayout(false);
-            this.namePanel.PerformLayout();
-            this.topBarPanel.ResumeLayout(false);
-            this.topBarPanel.PerformLayout();
+            this.tableLayoutPanel42.ResumeLayout(false);
+            this.tableLayoutPanel43.ResumeLayout(false);
+            this.tableLayoutPanel43.PerformLayout();
+            this.tableLayoutPanel44.ResumeLayout(false);
+            this.tableLayoutPanel44.PerformLayout();
+            this.tableLayoutPanel45.ResumeLayout(false);
+            this.tableLayoutPanel45.PerformLayout();
+            this.tableLayoutPanel46.ResumeLayout(false);
+            this.tableLayoutPanel47.ResumeLayout(false);
+            this.tableLayoutPanel48.ResumeLayout(false);
+            this.tableLayoutPanel49.ResumeLayout(false);
+            this.tableLayoutPanel49.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private Panel allContainer2;
-        private Button backHomeButton4;
-        private Button confirmButton;
+        private Label label1;
+        private Panel namePanel;
+        private Label nameLabel;
+        private Button settingsButton;
+        private Button helpButton;
+        private Button logoutButton;
+        private FlowLayoutPanel sidebarLayoutPanel;
+        private Label userNameLabel;
+        private Panel stethoscopeIconPanel;
+        private Panel topBarPanel;
         private Panel panel1;
+        private Panel panel10;
+        private Button button7;
+        private TableLayoutPanel tableLayoutPanel42;
+        private TableLayoutPanel tableLayoutPanel43;
+        private Label label15;
+        private TableLayoutPanel tableLayoutPanel44;
+        private Label label16;
+        private TableLayoutPanel tableLayoutPanel45;
+        private Label label17;
+        private TableLayoutPanel tableLayoutPanel46;
+        private ListView listView1;
+        private ListView listView2;
+        private TableLayoutPanel tableLayoutPanel47;
+        private ListView listView3;
+        private ListView listView5;
+        private TableLayoutPanel tableLayoutPanel48;
+        private ListView listView12;
+        private ListView listView13;
+        private TableLayoutPanel tableLayoutPanel49;
+        private Label label18;
+        private Button firstNextStebButton2;
+        private Panel panel2;
         private TableLayoutPanel tableLayoutPanel1;
         private TextBox textBox6;
         private TextBox textBox5;
         private TableLayoutPanel tableLayoutPanel2;
-        private Label label1;
         private Label label2;
+        private Label label3;
         private TableLayoutPanel tableLayoutPanel9;
         private TextBox textBox1;
         private TextBox textBox2;
@@ -802,32 +863,5 @@
         private TableLayoutPanel tableLayoutPanel17;
         private TableLayoutPanel tableLayoutPanel18;
         private TableLayoutPanel tableLayoutPanel19;
-        private TableLayoutPanel steps2Container;
-        private TableLayoutPanel tableLayoutPanel13;
-        private Label step4Text2;
-        private TableLayoutPanel tableLayoutPanel12;
-        private Label step3Text2;
-        private TableLayoutPanel tableLayoutPanel10;
-        private Label step2Text2;
-        private TableLayoutPanel tableLayoutPanel7;
-        private ListView listView11;
-        private ListView listView7;
-        private TableLayoutPanel tableLayoutPanel6;
-        private ListView listView8;
-        private ListView listView10;
-        private TableLayoutPanel tableLayoutPanel3;
-        private ListView listView6;
-        private ListView listView9;
-        private TableLayoutPanel tableLayoutPanel8;
-        private Label step1Text2;
-        private FlowLayoutPanel sidebarLayoutPanel;
-        private Button logoutButton;
-        private Button helpButton;
-        private Button settingsButton;
-        private Panel topBarPanel;
-        private Panel stethoscopeIconPanel;
-        private Label userNameLabel;
-        private Panel namePanel;
-        private Label nameLabel;
     }
 }
