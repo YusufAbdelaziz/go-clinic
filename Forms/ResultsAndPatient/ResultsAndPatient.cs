@@ -1,8 +1,10 @@
+﻿using goclinic.Forms;
+
 namespace goclinic
 {
-    public partial class Results : Form
+    public partial class ResultsAndPatient : Form
     {
-        public Results()
+        public ResultsAndPatient()
         {
             InitializeComponent();
         }
@@ -57,5 +59,25 @@ namespace goclinic
 
         }
 
+        private void tableLayoutPanel13_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void generalPatientDetailsPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void GeneralPatientDetailsPanelClick(object sender, EventArgs e) 
+        {
+            var popupForm = new popupForm();
+            popupForm.ShowDialog();
+        }
+
+        private void patientPhoneNumber_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
