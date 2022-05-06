@@ -17,14 +17,7 @@ namespace goclinic
             InitializeComponent();
         }
 
-        private void backHomeButton2_Click(object sender, EventArgs e)
-        {
-            // AddPatient2 form back button
-            this.Hide();                                         //Hide AddPatient2 form
-            AddPatient1 NewSign = new AddPatient1();            //Creat an object from AddPatient1 form
-            NewSign.ShowDialog();                              //Display the AddPatient1 form 
-            this.Close();                                     //Close the AddPatient2 form
-        }
+
 
         private void firstNextStebButton2_Click(object sender, EventArgs e)
         {
@@ -33,6 +26,15 @@ namespace goclinic
             AddPatient3 NewSign = new AddPatient3();            //Creat an object from AddPatient1 form
             NewSign.ShowDialog();                              //Display the AddPatient1 form 
             this.Close();                                     //Close the AddPatient2 form
+        }
+        private void firstBackStebButton2_Click(object sender, EventArgs e)
+        {
+            // AddPatient2 form back button
+            this.Hide();                                         //Hide AddPatient2 form
+            AddPatient1 NewSign = new AddPatient1();            //Creat an object from AddPatient1 form
+            NewSign.ShowDialog();                              //Display the AddPatient1 form 
+            this.Close();                                     //Close the AddPatient2 form
+
         }
     }
 }
