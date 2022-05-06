@@ -168,7 +168,7 @@
             // 
             this.firstNextStebButton2.BackColor = System.Drawing.Color.Black;
             this.firstNextStebButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.firstNextStebButton2.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.firstNextStebButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.firstNextStebButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
             this.firstNextStebButton2.Location = new System.Drawing.Point(80, 602);
             this.firstNextStebButton2.Name = "firstNextStebButton2";
@@ -182,7 +182,7 @@
             // 
             this.backHomeButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
             this.backHomeButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.backHomeButton2.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.backHomeButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.backHomeButton2.ForeColor = System.Drawing.Color.Black;
             this.backHomeButton2.Location = new System.Drawing.Point(690, 602);
             this.backHomeButton2.Name = "backHomeButton2";
@@ -228,7 +228,7 @@
             this.genderComboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.genderComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.genderComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genderComboBox2.Font = new System.Drawing.Font("Cairo", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.genderComboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.genderComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
             this.genderComboBox2.FormattingEnabled = true;
             this.genderComboBox2.ImeMode = System.Windows.Forms.ImeMode.Alpha;
@@ -240,7 +240,7 @@
             this.genderComboBox2.MaxDropDownItems = 2;
             this.genderComboBox2.Name = "genderComboBox2";
             this.genderComboBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.genderComboBox2.Size = new System.Drawing.Size(486, 61);
+            this.genderComboBox2.Size = new System.Drawing.Size(486, 47);
             this.genderComboBox2.Sorted = true;
             this.genderComboBox2.TabIndex = 5;
             // 
@@ -250,7 +250,7 @@
             this.bloodComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bloodComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.bloodComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bloodComboBox.Font = new System.Drawing.Font("Cairo", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bloodComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bloodComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
             this.bloodComboBox.FormattingEnabled = true;
             this.bloodComboBox.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -263,7 +263,7 @@
             this.bloodComboBox.Location = new System.Drawing.Point(3, 3);
             this.bloodComboBox.Name = "bloodComboBox";
             this.bloodComboBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bloodComboBox.Size = new System.Drawing.Size(487, 61);
+            this.bloodComboBox.Size = new System.Drawing.Size(487, 47);
             this.bloodComboBox.TabIndex = 6;
             // 
             // tableLayoutPanel26
@@ -285,11 +285,11 @@
             this.bloodText.AutoSize = true;
             this.bloodText.BackColor = System.Drawing.Color.Transparent;
             this.bloodText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.bloodText.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bloodText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bloodText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.bloodText.Location = new System.Drawing.Point(357, 0);
+            this.bloodText.Location = new System.Drawing.Point(367, 0);
             this.bloodText.Name = "bloodText";
-            this.bloodText.Size = new System.Drawing.Size(132, 60);
+            this.bloodText.Size = new System.Drawing.Size(122, 60);
             this.bloodText.TabIndex = 6;
             this.bloodText.Text = "فصيلة الدم";
             this.bloodText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -299,7 +299,7 @@
             this.genderText.AutoSize = true;
             this.genderText.BackColor = System.Drawing.Color.Transparent;
             this.genderText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.genderText.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.genderText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.genderText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
             this.genderText.Location = new System.Drawing.Point(914, 0);
             this.genderText.Name = "genderText";
@@ -325,30 +325,30 @@
             // logIndatePicker
             // 
             this.logIndatePicker.AllowDrop = true;
-            this.logIndatePicker.CalendarFont = new System.Drawing.Font("Cairo", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.logIndatePicker.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.logIndatePicker.CalendarForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.logIndatePicker.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
             this.logIndatePicker.CalendarTitleForeColor = System.Drawing.Color.Gray;
             this.logIndatePicker.Dock = System.Windows.Forms.DockStyle.Fill;
             this.logIndatePicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.logIndatePicker.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.logIndatePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.logIndatePicker.Location = new System.Drawing.Point(3, 3);
             this.logIndatePicker.Name = "logIndatePicker";
-            this.logIndatePicker.Size = new System.Drawing.Size(486, 62);
+            this.logIndatePicker.Size = new System.Drawing.Size(486, 49);
             this.logIndatePicker.TabIndex = 4;
             // 
             // dateBirthPicker
             // 
-            this.dateBirthPicker.CalendarFont = new System.Drawing.Font("Cairo", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.dateBirthPicker.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.dateBirthPicker.CalendarForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.dateBirthPicker.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
             this.dateBirthPicker.CalendarTitleForeColor = System.Drawing.Color.Gray;
             this.dateBirthPicker.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateBirthPicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dateBirthPicker.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.dateBirthPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.dateBirthPicker.Location = new System.Drawing.Point(495, 3);
             this.dateBirthPicker.Name = "dateBirthPicker";
-            this.dateBirthPicker.Size = new System.Drawing.Size(487, 62);
+            this.dateBirthPicker.Size = new System.Drawing.Size(487, 49);
             this.dateBirthPicker.TabIndex = 3;
             // 
             // tableLayoutPanel30
@@ -372,11 +372,11 @@
             this.logInText.AutoSize = true;
             this.logInText.BackColor = System.Drawing.Color.Transparent;
             this.logInText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.logInText.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.logInText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.logInText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.logInText.Location = new System.Drawing.Point(338, 0);
+            this.logInText.Location = new System.Drawing.Point(328, 0);
             this.logInText.Name = "logInText";
-            this.logInText.Size = new System.Drawing.Size(151, 60);
+            this.logInText.Size = new System.Drawing.Size(161, 60);
             this.logInText.TabIndex = 10;
             this.logInText.Text = "تاريخ التسجيل";
             this.logInText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -386,11 +386,11 @@
             this.dateBirthText.AutoSize = true;
             this.dateBirthText.BackColor = System.Drawing.Color.Transparent;
             this.dateBirthText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dateBirthText.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.dateBirthText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.dateBirthText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.dateBirthText.Location = new System.Drawing.Point(847, 0);
+            this.dateBirthText.Location = new System.Drawing.Point(836, 0);
             this.dateBirthText.Name = "dateBirthText";
-            this.dateBirthText.Size = new System.Drawing.Size(135, 60);
+            this.dateBirthText.Size = new System.Drawing.Size(146, 60);
             this.dateBirthText.TabIndex = 7;
             this.dateBirthText.Text = "تاريخ الميلاد";
             this.dateBirthText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -414,10 +414,10 @@
             this.nameTextBox.BackColor = System.Drawing.Color.White;
             this.nameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.nameTextBox.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nameTextBox.Location = new System.Drawing.Point(495, 3);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(487, 62);
+            this.nameTextBox.Size = new System.Drawing.Size(487, 49);
             this.nameTextBox.TabIndex = 1;
             this.nameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -426,10 +426,10 @@
             this.phoneTextBox.BackColor = System.Drawing.Color.White;
             this.phoneTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.phoneTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.phoneTextBox.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.phoneTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.phoneTextBox.Location = new System.Drawing.Point(3, 3);
             this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(486, 62);
+            this.phoneTextBox.Size = new System.Drawing.Size(486, 49);
             this.phoneTextBox.TabIndex = 2;
             this.phoneTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -452,11 +452,11 @@
             this.phoneText.AutoSize = true;
             this.phoneText.BackColor = System.Drawing.Color.Transparent;
             this.phoneText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.phoneText.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.phoneText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.phoneText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.phoneText.Location = new System.Drawing.Point(336, 0);
+            this.phoneText.Location = new System.Drawing.Point(334, 0);
             this.phoneText.Name = "phoneText";
-            this.phoneText.Size = new System.Drawing.Size(153, 60);
+            this.phoneText.Size = new System.Drawing.Size(155, 60);
             this.phoneText.TabIndex = 5;
             this.phoneText.Text = "* رقم الموبيل";
             this.phoneText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -466,11 +466,11 @@
             this.nameText.AutoSize = true;
             this.nameText.BackColor = System.Drawing.Color.Transparent;
             this.nameText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.nameText.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nameText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nameText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.nameText.Location = new System.Drawing.Point(888, 0);
+            this.nameText.Location = new System.Drawing.Point(893, 0);
             this.nameText.Name = "nameText";
-            this.nameText.Size = new System.Drawing.Size(94, 60);
+            this.nameText.Size = new System.Drawing.Size(89, 60);
             this.nameText.TabIndex = 4;
             this.nameText.Text = "* الاسم";
             this.nameText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -494,11 +494,11 @@
             this.mustFillText.AutoSize = true;
             this.mustFillText.BackColor = System.Drawing.Color.Transparent;
             this.mustFillText.Dock = System.Windows.Forms.DockStyle.Left;
-            this.mustFillText.Font = new System.Drawing.Font("Cairo", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.mustFillText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.mustFillText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(108)))), ((int)(((byte)(144)))));
             this.mustFillText.Location = new System.Drawing.Point(3, 0);
             this.mustFillText.Name = "mustFillText";
-            this.mustFillText.Size = new System.Drawing.Size(104, 69);
+            this.mustFillText.Size = new System.Drawing.Size(106, 69);
             this.mustFillText.TabIndex = 3;
             this.mustFillText.Text = "* يلزم ملئه";
             this.mustFillText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -508,11 +508,11 @@
             this.contactInfoText.AutoSize = true;
             this.contactInfoText.BackColor = System.Drawing.Color.Transparent;
             this.contactInfoText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.contactInfoText.Font = new System.Drawing.Font("Cairo", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.contactInfoText.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.contactInfoText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.contactInfoText.Location = new System.Drawing.Point(579, 0);
+            this.contactInfoText.Location = new System.Drawing.Point(590, 0);
             this.contactInfoText.Name = "contactInfoText";
-            this.contactInfoText.Size = new System.Drawing.Size(403, 69);
+            this.contactInfoText.Size = new System.Drawing.Size(392, 69);
             this.contactInfoText.TabIndex = 2;
             this.contactInfoText.Text = "معلومات التواصل الرئيسية";
             // 
@@ -590,7 +590,7 @@
             // 
             this.step4Text1.AutoSize = true;
             this.step4Text1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step4Text1.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.step4Text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.step4Text1.ForeColor = System.Drawing.Color.Black;
             this.step4Text1.Location = new System.Drawing.Point(3, 0);
             this.step4Text1.Name = "step4Text1";
@@ -616,7 +616,7 @@
             // 
             this.step3Text1.AutoSize = true;
             this.step3Text1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step3Text1.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.step3Text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.step3Text1.ForeColor = System.Drawing.Color.Black;
             this.step3Text1.Location = new System.Drawing.Point(3, 0);
             this.step3Text1.Name = "step3Text1";
@@ -643,7 +643,7 @@
             this.step2Text1.AutoSize = true;
             this.step2Text1.BackColor = System.Drawing.Color.White;
             this.step2Text1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step2Text1.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.step2Text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.step2Text1.ForeColor = System.Drawing.Color.Black;
             this.step2Text1.Location = new System.Drawing.Point(3, 0);
             this.step2Text1.Name = "step2Text1";
@@ -774,7 +774,7 @@
             // 
             this.step1Text1.AutoSize = true;
             this.step1Text1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step1Text1.Font = new System.Drawing.Font("Cairo", 16.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.step1Text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.step1Text1.ForeColor = System.Drawing.Color.White;
             this.step1Text1.Location = new System.Drawing.Point(3, 0);
             this.step1Text1.Name = "step1Text1";
@@ -938,9 +938,9 @@
             this.sidebarLayoutPanel.Controls.Add(this.namePanel);
             this.sidebarLayoutPanel.Dock = System.Windows.Forms.DockStyle.Right;
             this.sidebarLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
-            this.sidebarLayoutPanel.Location = new System.Drawing.Point(1272, 79);
+            this.sidebarLayoutPanel.Location = new System.Drawing.Point(1270, 79);
             this.sidebarLayoutPanel.Name = "sidebarLayoutPanel";
-            this.sidebarLayoutPanel.Size = new System.Drawing.Size(112, 782);
+            this.sidebarLayoutPanel.Size = new System.Drawing.Size(112, 774);
             this.sidebarLayoutPanel.TabIndex = 2;
             // 
             // logoutButton
@@ -952,7 +952,7 @@
             this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.logoutButton.Image = ((System.Drawing.Image)(resources.GetObject("logoutButton.Image")));
-            this.logoutButton.Location = new System.Drawing.Point(0, 649);
+            this.logoutButton.Location = new System.Drawing.Point(0, 641);
             this.logoutButton.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(122, 123);
@@ -968,7 +968,7 @@
             this.helpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.helpButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.helpButton.Image = ((System.Drawing.Image)(resources.GetObject("helpButton.Image")));
-            this.helpButton.Location = new System.Drawing.Point(0, 533);
+            this.helpButton.Location = new System.Drawing.Point(0, 525);
             this.helpButton.Margin = new System.Windows.Forms.Padding(0);
             this.helpButton.Name = "helpButton";
             this.helpButton.Size = new System.Drawing.Size(122, 116);
@@ -984,7 +984,7 @@
             this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.settingsButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.settingsButton.Image = ((System.Drawing.Image)(resources.GetObject("settingsButton.Image")));
-            this.settingsButton.Location = new System.Drawing.Point(0, 413);
+            this.settingsButton.Location = new System.Drawing.Point(0, 405);
             this.settingsButton.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.settingsButton.Name = "settingsButton";
             this.settingsButton.Size = new System.Drawing.Size(119, 117);
@@ -997,7 +997,7 @@
             // 
             this.namePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
             this.namePanel.Controls.Add(this.nameLabel);
-            this.namePanel.Location = new System.Drawing.Point(122, 210);
+            this.namePanel.Location = new System.Drawing.Point(122, 202);
             this.namePanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 493);
             this.namePanel.Name = "namePanel";
             this.namePanel.Size = new System.Drawing.Size(112, 79);
@@ -1013,7 +1013,7 @@
             this.nameLabel.Location = new System.Drawing.Point(36, 6);
             this.nameLabel.Margin = new System.Windows.Forms.Padding(0);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(51, 45);
+            this.nameLabel.Size = new System.Drawing.Size(61, 54);
             this.nameLabel.TabIndex = 3;
             this.nameLabel.Text = "M";
             this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1027,7 +1027,7 @@
             this.topBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topBarPanel.Location = new System.Drawing.Point(0, 0);
             this.topBarPanel.Name = "topBarPanel";
-            this.topBarPanel.Size = new System.Drawing.Size(1384, 79);
+            this.topBarPanel.Size = new System.Drawing.Size(1382, 79);
             this.topBarPanel.TabIndex = 3;
             // 
             // panel1
@@ -1055,7 +1055,7 @@
             this.userNameLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.userNameLabel.Location = new System.Drawing.Point(508, 17);
             this.userNameLabel.Name = "userNameLabel";
-            this.userNameLabel.Size = new System.Drawing.Size(369, 45);
+            this.userNameLabel.Size = new System.Drawing.Size(461, 54);
             this.userNameLabel.TabIndex = 2;
             this.userNameLabel.Text = "Dr. Mostaffa Mohamed";
             // 
@@ -1069,18 +1069,17 @@
             this.label1.Location = new System.Drawing.Point(1303, 17);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 45);
+            this.label1.Size = new System.Drawing.Size(61, 54);
             this.label1.TabIndex = 3;
             this.label1.Text = "M";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AddPatient1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(1384, 861);
+            this.ClientSize = new System.Drawing.Size(1382, 853);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.sidebarLayoutPanel);
             this.Controls.Add(this.topBarPanel);

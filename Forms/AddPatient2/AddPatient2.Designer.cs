@@ -148,7 +148,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Location = new System.Drawing.Point(821, 613);
             this.button3.Name = "button3";
@@ -162,7 +162,7 @@
             // 
             this.backHomeButton2.BackColor = System.Drawing.Color.Black;
             this.backHomeButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.backHomeButton2.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.backHomeButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.backHomeButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
             this.backHomeButton2.Location = new System.Drawing.Point(23, 613);
             this.backHomeButton2.Name = "backHomeButton2";
@@ -208,10 +208,10 @@
             this.textBox6.BackColor = System.Drawing.Color.White;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox6.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox6.Location = new System.Drawing.Point(496, 3);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(486, 62);
+            this.textBox6.Size = new System.Drawing.Size(486, 49);
             this.textBox6.TabIndex = 3;
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -220,10 +220,10 @@
             this.textBox5.BackColor = System.Drawing.Color.White;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox5.Location = new System.Drawing.Point(3, 3);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(487, 62);
+            this.textBox5.Size = new System.Drawing.Size(487, 49);
             this.textBox5.TabIndex = 2;
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -246,11 +246,11 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label14.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label14.Location = new System.Drawing.Point(383, 0);
+            this.label14.Location = new System.Drawing.Point(396, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(106, 60);
+            this.label14.Size = new System.Drawing.Size(93, 60);
             this.label14.TabIndex = 6;
             this.label14.Text = "نقل الدم";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -260,11 +260,11 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label15.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label15.Location = new System.Drawing.Point(777, 0);
+            this.label15.Location = new System.Drawing.Point(774, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(205, 60);
+            this.label15.Size = new System.Drawing.Size(208, 60);
             this.label15.TabIndex = 9;
             this.label15.Text = "الحوادث والعمليات";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -289,10 +289,10 @@
             this.textBox4.BackColor = System.Drawing.Color.White;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox4.Location = new System.Drawing.Point(495, 3);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(487, 62);
+            this.textBox4.Size = new System.Drawing.Size(487, 49);
             this.textBox4.TabIndex = 3;
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -301,10 +301,10 @@
             this.textBox3.BackColor = System.Drawing.Color.White;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox3.Location = new System.Drawing.Point(3, 3);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(486, 62);
+            this.textBox3.Size = new System.Drawing.Size(486, 49);
             this.textBox3.TabIndex = 2;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -329,11 +329,11 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label16.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label16.Location = new System.Drawing.Point(323, 0);
+            this.label16.Location = new System.Drawing.Point(304, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(166, 60);
+            this.label16.Size = new System.Drawing.Size(185, 60);
             this.label16.TabIndex = 10;
             this.label16.Text = "التاريخ التطوري";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -343,11 +343,11 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label17.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label17.Location = new System.Drawing.Point(777, 0);
+            this.label17.Location = new System.Drawing.Point(764, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(205, 60);
+            this.label17.Size = new System.Drawing.Size(218, 60);
             this.label17.TabIndex = 7;
             this.label17.Text = "تاريخ حديثي الولادة";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -371,10 +371,10 @@
             this.textBox7.BackColor = System.Drawing.Color.White;
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox7.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox7.Location = new System.Drawing.Point(495, 3);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(487, 62);
+            this.textBox7.Size = new System.Drawing.Size(487, 49);
             this.textBox7.TabIndex = 1;
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -383,10 +383,10 @@
             this.textBox8.BackColor = System.Drawing.Color.White;
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox8.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox8.Location = new System.Drawing.Point(3, 3);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(486, 62);
+            this.textBox8.Size = new System.Drawing.Size(486, 49);
             this.textBox8.TabIndex = 2;
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -409,11 +409,11 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label18.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label18.Location = new System.Drawing.Point(328, 0);
+            this.label18.Location = new System.Drawing.Point(322, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(161, 60);
+            this.label18.Size = new System.Drawing.Size(167, 60);
             this.label18.TabIndex = 5;
             this.label18.Text = "التاريخ الغذائي";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -423,11 +423,11 @@
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label19.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label19.Location = new System.Drawing.Point(764, 0);
+            this.label19.Location = new System.Drawing.Point(720, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(218, 60);
+            this.label19.Size = new System.Drawing.Size(262, 60);
             this.label19.TabIndex = 4;
             this.label19.Text = "التاريخ الحاضر للمرض";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -450,11 +450,11 @@
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label20.Font = new System.Drawing.Font("Cairo", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label20.Location = new System.Drawing.Point(659, 0);
+            this.label20.Location = new System.Drawing.Point(676, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(323, 69);
+            this.label20.Size = new System.Drawing.Size(306, 69);
             this.label20.TabIndex = 2;
             this.label20.Text = "تاريخ الشكوى العامة";
             // 
@@ -532,7 +532,7 @@
             // 
             this.step4Text1.AutoSize = true;
             this.step4Text1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step4Text1.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.step4Text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.step4Text1.ForeColor = System.Drawing.Color.Black;
             this.step4Text1.Location = new System.Drawing.Point(3, 0);
             this.step4Text1.Name = "step4Text1";
@@ -558,7 +558,7 @@
             // 
             this.step3Text1.AutoSize = true;
             this.step3Text1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step3Text1.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.step3Text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.step3Text1.ForeColor = System.Drawing.Color.Black;
             this.step3Text1.Location = new System.Drawing.Point(3, 0);
             this.step3Text1.Name = "step3Text1";
@@ -585,7 +585,7 @@
             this.step2Text1.AutoSize = true;
             this.step2Text1.BackColor = System.Drawing.Color.Black;
             this.step2Text1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step2Text1.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.step2Text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.step2Text1.ForeColor = System.Drawing.Color.White;
             this.step2Text1.Location = new System.Drawing.Point(3, 0);
             this.step2Text1.Name = "step2Text1";
@@ -716,7 +716,7 @@
             // 
             this.step1Text1.AutoSize = true;
             this.step1Text1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step1Text1.Font = new System.Drawing.Font("Cairo", 16.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.step1Text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.step1Text1.ForeColor = System.Drawing.Color.White;
             this.step1Text1.Location = new System.Drawing.Point(3, 0);
             this.step1Text1.Name = "step1Text1";
@@ -765,7 +765,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(3, 0);
             this.label9.Name = "label9";
@@ -791,7 +791,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(3, 0);
             this.label10.Name = "label10";
@@ -818,7 +818,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.White;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(3, 0);
             this.label11.Name = "label11";
@@ -948,7 +948,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Font = new System.Drawing.Font("Cairo", 16.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(3, 0);
             this.label12.Name = "label12";
@@ -966,9 +966,9 @@
             this.sidebarLayoutPanel.Controls.Add(this.namePanel);
             this.sidebarLayoutPanel.Dock = System.Windows.Forms.DockStyle.Right;
             this.sidebarLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
-            this.sidebarLayoutPanel.Location = new System.Drawing.Point(1272, 79);
+            this.sidebarLayoutPanel.Location = new System.Drawing.Point(1270, 79);
             this.sidebarLayoutPanel.Name = "sidebarLayoutPanel";
-            this.sidebarLayoutPanel.Size = new System.Drawing.Size(112, 782);
+            this.sidebarLayoutPanel.Size = new System.Drawing.Size(112, 774);
             this.sidebarLayoutPanel.TabIndex = 4;
             // 
             // logoutButton
@@ -980,7 +980,7 @@
             this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.logoutButton.Image = ((System.Drawing.Image)(resources.GetObject("logoutButton.Image")));
-            this.logoutButton.Location = new System.Drawing.Point(0, 649);
+            this.logoutButton.Location = new System.Drawing.Point(0, 641);
             this.logoutButton.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(122, 123);
@@ -996,7 +996,7 @@
             this.helpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.helpButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.helpButton.Image = ((System.Drawing.Image)(resources.GetObject("helpButton.Image")));
-            this.helpButton.Location = new System.Drawing.Point(0, 533);
+            this.helpButton.Location = new System.Drawing.Point(0, 525);
             this.helpButton.Margin = new System.Windows.Forms.Padding(0);
             this.helpButton.Name = "helpButton";
             this.helpButton.Size = new System.Drawing.Size(122, 116);
@@ -1012,7 +1012,7 @@
             this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.settingsButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.settingsButton.Image = ((System.Drawing.Image)(resources.GetObject("settingsButton.Image")));
-            this.settingsButton.Location = new System.Drawing.Point(0, 413);
+            this.settingsButton.Location = new System.Drawing.Point(0, 405);
             this.settingsButton.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.settingsButton.Name = "settingsButton";
             this.settingsButton.Size = new System.Drawing.Size(119, 117);
@@ -1025,7 +1025,7 @@
             // 
             this.namePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
             this.namePanel.Controls.Add(this.nameLabel);
-            this.namePanel.Location = new System.Drawing.Point(122, 210);
+            this.namePanel.Location = new System.Drawing.Point(122, 202);
             this.namePanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 493);
             this.namePanel.Name = "namePanel";
             this.namePanel.Size = new System.Drawing.Size(112, 79);
@@ -1041,7 +1041,7 @@
             this.nameLabel.Location = new System.Drawing.Point(36, -5);
             this.nameLabel.Margin = new System.Windows.Forms.Padding(0);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(51, 45);
+            this.nameLabel.Size = new System.Drawing.Size(61, 54);
             this.nameLabel.TabIndex = 3;
             this.nameLabel.Text = "M";
             this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1056,7 +1056,7 @@
             this.label13.Location = new System.Drawing.Point(1303, 17);
             this.label13.Margin = new System.Windows.Forms.Padding(0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(51, 45);
+            this.label13.Size = new System.Drawing.Size(61, 54);
             this.label13.TabIndex = 5;
             this.label13.Text = "M";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1079,7 +1079,7 @@
             this.topBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topBarPanel.Location = new System.Drawing.Point(0, 0);
             this.topBarPanel.Name = "topBarPanel";
-            this.topBarPanel.Size = new System.Drawing.Size(1384, 79);
+            this.topBarPanel.Size = new System.Drawing.Size(1382, 79);
             this.topBarPanel.TabIndex = 6;
             // 
             // stethoscopeIconPanel
@@ -1098,17 +1098,16 @@
             this.userNameLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.userNameLabel.Location = new System.Drawing.Point(508, 17);
             this.userNameLabel.Name = "userNameLabel";
-            this.userNameLabel.Size = new System.Drawing.Size(369, 45);
+            this.userNameLabel.Size = new System.Drawing.Size(461, 54);
             this.userNameLabel.TabIndex = 2;
             this.userNameLabel.Text = "Dr. Mostaffa Mohamed";
             // 
             // AddPatient2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(1384, 861);
+            this.ClientSize = new System.Drawing.Size(1382, 853);
             this.Controls.Add(this.sidebarLayoutPanel);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.topBarPanel);
