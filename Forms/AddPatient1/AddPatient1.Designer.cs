@@ -159,10 +159,10 @@
             this.allContainer2.Controls.Add(this.backHomeButton2);
             this.allContainer2.Controls.Add(this.infoContainer2);
             this.allContainer2.Controls.Add(this.steps2Container);
-            this.allContainer2.Location = new System.Drawing.Point(138, 168);
-            this.allContainer2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.allContainer2.Location = new System.Drawing.Point(158, 224);
+            this.allContainer2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.allContainer2.Name = "allContainer2";
-            this.allContainer2.Size = new System.Drawing.Size(1176, 915);
+            this.allContainer2.Size = new System.Drawing.Size(1344, 1220);
             this.allContainer2.TabIndex = 0;
             // 
             // firstNextStebButton2
@@ -171,10 +171,10 @@
             this.firstNextStebButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.firstNextStebButton2.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.firstNextStebButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.firstNextStebButton2.Location = new System.Drawing.Point(26, 817);
-            this.firstNextStebButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.firstNextStebButton2.Location = new System.Drawing.Point(30, 1089);
+            this.firstNextStebButton2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.firstNextStebButton2.Name = "firstNextStebButton2";
-            this.firstNextStebButton2.Size = new System.Drawing.Size(192, 67);
+            this.firstNextStebButton2.Size = new System.Drawing.Size(219, 89);
             this.firstNextStebButton2.TabIndex = 14;
             this.firstNextStebButton2.Text = "الخطوة التالية";
             this.firstNextStebButton2.UseVisualStyleBackColor = false;
@@ -186,10 +186,10 @@
             this.backHomeButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.backHomeButton2.Font = new System.Drawing.Font("Cairo", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.backHomeButton2.ForeColor = System.Drawing.Color.Black;
-            this.backHomeButton2.Location = new System.Drawing.Point(831, 813);
-            this.backHomeButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.backHomeButton2.Location = new System.Drawing.Point(950, 1084);
+            this.backHomeButton2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.backHomeButton2.Name = "backHomeButton2";
-            this.backHomeButton2.Size = new System.Drawing.Size(319, 71);
+            this.backHomeButton2.Size = new System.Drawing.Size(365, 95);
             this.backHomeButton2.TabIndex = 15;
             this.backHomeButton2.Text = "رجوع إلى الصفحة الرئيسية";
             this.backHomeButton2.UseVisualStyleBackColor = false;
@@ -206,25 +206,25 @@
             this.infoContainer2.Controls.Add(this.tableLayoutPanel15);
             this.infoContainer2.Controls.Add(this.tableLayoutPanel21);
             this.infoContainer2.Controls.Add(this.tableLayoutPanel14);
-            this.infoContainer2.Location = new System.Drawing.Point(19, 124);
-            this.infoContainer2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.infoContainer2.Location = new System.Drawing.Point(22, 165);
+            this.infoContainer2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.infoContainer2.Name = "infoContainer2";
-            this.infoContainer2.Size = new System.Drawing.Size(1133, 660);
+            this.infoContainer2.Size = new System.Drawing.Size(1295, 880);
             this.infoContainer2.TabIndex = 13;
             // 
             // tableLayoutPanel25
             // 
             this.tableLayoutPanel25.ColumnCount = 2;
             this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 562F));
+            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 642F));
             this.tableLayoutPanel25.Controls.Add(this.genderComboBox2, 1, 0);
             this.tableLayoutPanel25.Controls.Add(this.bloodComboBox, 0, 0);
-            this.tableLayoutPanel25.Location = new System.Drawing.Point(3, 568);
-            this.tableLayoutPanel25.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tableLayoutPanel25.Location = new System.Drawing.Point(3, 757);
+            this.tableLayoutPanel25.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.tableLayoutPanel25.Name = "tableLayoutPanel25";
             this.tableLayoutPanel25.RowCount = 1;
             this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel25.Size = new System.Drawing.Size(1126, 92);
+            this.tableLayoutPanel25.Size = new System.Drawing.Size(1287, 123);
             this.tableLayoutPanel25.TabIndex = 18;
             // 
             // genderComboBox2
@@ -241,12 +241,12 @@
             this.genderComboBox2.Items.AddRange(new object[] {
             "أنثى",
             "ذكر"});
-            this.genderComboBox2.Location = new System.Drawing.Point(567, 4);
-            this.genderComboBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.genderComboBox2.Location = new System.Drawing.Point(648, 5);
+            this.genderComboBox2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.genderComboBox2.MaxDropDownItems = 2;
             this.genderComboBox2.Name = "genderComboBox2";
             this.genderComboBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.genderComboBox2.Size = new System.Drawing.Size(556, 74);
+            this.genderComboBox2.Size = new System.Drawing.Size(636, 74);
             this.genderComboBox2.Sorted = true;
             this.genderComboBox2.TabIndex = 5;
             // 
@@ -266,26 +266,26 @@
             "AB",
             "O",
             "O-"});
-            this.bloodComboBox.Location = new System.Drawing.Point(3, 4);
-            this.bloodComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bloodComboBox.Location = new System.Drawing.Point(3, 5);
+            this.bloodComboBox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.bloodComboBox.Name = "bloodComboBox";
             this.bloodComboBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bloodComboBox.Size = new System.Drawing.Size(558, 74);
+            this.bloodComboBox.Size = new System.Drawing.Size(639, 74);
             this.bloodComboBox.TabIndex = 6;
             // 
             // tableLayoutPanel26
             // 
             this.tableLayoutPanel26.ColumnCount = 2;
             this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 563F));
+            this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 643F));
             this.tableLayoutPanel26.Controls.Add(this.bloodText, 0, 0);
             this.tableLayoutPanel26.Controls.Add(this.genderText, 1, 0);
-            this.tableLayoutPanel26.Location = new System.Drawing.Point(3, 480);
-            this.tableLayoutPanel26.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tableLayoutPanel26.Location = new System.Drawing.Point(3, 640);
+            this.tableLayoutPanel26.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.tableLayoutPanel26.Name = "tableLayoutPanel26";
             this.tableLayoutPanel26.RowCount = 1;
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel26.Size = new System.Drawing.Size(1126, 80);
+            this.tableLayoutPanel26.Size = new System.Drawing.Size(1287, 107);
             this.tableLayoutPanel26.TabIndex = 17;
             // 
             // bloodText
@@ -293,11 +293,11 @@
             this.bloodText.AutoSize = true;
             this.bloodText.BackColor = System.Drawing.Color.Transparent;
             this.bloodText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.bloodText.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bloodText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bloodText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.bloodText.Location = new System.Drawing.Point(357, 0);
+            this.bloodText.Location = new System.Drawing.Point(519, 0);
             this.bloodText.Name = "bloodText";
-            this.bloodText.Size = new System.Drawing.Size(132, 60);
+            this.bloodText.Size = new System.Drawing.Size(122, 107);
             this.bloodText.TabIndex = 6;
             this.bloodText.Text = "فصيلة الدم";
             this.bloodText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -307,28 +307,28 @@
             this.genderText.AutoSize = true;
             this.genderText.BackColor = System.Drawing.Color.Transparent;
             this.genderText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.genderText.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.genderText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.genderText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.genderText.Location = new System.Drawing.Point(914, 0);
+            this.genderText.Location = new System.Drawing.Point(1216, 0);
             this.genderText.Name = "genderText";
-            this.genderText.Size = new System.Drawing.Size(68, 60);
+            this.genderText.Size = new System.Drawing.Size(68, 107);
             this.genderText.TabIndex = 9;
             this.genderText.Text = "النوع";
             this.genderText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-
             // tableLayoutPanel27
             // 
             this.tableLayoutPanel27.ColumnCount = 2;
             this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 493F));
+            this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 563F));
             this.tableLayoutPanel27.Controls.Add(this.logIndatePicker, 0, 0);
             this.tableLayoutPanel27.Controls.Add(this.dateBirthPicker, 1, 0);
-            this.tableLayoutPanel27.Location = new System.Drawing.Point(3, 285);
+            this.tableLayoutPanel27.Location = new System.Drawing.Point(3, 380);
+            this.tableLayoutPanel27.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel27.Name = "tableLayoutPanel27";
             this.tableLayoutPanel27.RowCount = 1;
             this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel27.Size = new System.Drawing.Size(985, 69);
+            this.tableLayoutPanel27.Size = new System.Drawing.Size(1126, 92);
             this.tableLayoutPanel27.TabIndex = 16;
             // 
             // logIndatePicker
@@ -341,8 +341,8 @@
             this.logIndatePicker.Dock = System.Windows.Forms.DockStyle.Fill;
             this.logIndatePicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.logIndatePicker.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.logIndatePicker.Location = new System.Drawing.Point(3, 4);
-            this.logIndatePicker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.logIndatePicker.Location = new System.Drawing.Point(3, 5);
+            this.logIndatePicker.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.logIndatePicker.Name = "logIndatePicker";
             this.logIndatePicker.Size = new System.Drawing.Size(557, 76);
             this.logIndatePicker.TabIndex = 4;
@@ -356,8 +356,8 @@
             this.dateBirthPicker.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateBirthPicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dateBirthPicker.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dateBirthPicker.Location = new System.Drawing.Point(566, 4);
-            this.dateBirthPicker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dateBirthPicker.Location = new System.Drawing.Point(566, 5);
+            this.dateBirthPicker.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.dateBirthPicker.Name = "dateBirthPicker";
             this.dateBirthPicker.Size = new System.Drawing.Size(557, 76);
             this.dateBirthPicker.TabIndex = 3;
@@ -366,16 +366,17 @@
             // 
             this.tableLayoutPanel30.ColumnCount = 2;
             this.tableLayoutPanel30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 493F));
+            this.tableLayoutPanel30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 563F));
             this.tableLayoutPanel30.Controls.Add(this.logInText, 0, 0);
             this.tableLayoutPanel30.Controls.Add(this.dateBirthText, 1, 0);
-            this.tableLayoutPanel30.Location = new System.Drawing.Point(3, 219);
+            this.tableLayoutPanel30.Location = new System.Drawing.Point(3, 292);
+            this.tableLayoutPanel30.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel30.Name = "tableLayoutPanel30";
             this.tableLayoutPanel30.RowCount = 1;
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel30.Size = new System.Drawing.Size(985, 60);
+            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel30.Size = new System.Drawing.Size(1126, 80);
             this.tableLayoutPanel30.TabIndex = 15;
             // 
             // logInText
@@ -410,17 +411,15 @@
             // 
             this.tableLayoutPanel20.ColumnCount = 2;
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 563F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 643F));
             this.tableLayoutPanel20.Controls.Add(this.nameTextBox, 1, 0);
             this.tableLayoutPanel20.Controls.Add(this.phoneTextBox, 0, 0);
-            this.tableLayoutPanel20.Location = new System.Drawing.Point(3, 192);
-            this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-
+            this.tableLayoutPanel20.Location = new System.Drawing.Point(3, 256);
+            this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.tableLayoutPanel20.Name = "tableLayoutPanel20";
             this.tableLayoutPanel20.RowCount = 1;
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel20.Size = new System.Drawing.Size(985, 69);
+            this.tableLayoutPanel20.Size = new System.Drawing.Size(1126, 92);
             this.tableLayoutPanel20.TabIndex = 14;
             // 
             // nameTextBox
@@ -429,10 +428,10 @@
             this.nameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.nameTextBox.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.nameTextBox.Location = new System.Drawing.Point(566, 4);
-            this.nameTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.nameTextBox.Location = new System.Drawing.Point(486, 5);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(557, 76);
+            this.nameTextBox.Size = new System.Drawing.Size(637, 76);
             this.nameTextBox.TabIndex = 1;
             this.nameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -442,26 +441,26 @@
             this.phoneTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.phoneTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.phoneTextBox.Font = new System.Drawing.Font("Cairo", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.phoneTextBox.Location = new System.Drawing.Point(3, 4);
-            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.phoneTextBox.Location = new System.Drawing.Point(3, 5);
+            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(557, 76);
+            this.phoneTextBox.Size = new System.Drawing.Size(477, 76);
             this.phoneTextBox.TabIndex = 2;
             this.phoneTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-
             // tableLayoutPanel23
             // 
             this.tableLayoutPanel23.ColumnCount = 2;
             this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 493F));
+            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 563F));
             this.tableLayoutPanel23.Controls.Add(this.phoneText, 0, 0);
             this.tableLayoutPanel23.Controls.Add(this.nameText, 1, 0);
-            this.tableLayoutPanel23.Location = new System.Drawing.Point(3, 78);
+            this.tableLayoutPanel23.Location = new System.Drawing.Point(3, 104);
+            this.tableLayoutPanel23.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel23.Name = "tableLayoutPanel23";
             this.tableLayoutPanel23.RowCount = 1;
             this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel23.Size = new System.Drawing.Size(985, 60);
+            this.tableLayoutPanel23.Size = new System.Drawing.Size(1126, 80);
             this.tableLayoutPanel23.TabIndex = 13;
             // 
             // phoneText
@@ -483,11 +482,11 @@
             this.nameText.AutoSize = true;
             this.nameText.BackColor = System.Drawing.Color.Transparent;
             this.nameText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.nameText.Font = new System.Drawing.Font("Cairo Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nameText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nameText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.nameText.Location = new System.Drawing.Point(888, 0);
+            this.nameText.Location = new System.Drawing.Point(1034, 0);
             this.nameText.Name = "nameText";
-            this.nameText.Size = new System.Drawing.Size(94, 60);
+            this.nameText.Size = new System.Drawing.Size(89, 80);
             this.nameText.TabIndex = 4;
             this.nameText.Text = "* الاسم";
             this.nameText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -496,14 +495,15 @@
             // 
             this.tableLayoutPanel29.ColumnCount = 2;
             this.tableLayoutPanel29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 492F));
+            this.tableLayoutPanel29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 562F));
             this.tableLayoutPanel29.Controls.Add(this.mustFillText, 0, 0);
             this.tableLayoutPanel29.Controls.Add(this.contactInfoText, 1, 0);
-            this.tableLayoutPanel29.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel29.Location = new System.Drawing.Point(3, 4);
+            this.tableLayoutPanel29.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel29.Name = "tableLayoutPanel29";
             this.tableLayoutPanel29.RowCount = 1;
             this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel29.Size = new System.Drawing.Size(985, 69);
+            this.tableLayoutPanel29.Size = new System.Drawing.Size(1126, 92);
             this.tableLayoutPanel29.TabIndex = 10;
             // 
             // mustFillText
@@ -515,9 +515,7 @@
             this.mustFillText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(108)))), ((int)(((byte)(144)))));
             this.mustFillText.Location = new System.Drawing.Point(3, 0);
             this.mustFillText.Name = "mustFillText";
-
             this.mustFillText.Size = new System.Drawing.Size(132, 92);
-
             this.mustFillText.TabIndex = 3;
             this.mustFillText.Text = "* يلزم ملئه";
             this.mustFillText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -529,11 +527,9 @@
             this.contactInfoText.Dock = System.Windows.Forms.DockStyle.Right;
             this.contactInfoText.Font = new System.Drawing.Font("Cairo", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.contactInfoText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-
             this.contactInfoText.Location = new System.Drawing.Point(612, 0);
             this.contactInfoText.Name = "contactInfoText";
             this.contactInfoText.Size = new System.Drawing.Size(511, 92);
-
             this.contactInfoText.TabIndex = 2;
             this.contactInfoText.Text = "معلومات التواصل الرئيسية";
             // 
@@ -541,22 +537,24 @@
             // 
             this.tableLayoutPanel15.ColumnCount = 1;
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel15.Location = new System.Drawing.Point(3, 4);
+            this.tableLayoutPanel15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 1;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(979, 64);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(1119, 85);
             this.tableLayoutPanel15.TabIndex = 9;
             // 
             // tableLayoutPanel21
             // 
             this.tableLayoutPanel21.ColumnCount = 1;
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel21.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel21.Location = new System.Drawing.Point(3, 4);
+            this.tableLayoutPanel21.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel21.Name = "tableLayoutPanel21";
             this.tableLayoutPanel21.RowCount = 1;
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel21.Size = new System.Drawing.Size(979, 63);
+            this.tableLayoutPanel21.Size = new System.Drawing.Size(1119, 84);
             this.tableLayoutPanel21.TabIndex = 2;
             // 
             // tableLayoutPanel14
@@ -564,16 +562,16 @@
             this.tableLayoutPanel14.ColumnCount = 1;
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel14.Location = new System.Drawing.Point(3, 0);
+            this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 1;
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(985, 63);
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(1126, 84);
             this.tableLayoutPanel14.TabIndex = 0;
             // 
             // steps2Container
             // 
             this.steps2Container.ColumnCount = 7;
-
             this.steps2Container.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.steps2Container.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.steps2Container.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
@@ -581,7 +579,6 @@
             this.steps2Container.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.steps2Container.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.steps2Container.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-
             this.steps2Container.Controls.Add(this.tableLayoutPanel13, 6, 0);
             this.steps2Container.Controls.Add(this.tableLayoutPanel12, 4, 0);
             this.steps2Container.Controls.Add(this.tableLayoutPanel10, 2, 0);
@@ -589,14 +586,13 @@
             this.steps2Container.Controls.Add(this.tableLayoutPanel6, 3, 0);
             this.steps2Container.Controls.Add(this.tableLayoutPanel3, 1, 0);
             this.steps2Container.Controls.Add(this.tableLayoutPanel8, 0, 0);
-            this.steps2Container.Location = new System.Drawing.Point(199, 32);
-            this.steps2Container.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.steps2Container.Location = new System.Drawing.Point(227, 43);
+            this.steps2Container.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.steps2Container.Name = "steps2Container";
             this.steps2Container.RowCount = 1;
             this.steps2Container.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.steps2Container.Size = new System.Drawing.Size(816, 75);
+            this.steps2Container.Size = new System.Drawing.Size(933, 100);
             this.steps2Container.TabIndex = 12;
-
             // 
             // tableLayoutPanel13
             // 
@@ -604,13 +600,12 @@
             this.tableLayoutPanel13.ColumnCount = 1;
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel13.Controls.Add(this.step4Text1, 0, 0);
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(692, 4);
-            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(785, 5);
+            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 1;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(115, 67);
-
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(131, 89);
             this.tableLayoutPanel13.TabIndex = 13;
             // 
             // step4Text1
@@ -621,7 +616,7 @@
             this.step4Text1.ForeColor = System.Drawing.Color.Black;
             this.step4Text1.Location = new System.Drawing.Point(3, 0);
             this.step4Text1.Name = "step4Text1";
-            this.step4Text1.Size = new System.Drawing.Size(109, 67);
+            this.step4Text1.Size = new System.Drawing.Size(125, 89);
             this.step4Text1.TabIndex = 1;
             this.step4Text1.Text = "خطوة 4";
             this.step4Text1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -632,13 +627,12 @@
             this.tableLayoutPanel12.ColumnCount = 1;
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel12.Controls.Add(this.step3Text1, 0, 0);
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(463, 4);
-            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(525, 5);
+            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(114, 67);
-
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(130, 89);
             this.tableLayoutPanel12.TabIndex = 12;
             // 
             // step3Text1
@@ -649,9 +643,7 @@
             this.step3Text1.ForeColor = System.Drawing.Color.Black;
             this.step3Text1.Location = new System.Drawing.Point(3, 0);
             this.step3Text1.Name = "step3Text1";
-
-            this.step3Text1.Size = new System.Drawing.Size(108, 67);
-
+            this.step3Text1.Size = new System.Drawing.Size(124, 89);
             this.step3Text1.TabIndex = 1;
             this.step3Text1.Text = "خطوة 3";
             this.step3Text1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -662,14 +654,12 @@
             this.tableLayoutPanel10.ColumnCount = 1;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel10.Controls.Add(this.step2Text1, 0, 0);
-
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(233, 4);
-            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(264, 5);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(115, 67);
-
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(131, 89);
             this.tableLayoutPanel10.TabIndex = 11;
             // 
             // step2Text1
@@ -681,9 +671,7 @@
             this.step2Text1.ForeColor = System.Drawing.Color.Black;
             this.step2Text1.Location = new System.Drawing.Point(3, 0);
             this.step2Text1.Name = "step2Text1";
-
-            this.step2Text1.Size = new System.Drawing.Size(109, 67);
-
+            this.step2Text1.Size = new System.Drawing.Size(125, 89);
             this.step2Text1.TabIndex = 1;
             this.step2Text1.Text = "خطوة 2";
             this.step2Text1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -695,41 +683,33 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.Controls.Add(this.listView11, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.listView7, 1, 1);
-
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(583, 4);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(661, 5);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 3;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(103, 67);
-
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(118, 89);
             this.tableLayoutPanel7.TabIndex = 9;
             // 
             // listView11
             // 
             this.listView11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-
-            this.listView11.Location = new System.Drawing.Point(3, 24);
-            this.listView11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.listView11.Location = new System.Drawing.Point(3, 31);
+            this.listView11.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.listView11.Name = "listView11";
-            this.listView11.Size = new System.Drawing.Size(45, 12);
-
+            this.listView11.Size = new System.Drawing.Size(51, 16);
             this.listView11.TabIndex = 8;
             this.listView11.UseCompatibleStateImageBehavior = false;
             // 
             // listView7
             // 
             this.listView7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-
-            this.listView7.Location = new System.Drawing.Point(54, 24);
-            this.listView7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.listView7.Location = new System.Drawing.Point(62, 31);
+            this.listView7.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.listView7.Name = "listView7";
-            this.listView7.Size = new System.Drawing.Size(45, 12);
-
+            this.listView7.Size = new System.Drawing.Size(51, 16);
             this.listView7.TabIndex = 7;
             this.listView7.UseCompatibleStateImageBehavior = false;
             // 
@@ -740,41 +720,34 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.Controls.Add(this.listView8, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.listView10, 1, 1);
-
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(354, 4);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(401, 5);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(103, 67);
-
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(118, 89);
             this.tableLayoutPanel6.TabIndex = 8;
             // 
             // listView8
             // 
             this.listView8.BackColor = System.Drawing.Color.White;
             this.listView8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-
-            this.listView8.Location = new System.Drawing.Point(3, 24);
-            this.listView8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.listView8.Location = new System.Drawing.Point(3, 31);
+            this.listView8.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.listView8.Name = "listView8";
-            this.listView8.Size = new System.Drawing.Size(45, 12);
-
+            this.listView8.Size = new System.Drawing.Size(51, 16);
             this.listView8.TabIndex = 6;
             this.listView8.UseCompatibleStateImageBehavior = false;
             // 
             // listView10
             // 
             this.listView10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-
-            this.listView10.Location = new System.Drawing.Point(54, 24);
-            this.listView10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.listView10.Location = new System.Drawing.Point(62, 31);
+            this.listView10.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.listView10.Name = "listView10";
-            this.listView10.Size = new System.Drawing.Size(45, 12);
+            this.listView10.Size = new System.Drawing.Size(51, 16);
             this.listView10.TabIndex = 7;
             this.listView10.UseCompatibleStateImageBehavior = false;
             // 
@@ -785,26 +758,24 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.listView6, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.listView9, 1, 1);
-
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(124, 4);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(140, 5);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(103, 67);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(118, 89);
             this.tableLayoutPanel3.TabIndex = 7;
             // 
             // listView6
             // 
             this.listView6.BackColor = System.Drawing.Color.Black;
             this.listView6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listView6.Location = new System.Drawing.Point(3, 24);
-            this.listView6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.listView6.Location = new System.Drawing.Point(3, 31);
+            this.listView6.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.listView6.Name = "listView6";
-            this.listView6.Size = new System.Drawing.Size(45, 12);
-
+            this.listView6.Size = new System.Drawing.Size(51, 16);
             this.listView6.TabIndex = 6;
             this.listView6.UseCompatibleStateImageBehavior = false;
             // 
@@ -812,12 +783,10 @@
             // 
             this.listView9.BackColor = System.Drawing.Color.White;
             this.listView9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-
-            this.listView9.Location = new System.Drawing.Point(54, 24);
-            this.listView9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.listView9.Location = new System.Drawing.Point(62, 31);
+            this.listView9.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.listView9.Name = "listView9";
-            this.listView9.Size = new System.Drawing.Size(45, 12);
-
+            this.listView9.Size = new System.Drawing.Size(51, 16);
             this.listView9.TabIndex = 7;
             this.listView9.UseCompatibleStateImageBehavior = false;
             // 
@@ -827,13 +796,12 @@
             this.tableLayoutPanel8.ColumnCount = 1;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.Controls.Add(this.step1Text1, 0, 0);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 4);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(115, 67);
-
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(131, 89);
             this.tableLayoutPanel8.TabIndex = 10;
             // 
             // step1Text1
@@ -844,9 +812,7 @@
             this.step1Text1.ForeColor = System.Drawing.Color.White;
             this.step1Text1.Location = new System.Drawing.Point(3, 0);
             this.step1Text1.Name = "step1Text1";
-
-            this.step1Text1.Size = new System.Drawing.Size(109, 67);
-
+            this.step1Text1.Size = new System.Drawing.Size(125, 89);
             this.step1Text1.TabIndex = 0;
             this.step1Text1.Text = "خطوة 1";
             this.step1Text1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1006,10 +972,10 @@
             this.sidebarLayoutPanel.Controls.Add(this.namePanel);
             this.sidebarLayoutPanel.Dock = System.Windows.Forms.DockStyle.Right;
             this.sidebarLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
-            this.sidebarLayoutPanel.Location = new System.Drawing.Point(1451, 105);
-            this.sidebarLayoutPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.sidebarLayoutPanel.Location = new System.Drawing.Point(1659, 140);
+            this.sidebarLayoutPanel.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.sidebarLayoutPanel.Name = "sidebarLayoutPanel";
-            this.sidebarLayoutPanel.Size = new System.Drawing.Size(128, 1032);
+            this.sidebarLayoutPanel.Size = new System.Drawing.Size(146, 1185);
             this.sidebarLayoutPanel.TabIndex = 2;
             // 
             // logoutButton
@@ -1021,10 +987,10 @@
             this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.logoutButton.Image = ((System.Drawing.Image)(resources.GetObject("logoutButton.Image")));
-            this.logoutButton.Location = new System.Drawing.Point(0, 855);
-            this.logoutButton.Margin = new System.Windows.Forms.Padding(0, 0, 0, 13);
+            this.logoutButton.Location = new System.Drawing.Point(0, 949);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(0, 0, 0, 17);
             this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(139, 164);
+            this.logoutButton.Size = new System.Drawing.Size(158, 219);
             this.logoutButton.TabIndex = 0;
             this.logoutButton.Text = "تسجيل الخروج";
             this.logoutButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1037,10 +1003,10 @@
             this.helpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.helpButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.helpButton.Image = ((System.Drawing.Image)(resources.GetObject("helpButton.Image")));
-            this.helpButton.Location = new System.Drawing.Point(0, 700);
+            this.helpButton.Location = new System.Drawing.Point(0, 742);
             this.helpButton.Margin = new System.Windows.Forms.Padding(0);
             this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(139, 155);
+            this.helpButton.Size = new System.Drawing.Size(158, 207);
             this.helpButton.TabIndex = 2;
             this.helpButton.Text = "المساعدة";
             this.helpButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1053,10 +1019,10 @@
             this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.settingsButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.settingsButton.Image = ((System.Drawing.Image)(resources.GetObject("settingsButton.Image")));
-            this.settingsButton.Location = new System.Drawing.Point(0, 540);
-            this.settingsButton.Margin = new System.Windows.Forms.Padding(0, 4, 3, 4);
+            this.settingsButton.Location = new System.Drawing.Point(0, 529);
+            this.settingsButton.Margin = new System.Windows.Forms.Padding(0, 5, 3, 5);
             this.settingsButton.Name = "settingsButton";
-            this.settingsButton.Size = new System.Drawing.Size(136, 156);
+            this.settingsButton.Size = new System.Drawing.Size(155, 208);
             this.settingsButton.TabIndex = 1;
             this.settingsButton.Text = "الإعدادات";
             this.settingsButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1066,10 +1032,10 @@
             // 
             this.namePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
             this.namePanel.Controls.Add(this.nameLabel);
-            this.namePanel.Location = new System.Drawing.Point(139, 270);
-            this.namePanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 657);
+            this.namePanel.Location = new System.Drawing.Point(158, 169);
+            this.namePanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 876);
             this.namePanel.Name = "namePanel";
-            this.namePanel.Size = new System.Drawing.Size(128, 105);
+            this.namePanel.Size = new System.Drawing.Size(146, 140);
             this.namePanel.TabIndex = 3;
             // 
             // nameLabel
@@ -1079,7 +1045,7 @@
             this.nameLabel.BackColor = System.Drawing.Color.Transparent;
             this.nameLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nameLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.nameLabel.Location = new System.Drawing.Point(41, 8);
+            this.nameLabel.Location = new System.Drawing.Point(47, 11);
             this.nameLabel.Margin = new System.Windows.Forms.Padding(0);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(61, 54);
@@ -1095,19 +1061,18 @@
             this.topBarPanel.Controls.Add(this.userNameLabel);
             this.topBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topBarPanel.Location = new System.Drawing.Point(0, 0);
+            this.topBarPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.topBarPanel.Name = "topBarPanel";
-
-            this.topBarPanel.Size = new System.Drawing.Size(1579, 105);
-
+            this.topBarPanel.Size = new System.Drawing.Size(1805, 140);
             this.topBarPanel.TabIndex = 3;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
-            this.panel1.Location = new System.Drawing.Point(1454, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 657);
+            this.panel1.Location = new System.Drawing.Point(1662, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 876);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(128, 105);
+            this.panel1.Size = new System.Drawing.Size(146, 140);
             this.panel1.TabIndex = 4;
             // 
             // stethoscopeIconPanel
@@ -1116,16 +1081,16 @@
             this.stethoscopeIconPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("stethoscopeIconPanel.BackgroundImage")));
             this.stethoscopeIconPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.stethoscopeIconPanel.Location = new System.Drawing.Point(0, 0);
+            this.stethoscopeIconPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.stethoscopeIconPanel.Name = "stethoscopeIconPanel";
-            this.stethoscopeIconPanel.Size = new System.Drawing.Size(104, 79);
+            this.stethoscopeIconPanel.Size = new System.Drawing.Size(119, 105);
             this.stethoscopeIconPanel.TabIndex = 2;
             // 
             // userNameLabel
             // 
             this.userNameLabel.AutoSize = true;
-
             this.userNameLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.userNameLabel.Location = new System.Drawing.Point(581, 23);
+            this.userNameLabel.Location = new System.Drawing.Point(664, 31);
             this.userNameLabel.Name = "userNameLabel";
             this.userNameLabel.Size = new System.Drawing.Size(461, 54);
             this.userNameLabel.TabIndex = 2;
@@ -1138,7 +1103,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(1489, 23);
+            this.label1.Location = new System.Drawing.Point(1702, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 54);
@@ -1148,18 +1113,18 @@
             // 
             // AddPatient1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(1579, 1137);
+            this.ClientSize = new System.Drawing.Size(1805, 1325);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.sidebarLayoutPanel);
             this.Controls.Add(this.topBarPanel);
             this.Controls.Add(this.allContainer2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MaximumSize = new System.Drawing.Size(1597, 1184);
-            this.MinimumSize = new System.Drawing.Size(1597, 1028);
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.MaximumSize = new System.Drawing.Size(1823, 1563);
+            this.MinimumSize = new System.Drawing.Size(1823, 1028);
             this.Name = "AddPatient1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "قائمة إضافة مريض جديد";
