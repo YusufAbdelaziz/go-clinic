@@ -35,7 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.usernameTextBox = new goclinic.customs.customTextBox();
             this.passwordTextBox = new goclinic.customs.customTextBox();
-            this.customButton1 = new goclinic.customs.CustomButton();
+            this.signinButton = new goclinic.customs.CustomButton();
             this.openSignupButton = new goclinic.customs.CustomButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -124,20 +124,21 @@
             this.passwordTextBox.TabIndex = 21;
             this.passwordTextBox.TextAlignRight = true;
             // 
-            // customButton1
+            // signinButton
             // 
-            this.customButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(141)))), ((int)(((byte)(145)))));
-            this.customButton1.FlatAppearance.BorderSize = 0;
-            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(60, 340);
-            this.customButton1.Name = "customButton1";
-            this.customButton1.Radius = 20;
-            this.customButton1.Size = new System.Drawing.Size(500, 40);
-            this.customButton1.TabIndex = 22;
-            this.customButton1.Text = "دخول";
-            this.customButton1.UseVisualStyleBackColor = false;
+            this.signinButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(141)))), ((int)(((byte)(145)))));
+            this.signinButton.FlatAppearance.BorderSize = 0;
+            this.signinButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.signinButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.signinButton.ForeColor = System.Drawing.Color.White;
+            this.signinButton.Location = new System.Drawing.Point(60, 340);
+            this.signinButton.Name = "signinButton";
+            this.signinButton.Radius = 20;
+            this.signinButton.Size = new System.Drawing.Size(500, 40);
+            this.signinButton.TabIndex = 22;
+            this.signinButton.Text = "دخول";
+            this.signinButton.UseVisualStyleBackColor = false;
+            this.signinButton.Click += new System.EventHandler(this.signinButton_Click);
             // 
             // openSignupButton
             // 
@@ -162,7 +163,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(60)))), ((int)(((byte)(67)))));
             this.ClientSize = new System.Drawing.Size(593, 564);
             this.Controls.Add(this.openSignupButton);
-            this.Controls.Add(this.customButton1);
+            this.Controls.Add(this.signinButton);
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.label4);
@@ -186,7 +187,7 @@
         private PictureBox pictureBox1;
         private customs.customTextBox usernameTextBox;
         private customs.customTextBox passwordTextBox;
-        private customs.CustomButton customButton1;
+        private customs.CustomButton signinButton;
         private customs.CustomButton openSignupButton;
     }
 }

@@ -34,10 +34,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.customTextBox1 = new goclinic.customs.customTextBox();
-            this.customTextBox2 = new goclinic.customs.customTextBox();
-            this.customTextBox3 = new goclinic.customs.customTextBox();
-            this.customButton1 = new goclinic.customs.CustomButton();
+            this.usernameTextBox = new goclinic.customs.customTextBox();
+            this.numberTextBox = new goclinic.customs.customTextBox();
+            this.passwordTextBox = new goclinic.customs.customTextBox();
+            this.createUserButton = new goclinic.customs.CustomButton();
             this.openLoginButton = new goclinic.customs.CustomButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -110,65 +110,66 @@
             this.label4.Text = "لديك حساب بالفعل؟";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // customTextBox1
+            // usernameTextBox
             // 
-            this.customTextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.customTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.customTextBox1.Location = new System.Drawing.Point(62, 168);
-            this.customTextBox1.Multiline = false;
-            this.customTextBox1.Name = "customTextBox1";
-            this.customTextBox1.Padding = new System.Windows.Forms.Padding(7);
-            this.customTextBox1.PasswordChar = false;
-            this.customTextBox1.PlaceholderText = "اسم المستخدم الجديد";
-            this.customTextBox1.Radius = 30;
-            this.customTextBox1.Size = new System.Drawing.Size(500, 50);
-            this.customTextBox1.TabIndex = 10;
-            this.customTextBox1.TextAlignRight = true;
+            this.usernameTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.usernameTextBox.ForeColor = System.Drawing.Color.DimGray;
+            this.usernameTextBox.Location = new System.Drawing.Point(62, 168);
+            this.usernameTextBox.Multiline = false;
+            this.usernameTextBox.Name = "usernameTextBox";
+            this.usernameTextBox.Padding = new System.Windows.Forms.Padding(7);
+            this.usernameTextBox.PasswordChar = false;
+            this.usernameTextBox.PlaceholderText = "اسم المستخدم الجديد";
+            this.usernameTextBox.Radius = 30;
+            this.usernameTextBox.Size = new System.Drawing.Size(500, 50);
+            this.usernameTextBox.TabIndex = 10;
+            this.usernameTextBox.TextAlignRight = true;
             // 
-            // customTextBox2
+            // numberTextBox
             // 
-            this.customTextBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.customTextBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.customTextBox2.Location = new System.Drawing.Point(62, 255);
-            this.customTextBox2.Multiline = false;
-            this.customTextBox2.Name = "customTextBox2";
-            this.customTextBox2.Padding = new System.Windows.Forms.Padding(7);
-            this.customTextBox2.PasswordChar = false;
-            this.customTextBox2.PlaceholderText = "رقم الموبايل او بريد الكتروني";
-            this.customTextBox2.Radius = 30;
-            this.customTextBox2.Size = new System.Drawing.Size(500, 50);
-            this.customTextBox2.TabIndex = 11;
-            this.customTextBox2.TextAlignRight = true;
+            this.numberTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.numberTextBox.ForeColor = System.Drawing.Color.DimGray;
+            this.numberTextBox.Location = new System.Drawing.Point(62, 255);
+            this.numberTextBox.Multiline = false;
+            this.numberTextBox.Name = "numberTextBox";
+            this.numberTextBox.Padding = new System.Windows.Forms.Padding(7);
+            this.numberTextBox.PasswordChar = false;
+            this.numberTextBox.PlaceholderText = "رقم الموبايل او بريد الكتروني";
+            this.numberTextBox.Radius = 30;
+            this.numberTextBox.Size = new System.Drawing.Size(500, 50);
+            this.numberTextBox.TabIndex = 11;
+            this.numberTextBox.TextAlignRight = true;
             // 
-            // customTextBox3
+            // passwordTextBox
             // 
-            this.customTextBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.customTextBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.customTextBox3.Location = new System.Drawing.Point(60, 338);
-            this.customTextBox3.Multiline = false;
-            this.customTextBox3.Name = "customTextBox3";
-            this.customTextBox3.Padding = new System.Windows.Forms.Padding(7);
-            this.customTextBox3.PasswordChar = false;
-            this.customTextBox3.PlaceholderText = "كلمة السر";
-            this.customTextBox3.Radius = 30;
-            this.customTextBox3.Size = new System.Drawing.Size(500, 50);
-            this.customTextBox3.TabIndex = 12;
-            this.customTextBox3.TextAlignRight = true;
+            this.passwordTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.passwordTextBox.ForeColor = System.Drawing.Color.DimGray;
+            this.passwordTextBox.Location = new System.Drawing.Point(60, 338);
+            this.passwordTextBox.Multiline = false;
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Padding = new System.Windows.Forms.Padding(7);
+            this.passwordTextBox.PasswordChar = false;
+            this.passwordTextBox.PlaceholderText = "كلمة السر";
+            this.passwordTextBox.Radius = 30;
+            this.passwordTextBox.Size = new System.Drawing.Size(500, 50);
+            this.passwordTextBox.TabIndex = 12;
+            this.passwordTextBox.TextAlignRight = true;
             // 
-            // customButton1
+            // createUserButton
             // 
-            this.customButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(141)))), ((int)(((byte)(145)))));
-            this.customButton1.FlatAppearance.BorderSize = 0;
-            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(62, 411);
-            this.customButton1.Name = "customButton1";
-            this.customButton1.Radius = 20;
-            this.customButton1.Size = new System.Drawing.Size(500, 40);
-            this.customButton1.TabIndex = 23;
-            this.customButton1.Text = "تسجيل مستخدم جديد";
-            this.customButton1.UseVisualStyleBackColor = false;
+            this.createUserButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(141)))), ((int)(((byte)(145)))));
+            this.createUserButton.FlatAppearance.BorderSize = 0;
+            this.createUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.createUserButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.createUserButton.ForeColor = System.Drawing.Color.White;
+            this.createUserButton.Location = new System.Drawing.Point(62, 411);
+            this.createUserButton.Name = "createUserButton";
+            this.createUserButton.Radius = 20;
+            this.createUserButton.Size = new System.Drawing.Size(500, 40);
+            this.createUserButton.TabIndex = 23;
+            this.createUserButton.Text = "تسجيل مستخدم جديد";
+            this.createUserButton.UseVisualStyleBackColor = false;
+            this.createUserButton.Click += new System.EventHandler(this.createUserButton_Click);
             // 
             // openLoginButton
             // 
@@ -193,10 +194,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(60)))), ((int)(((byte)(67)))));
             this.ClientSize = new System.Drawing.Size(593, 564);
             this.Controls.Add(this.openLoginButton);
-            this.Controls.Add(this.customButton1);
-            this.Controls.Add(this.customTextBox3);
-            this.Controls.Add(this.customTextBox2);
-            this.Controls.Add(this.customTextBox1);
+            this.Controls.Add(this.createUserButton);
+            this.Controls.Add(this.passwordTextBox);
+            this.Controls.Add(this.numberTextBox);
+            this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -219,10 +220,10 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private customs.customTextBox customTextBox1;
-        private customs.customTextBox customTextBox2;
-        private customs.customTextBox customTextBox3;
-        private customs.CustomButton customButton1;
+        private customs.customTextBox usernameTextBox;
+        private customs.customTextBox numberTextBox;
+        private customs.customTextBox passwordTextBox;
+        private customs.CustomButton createUserButton;
         private customs.CustomButton openLoginButton;
     }
 }
