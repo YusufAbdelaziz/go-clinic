@@ -19,12 +19,64 @@ namespace goclinic
 
         private void firstNextStebButton2_Click(object sender, EventArgs e)
         {
-            // AddPatient1 form Next button
-            this.Hide();                                         //Hide the AddPatient1 form
-            AddPatient2 NewSign = new AddPatient2();            //Creat an object from AddPatient2 form
-            NewSign.ShowDialog();                              //Display the AddPatient2 form
-            this.Close();                                     //Close the AddPatient1 form
+            
+            AddPatient1Container.Hide();
+            steps1Container.Hide();
+            AddPatient2Container.Show();
+            steps2Container.Show();
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // AddPatient4 form Back button
+            this.Hide();                                         //Hide AddPatient2 form
+            PatientdAdded NewSign = new PatientdAdded();            //Creat an object from AddPatient1 form
+            NewSign.ShowDialog();                              //Display the AddPatient1 form 
+            this.Close();                                     //Close the AddPatient2 form
+        }
+
+
+
+
+        private void backButton2_Click(object sender, EventArgs e)
+        {
+            AddPatient2Container.Hide();
+            steps1Container.Hide();
+            AddPatient1Container.Show();
+            steps1Container.Show();
+        }
+
+        private void nextButton2_Click(object sender, EventArgs e)
+        {
+            AddPatient2Container.Hide();
+            AddPatient3Container.Show();
+            steps2Container.Hide();
+            steps3Container.Show();
+        }
+
+        private void backButton3_Click(object sender, EventArgs e)
+        {
+            AddPatient3Container.Hide();
+            AddPatient2Container.Show();
+            steps3Container.Hide();
+            steps2Container.Show();
+        }
+
+        private void nextButton3_Click(object sender, EventArgs e)
+        {
+            AddPatient3Container.Hide();
+            AddPatient4Container.Show();
+            steps3Container.Hide();
+            steps4Container.Show();
+        }
+
+        private void backButton4_Click(object sender, EventArgs e)
+        {
+            AddPatient4Container.Hide();
+            AddPatient3Container.Show();
+            steps4Container.Hide();
+            steps3Container.Show();
         }
     }
 }
