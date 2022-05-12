@@ -1,13 +1,15 @@
 ﻿
 namespace goclinic.Models
 {
-   public enum Gender
+    public enum Gender
     {
         Male,
         Female,
+        Unknown
+
     }
 
-   public enum BloodTypes
+    public enum BloodTypes
     {
         ANegative,
         APositive,
@@ -16,39 +18,87 @@ namespace goclinic.Models
         OPositive,
         ONegative,
         ABPostive,
-        ABNegative
+        ABNegative,
+        Unknown
     }
     public class Patient
     {
 
-        public Patient(string id, string name, DateTime birthDate, Gender gender, BloodTypes bloodType, History history, string currentComplaint, string previousComplaint)
+        public Patient(int id, string name, DateTime birthDate, Gender gender, BloodTypes bloodType, string phoneNumber, DateTime registrationDate)
         {
             this.BirthDate = birthDate;
             this.Gender = gender;
             this.Name = name;
             this.Id = id;
-            this.History = history;
-            this.CurrentComplaint = currentComplaint;
-            this.PreviousComplaint = previousComplaint;
             this.BloodType = bloodType;
+            this.PhoneNumber = phoneNumber;
+            this.RegistrationDate = registrationDate;
         }
-        public string? Id { get; set; }
-        public string? Name { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
 
-        public DateTime? BirthDate { get; set; }
+        public string PhoneNumber { get; set; }
+        public DateTime BirthDate { get; set; }
 
-        public Gender? Gender { get; set; }
+        public DateTime RegistrationDate { get; set; }
+        public Gender Gender { get; set; }
 
-        public BloodTypes? BloodType { get; set; }
+        public BloodTypes BloodType { get; set; }
 
         public History? History { get; set; }
 
-        public string? CurrentComplaint { get; set; }
 
-        public string? PreviousComplaint { get; set; }
+        public static Patient CreateFromData(IDictionary<string, object> patientDictionary)
+        {
+            return new(bloodType: MapBloodTypeTextToValue((patientDictionary[key: "bloodType"] ?? "").ToString()!.Trim()), id: int.Parse(patientDictionary[key: "id"].ToString()!), name: patientDictionary[key: "name"].ToString()!.Trim(), birthDate: DateTime.Parse((patientDictionary[key: "DOB"] ?? "").ToString()!), gender: MapBinaryValueToGender((byte)patientDictionary[key: "gender"]), phoneNumber: patientDictionary[key: "phoneNumber"].ToString()!, registrationDate: DateTime.Parse(patientDictionary["registrationDate"].ToString()!));
+        }
 
+        private static BloodTypes MapBloodTypeTextToValue(string bloodTypeText)
+        {
+            switch (bloodTypeText)
+            {
+                case "AB+": return BloodTypes.ABPostive;
+                case "AB-": return BloodTypes.ABNegative;
+                case "A+": return BloodTypes.APositive;
+                case "A-": return BloodTypes.ANegative;
+                case "B+": return BloodTypes.BPositive;
+                case "B-": return BloodTypes.BNegative;
+                case "O+": return BloodTypes.OPositive;
+                case "O-": return BloodTypes.ONegative;
+                default: return BloodTypes.Unknown;
+            }
+        }
 
-        public static Patient createFromDB(string id, string name, DateTime birthDate, Gender gender, BloodTypes bloodType, History history, string currentComplaint, string previousComplaint) 
-            => new(bloodType: bloodType, id: id, name: name, birthDate: birthDate, gender: gender, currentComplaint: currentComplaint, previousComplaint: previousComplaint, history : history);
+        public string ConvertBloodTypeToString()
+        {
+            switch (BloodType)
+            {
+                case BloodTypes.ABPostive: return "AB+";
+                case BloodTypes.ABNegative: return "AB-";
+                case BloodTypes.APositive: return "A+";
+                case BloodTypes.ANegative: return "A-";
+                case BloodTypes.BPositive: return "B+";
+                case BloodTypes.BNegative: return "B-";
+                case BloodTypes.OPositive: return "O+";
+                case BloodTypes.ONegative: return "O-";
+                default: return "Unknown";
+            }
+
+        }
+
+        private static Gender MapBinaryValueToGender(byte gender)
+        {
+            if (gender == 0) return Gender.Female;
+            if (gender == 1) return Gender.Male;
+            return Gender.Unknown;
+
+        }
+
+        public int ConvertGenderToInt() {
+            if (Gender == Gender.Female) return 0;
+            else return 1;
+           
+
+        }
     }
 }

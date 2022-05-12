@@ -1,4 +1,6 @@
-﻿using goclinic.Forms;
+﻿using goclinic.customs;
+using goclinic.Forms;
+using goclinic.Repos;
 
 namespace goclinic
 {
@@ -76,6 +78,28 @@ namespace goclinic
         }
 
         private void patientPhoneNumber_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void SearchForPatientsButton(object sender, EventArgs e)
+        {
+            var patientsRepo = new PatientRepositiory();
+
+            var patients = patientsRepo.GetPatientsByPhoneNumber(phoneNumberValue.Text);
+
+            foreach (var patient in patients) {
+                resultsFlowLayoutPanel.Controls.Add(new CustomCard(patient));
+            }
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
         {
 
         }
