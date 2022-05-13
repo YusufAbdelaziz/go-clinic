@@ -1,6 +1,5 @@
 ﻿
 using goclinic.Models;
-using System.ComponentModel;
 
 namespace goclinic.customs
 {
@@ -16,37 +15,30 @@ namespace goclinic.customs
             patientNumberPanel.Text = patient.PhoneNumber;
         }
 
-        [Category("custom")]
-        public string? PatientNameString
-        {
-            get => this.patient.Name;
-            set
-            {
-                this.patient.Name = value;
-                patientNameLabel.Text = this.patient.Name;
-            }
-        }
+       // [Category("custom")]
+       // public string? PatientNameString
+       // {
+       //     get => this.patient.Name;
+       //     set
+       //     {
+       //         this.patient.Name = value;
+       //         patientNameLabel.Text = this.patient.Name;
+       //     }
+       // }
 
-        private void customCard_Click(object sender, EventArgs e)
-        {
-            this.OnClick(e);
-        }
+    
 
-        private void patientName_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        [Category("custom")]
-        public string? PatientNumberString
-        {
-            get => this.patient.PhoneNumber;
-            set
-            {
-                this.patient.PhoneNumber = value;
-                patientNumberPanel.Text = this.patient.PhoneNumber;
-            }
-        }
+      // [Category("custom")]
+      // public string? PatientNumberString
+      // {
+      //     get => this.patient.PhoneNumber;
+      //     set
+      //     {
+      //         this.patient.PhoneNumber = value;
+      //         patientNumberPanel.Text = this.patient.PhoneNumber;
+      //     }
+      // }
 
 
 

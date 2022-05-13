@@ -33,7 +33,7 @@ namespace goclinic.Repos
         {
             using (IDbConnection connection = new SqlConnection(DBHelper.CnnVal("Patients")))
             {
-                var newPatientId = connection.QuerySingle<int>($"INSERT INTO [dbo].[PatientMainInfo]([name],[phoneNumber] ,[registrationDate] ,[DOB][bloodType] ,[gender]) OUTPUT INSERTED.Id VALUES ('{patient.Name}','{patient.PhoneNumber}', '{patient.RegistrationDate}', '{patient.BirthDate}', '{patient.ConvertBloodTypeToString()}', '{patient.ConvertGenderToInt()}')");
+                var newPatientId = connection.QuerySingle<int>($"INSERT INTO [dbo].[PatientMainInfo]([name],[phoneNumber] ,[registrationDate] ,[DOB][bloodType] ,[gender]) OUTPUT INSERTED.id VALUES ('{patient.Name}','{patient.PhoneNumber}', '{patient.RegistrationDate}', '{patient.BirthDate}', '{patient.ConvertBloodTypeToString()}', '{patient.ConvertGenderToInt()}')");
 
 
                 var illness = patient.History!.Illness;
@@ -47,7 +47,7 @@ namespace goclinic.Repos
             }
         }
 
-        private History GetPatientHistory(IDbConnection connection, int patientId)
+        private History GetPatientHistory(IDbConnection connection, int? patientId)
         {
 
             var illnessResults = connection.Query($"SELECT * FROM Illness WHERE patientId = '{patientId}'").Cast<IDictionary<string, object>>().ToList();
@@ -60,22 +60,21 @@ namespace goclinic.Repos
         private void InsertPatientIllnessData(Illness illness, IDbConnection connection, int newPatientId)
         {
 
-            connection.Execute($"INSERT INTO [dbo].[Illness]([patientID],[currentDisease],[diet],[newbornHistory],[developmentHistory],[accidentsHistory],[bloodTransfer]) VALUES ('{newPatientId}', '{illness.CurrentDisease}', '{illness.Diet}', '{illness.NewbornHistory}', '{illness.DevelopmentHistory}', '{illness.AccidentsHistory}', '{(illness.BloodTransfer ? 1 : 0)}')");
+            connection.Execute($"INSERT INTO [dbo].[Illness]([patientID],[currentDisease],[diet],[newbornHistory],[developmentHistory],[accidentsHistory],[bloodTransfer]) VALUES ({newPatientId}, '{illness.CurrentDisease}', '{illness.Diet}', '{illness.NewbornHistory}', '{illness.DevelopmentHistory}', '{illness.AccidentsHistory}', {(illness.BloodTransfer ? 1 : 0)})");
         }
 
         private void InsertPatientHealthData(Health health, IDbConnection connection, int newPatientId)
         {
 
 
-            connection.Execute($"INSERT INTO [dbo].[Health] ([patientID],[medication],[chronicPatient],[repetation],[allergies]) VALUES ('{newPatientId}', '{health.Medication}', '{health.Chronic}', '{(health.Repetation ? 1 : 0)}', '{health.Allergies}')");
+            connection.Execute($"INSERT INTO [dbo].[Health] ([patientID],[medication],[chronicPatient],[repetation],[allergies]) VALUES ({newPatientId}, '{health.Medication}', '{health.Chronic}', {(health.Repetation ? 1 : 0)}, '{health.Allergies}')");
 
 
         }
 
         private void InsertPatientFamilyHistoryData(FamilyHistory family, IDbConnection connection, int newPatientId) {
 
-            connection.Execute($"INSERT INTO [dbo].[FamilyHistory]([patientID],[parentsRelated],[chronicFamily],[chronicDiseases],[sameDiseasesWithParents]) VALUES('{newPatientId}', '{(family.ParentsRelated ? 1 : 0)}', '{(family.ChronicFamily ? 1 : 0)}', '{family.ChronicDiseases}', '{(family.SameDiseasesWithParents ? 1 : 0)}')");
-        
+            connection.Execute($"INSERT INTO [dbo].[FamilyHistory]([patientID],[parentsRelated],[chronicFamily],[chronicDiseases],[sameDiseasesWithParents]) VALUES({newPatientId}, {(family.ParentsRelated ? 1 : 0)}, {(family.ChronicFamily ? 1 : 0)}, '{family.ChronicDiseases}',{(family.SameDiseasesWithParents ? 1 : 0)})");
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using goclinic.customs;
 using goclinic.Forms;
+using goclinic.Models;
 using goclinic.Repos;
 
 namespace goclinic
@@ -9,99 +10,122 @@ namespace goclinic
         public ResultsAndPatient()
         {
             InitializeComponent();
+            if (!resultsFlowLayoutPanel.Visible && !noResultsFoundLabel.Visible && !patientDetailsPanel.Visible)
+            {
+                backButton.Visible = false;
+            }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void BackButtonClick(object sender, EventArgs e)
         {
+            if (resultsFlowLayoutPanel.Visible || noResultsFoundLabel.Visible)
+            {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
+                noResultsFoundLabel.Visible = false;
+                patientDetailsPanel.Visible = false;
+                resultsFlowLayoutPanel.Visible = false;
+                backButton.Visible = false;
+            }
+            else if (patientDetailsPanel.Visible)
+            {
+                noResultsFoundLabel.Visible = false;
+                patientDetailsPanel.Visible = false;
+                resultsFlowLayoutPanel.Visible = true;
+            }
 
         }
 
-        private void showMoreButton_Click(object sender, EventArgs e)
+        private void SearchForPatientsButtonClick(object sender, EventArgs? e )
         {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void searchPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void phoneNumberValue_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel13_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void generalPatientDetailsPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void GeneralPatientDetailsPanelClick(object sender, EventArgs e) 
-        {
-            var popupForm = new popupForm();
-            popupForm.ShowDialog();
-        }
-
-        private void patientPhoneNumber_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void SearchForPatientsButton(object sender, EventArgs e)
-        {
+            resultsFlowLayoutPanel.Controls.Clear();
+            resultsFlowLayoutPanel.Visible = true;
+            noResultsFoundLabel.Visible = false;
+            patientDetailsPanel.Visible = false;
+            backButton.Visible = true;
             var patientsRepo = new PatientRepositiory();
 
             var patients = patientsRepo.GetPatientsByPhoneNumber(phoneNumberValue.Text);
 
-            foreach (var patient in patients) {
-                resultsFlowLayoutPanel.Controls.Add(new CustomCard(patient));
+            if (patients.Count == 0) noResultsFoundLabel.Visible = true;
+            foreach (var patient in patients)
+            {
+                var customCard = new CustomCard(patient);
+                customCard.showMoreButton.Click += new EventHandler((sender, e) => CardOnClick(patient));
+                resultsFlowLayoutPanel.Controls.Add(customCard);
             }
         }
 
-        private void panel1_Paint_1(object sender, PaintEventArgs e)
+
+        private void CardOnClick(Patient patient)
         {
+            resultsFlowLayoutPanel.Visible = false;
+            noResultsFoundLabel.Visible = false;
+            patientDetailsPanel.Visible = true;
+            PopulatePatientDetailsPanels(patient);
 
         }
 
-        private void button3_Click_1(object sender, EventArgs e)
+
+
+        private void PopulatePatientDetailsPanels(Patient patient)
+        {
+            generalPatientDetailsPanel.Click += new EventHandler((sender, e) => GeneralPatientDetailsPanelClick(patient));
+            generalComplaintHistoryPanel.Click += new EventHandler((sender, e) => PatientGeneralComplaintHistoryPanelClick(patient.History!.Health));
+            medicalHistoryPanel.Click += new EventHandler((sender, e) => PatientMedicalHistoryPanelClick(patient.History!.Illness));
+            familyMedicalHistoryPanel.Click += new EventHandler((sender, e) => PatientFamilyMedicalHistoryPanelClick(patient.History!.Family));
+        }
+
+        private void PatientGeneralComplaintHistoryPanelClick(Health health)
+        {
+            string dataShown = "";
+            dataShown += $"التاريخ المرضي : {health.Chronic}\n";
+            dataShown += $"الادوية : {health.Medication}\n";
+            dataShown += $"هل تكرر المرض : {health.Repetation}\n";
+            dataShown += $"هل يوجد حساسية : {health.Allergies}\n";
+            MessageBox.Show(dataShown);
+
+
+        }
+
+        private void PatientFamilyMedicalHistoryPanelClick(FamilyHistory familyHistory)
+        {
+            string dataShown = "";
+            dataShown += $"هل للعائلة أمراض مزمنة : {familyHistory.ChronicFamily}\n";
+            dataShown += $"هل الوالدان على صلة قرابة : {familyHistory.ParentsRelated}\n";
+            dataShown += $"التاريخ المرضي العائلي : {familyHistory.ChronicDiseases}\n";
+            dataShown += $"هل يوجد نفس المرض مع الوالدين : {familyHistory.SameDiseasesWithParents}\n"; ;
+
+            MessageBox.Show(dataShown);
+        }
+
+        private void PatientMedicalHistoryPanelClick(Illness illness)
+        {
+            string dataShown = "";
+            dataShown += $"التاريخ الغذائي : {illness.Diet}\n";
+            dataShown += $"تاريخ حديث الولادة : {illness.NewbornHistory}\n";
+            dataShown += $"تاريخ الحوادث : {illness.AccidentsHistory}\n";
+            dataShown += $"هل تم نقل دم للطفل : {illness.BloodTransfer}\n";
+            dataShown += $"المرض الحالي : {illness.CurrentDisease}\n";
+            dataShown += $"التاريخ التطوري : {illness.DevelopmentHistory}\n";
+
+            MessageBox.Show(dataShown);
+        }
+        private void GeneralPatientDetailsPanelClick(Patient patient)
         {
 
+            string dataShown = "";
+            dataShown += $"الإسم : {patient.Name}\n";
+            dataShown += $"النوع : {patient.Gender}\n";
+            dataShown += $"نوع الدم : {patient.BloodType}\n";
+            dataShown += $"رقم الهاتف : {patient.PhoneNumber}\n";
+            dataShown += $"تاريخ الولادة : {patient.BirthDate}\n";
+            dataShown += $"تاريخ التسجيل : {patient.RegistrationDate}\n";
+            MessageBox.Show(dataShown);
+        }
+
+        private void phoneNumberValue_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) SearchForPatientsButtonClick(sender , null);
         }
     }
 }

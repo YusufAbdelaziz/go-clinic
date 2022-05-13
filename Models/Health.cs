@@ -26,7 +26,7 @@ namespace goclinic.Models
 
         public static Health FromData(IDictionary<string, object> healthDictionary) {
 
-            return new Health(chronic: healthDictionary["chronicPatient"].ToString()!, repetation: bool.Parse(healthDictionary["repetation"].ToString()!), medication : healthDictionary["medication"].ToString()!, allergies: healthDictionary["allergies"].ToString()!);
+            return new Health(chronic: healthDictionary["chronicPatient"].ToString()!, repetation: healthDictionary["repetation"].ToString()! == "1" ? true : false, medication : healthDictionary["medication"].ToString()!, allergies: healthDictionary["allergies"].ToString()!);
                 
         }
     }

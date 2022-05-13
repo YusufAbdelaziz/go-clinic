@@ -125,7 +125,6 @@
             this.patientNameLabel.TabIndex = 0;
             this.patientNameLabel.Text = "رنا محى الدين ربيع احمد";
             this.patientNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.patientNameLabel.Click += new System.EventHandler(this.patientName_Click);
             // 
             // CustomCard
             // 
@@ -135,7 +134,6 @@
             this.MinimumSize = new System.Drawing.Size(310, 248);
             this.Name = "CustomCard";
             this.Size = new System.Drawing.Size(310, 248);
-            this.Click += new System.EventHandler(this.customCard_Click);
             this.patientCardTableLayout.ResumeLayout(false);
             this.patientDetailCardTopPanel.ResumeLayout(false);
             this.patientNamePanel.ResumeLayout(false);

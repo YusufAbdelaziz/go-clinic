@@ -13,7 +13,6 @@
         public string AccidentsHistory { get; set; }
 
         public bool BloodTransfer { get; set; }
-
         public Illness(string currentDisease, string diet, string newbornHistory, string developmentHistory, string accidentsHistory, bool bloodTransfer)
         {
             CurrentDisease = currentDisease;
@@ -26,9 +25,9 @@
 
         public static Illness FromData(IDictionary<string, object> illnessDictionary)
         {
-            return new Illness(currentDisease: illnessDictionary["currentDisease"].ToString()!, diet: illnessDictionary["diet"].ToString()!,newbornHistory: illnessDictionary["newbornHistory"].ToString()!, developmentHistory: illnessDictionary["developmentHistory"].ToString()!,accidentsHistory: illnessDictionary["accidentsHistory"].ToString()!, bloodTransfer: bool.Parse(illnessDictionary["bloodTransfer"].ToString()!));
+            return new Illness(currentDisease: illnessDictionary["currentDisease"].ToString()!, diet: illnessDictionary["diet"].ToString()!, newbornHistory: illnessDictionary["newbornHistory"].ToString()!, developmentHistory: illnessDictionary["developmentHistory"].ToString()!, accidentsHistory: illnessDictionary["accidentsHistory"].ToString()!, bloodTransfer: illnessDictionary["bloodTransfer"].ToString()! == "1" ? true : false);
         }
 
-        
+
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace goclinic.Models
 {
-    public enum Gender
+    public enum GenderTypes
     {
         Male,
         Female,
@@ -24,7 +24,7 @@ namespace goclinic.Models
     public class Patient
     {
 
-        public Patient(int id, string name, DateTime birthDate, Gender gender, BloodTypes bloodType, string phoneNumber, DateTime registrationDate)
+        public Patient(int id, string name, DateTime birthDate, GenderTypes gender, BloodTypes bloodType, string phoneNumber, DateTime registrationDate)
         {
             this.BirthDate = birthDate;
             this.Gender = gender;
@@ -34,16 +34,16 @@ namespace goclinic.Models
             this.PhoneNumber = phoneNumber;
             this.RegistrationDate = registrationDate;
         }
-        public int Id { get; set; }
-        public string Name { get; set; }
+        public int? Id { get; set; }
+        public string? Name { get; set; }
 
-        public string PhoneNumber { get; set; }
-        public DateTime BirthDate { get; set; }
+        public string? PhoneNumber { get; set; }
+        public DateTime? BirthDate { get; set; }
 
-        public DateTime RegistrationDate { get; set; }
-        public Gender Gender { get; set; }
+        public DateTime? RegistrationDate { get; set; }
+        public GenderTypes? Gender { get; set; }
 
-        public BloodTypes BloodType { get; set; }
+        public BloodTypes? BloodType { get; set; }
 
         public History? History { get; set; }
 
@@ -86,16 +86,16 @@ namespace goclinic.Models
 
         }
 
-        private static Gender MapBinaryValueToGender(byte gender)
+        private static GenderTypes MapBinaryValueToGender(byte gender)
         {
-            if (gender == 0) return Gender.Female;
-            if (gender == 1) return Gender.Male;
-            return Gender.Unknown;
+            if (gender == 0) return GenderTypes.Female;
+            if (gender == 1) return GenderTypes.Male;
+            return GenderTypes.Unknown;
 
         }
 
         public int ConvertGenderToInt() {
-            if (Gender == Gender.Female) return 0;
+            if (Gender == GenderTypes.Female) return 0;
             else return 1;
            
 

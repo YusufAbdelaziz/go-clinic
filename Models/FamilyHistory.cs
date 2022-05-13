@@ -10,13 +10,13 @@ namespace goclinic.Models
     {
         public bool ParentsRelated { get; set; }
 
-        public string? ChronicDiseases { get; set; }
+        public string ChronicDiseases { get; set; }
 
         public bool SameDiseasesWithParents { get; set; }
 
         public bool ChronicFamily { get; set; }
 
-        public FamilyHistory(bool parentsRelated, string? chronicDiseases, bool sameDiseasesWithParents, bool chronicFamily)
+        public FamilyHistory(bool parentsRelated, string chronicDiseases, bool sameDiseasesWithParents, bool chronicFamily)
         {
             ParentsRelated = parentsRelated;
             ChronicDiseases = chronicDiseases;
@@ -27,7 +27,7 @@ namespace goclinic.Models
         public static FamilyHistory FromData(IDictionary<string, object> data)
         {
 
-            return new FamilyHistory(parentsRelated: bool.Parse(data["parentsRelated"].ToString()!), chronicDiseases: data["chronicDiseases"].ToString(), sameDiseasesWithParents: bool.Parse(data["sameDiseasesWithParents"].ToString()!), chronicFamily: bool.Parse(data["chronicFamily"].ToString()!));
+            return new FamilyHistory(parentsRelated: data["parentsRelated"].ToString()! == "1" ? true : false, chronicDiseases: data["chronicDiseases"].ToString()!, sameDiseasesWithParents: data["sameDiseasesWithParents"].ToString()! == "1" ? true : false, chronicFamily: data["chronicFamily"].ToString()! == "1" ? true : false);
 
         }
     }
