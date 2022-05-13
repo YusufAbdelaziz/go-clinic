@@ -51,21 +51,26 @@ namespace goclinic
 
         private void SearchForPatientsButtonClick(object sender, EventArgs? e)
         {
-            resultsFlowLayoutPanel.Controls.Clear();
-            resultsFlowLayoutPanel.Visible = true;
-            noResultsFoundLabel.Visible = false;
-            patientDetailsPanel.Visible = false;
-            backButton.Visible = true;
-            var patientsRepo = new PatientRepositiory();
+            if (!string.IsNullOrEmpty(phoneNumberValue.Text)) {
+                resultsFlowLayoutPanel.Controls.Clear();
+                resultsFlowLayoutPanel.Visible = true;
+                noResultsFoundLabel.Visible = false;
+                patientDetailsPanel.Visible = false;
+                backButton.Visible = true;
+                var patientsRepo = new PatientRepositiory();
 
-            var patients = patientsRepo.GetPatientsByPhoneNumber(phoneNumberValue.Text);
+                var patients = patientsRepo.GetPatientsByPhoneNumber(phoneNumberValue.Text);
 
-            if (patients.Count == 0) noResultsFoundLabel.Visible = true;
-            foreach (var patient in patients)
+                if (patients.Count == 0) noResultsFoundLabel.Visible = true;
+                foreach (var patient in patients)
+                {
+                    var customCard = new CustomCard(patient);
+                    customCard.showMoreButton.Click += new EventHandler((sender, e) => CardOnClick(patient));
+                    resultsFlowLayoutPanel.Controls.Add(customCard);
+                }
+            } else
             {
-                var customCard = new CustomCard(patient);
-                customCard.showMoreButton.Click += new EventHandler((sender, e) => CardOnClick(patient));
-                resultsFlowLayoutPanel.Controls.Add(customCard);
+                MessageBox.Show("الرجاء ادخال رقم لبدء عملية البحث");
             }
         }
 
