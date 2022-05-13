@@ -31,6 +31,10 @@ namespace goclinic.Forms
                 if (loginResults == 1)
                 {
                     MessageBox.Show("تم الدخول بنجاح");
+                    Form resultsAndPatients = new ResultsAndPatient();
+                    this.Hide();
+                    resultsAndPatients.ShowDialog();
+                    this.Close();
                 }
                 else
                 {
