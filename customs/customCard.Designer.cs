@@ -1,6 +1,6 @@
 ﻿namespace goclinic.customs
 {
-    partial class customCard
+    partial class CustomCard
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,56 +29,58 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(customCard));
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomCard));
+            this.patientCardTableLayout = new System.Windows.Forms.TableLayoutPanel();
             this.patientDetailCardTopPanel = new System.Windows.Forms.Panel();
-            this.patientNumber = new System.Windows.Forms.Label();
+            this.patientNumberPanel = new System.Windows.Forms.Label();
             this.showMoreButton = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.patientName = new System.Windows.Forms.Label();
+            //this.panel1 = new System.Windows.Forms.Panel();
+            //this.patientName = new System.Windows.Forms.Label();
             this.eyeImage = new System.Windows.Forms.ImageList(this.components);
-            this.tableLayoutPanel1.SuspendLayout();
+            this.patientNamePanel = new System.Windows.Forms.Panel();
+            this.patientNameLabel = new System.Windows.Forms.Label();
+            this.patientCardTableLayout.SuspendLayout();
             this.patientDetailCardTopPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.patientNamePanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // patientCardTableLayout
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.patientDetailCardTopPanel, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.showMoreButton, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.70297F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.06142F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.23561F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(310, 248);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.patientCardTableLayout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.patientCardTableLayout.ColumnCount = 1;
+            this.patientCardTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.patientCardTableLayout.Controls.Add(this.patientDetailCardTopPanel, 0, 1);
+            this.patientCardTableLayout.Controls.Add(this.showMoreButton, 0, 2);
+            this.patientCardTableLayout.Controls.Add(this.patientNamePanel, 0, 0);
+            this.patientCardTableLayout.Location = new System.Drawing.Point(0, 0);
+            this.patientCardTableLayout.Name = "patientCardTableLayout";
+            this.patientCardTableLayout.RowCount = 3;
+            this.patientCardTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.70297F));
+            this.patientCardTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.06142F));
+            this.patientCardTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.23561F));
+            this.patientCardTableLayout.Size = new System.Drawing.Size(310, 248);
+            this.patientCardTableLayout.TabIndex = 0;
             // 
             // patientDetailCardTopPanel
             // 
             this.patientDetailCardTopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.patientDetailCardTopPanel.Controls.Add(this.patientNumber);
+            this.patientDetailCardTopPanel.Controls.Add(this.patientNumberPanel);
             this.patientDetailCardTopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.patientDetailCardTopPanel.Location = new System.Drawing.Point(3, 76);
             this.patientDetailCardTopPanel.Name = "patientDetailCardTopPanel";
             this.patientDetailCardTopPanel.Size = new System.Drawing.Size(304, 68);
             this.patientDetailCardTopPanel.TabIndex = 0;
             // 
-            // patientNumber
+            // patientNumberPanel
             // 
-            this.patientNumber.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.patientNumber.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.patientNumber.Location = new System.Drawing.Point(0, 0);
-            this.patientNumber.Name = "patientNumber";
-            this.patientNumber.Size = new System.Drawing.Size(304, 68);
-            this.patientNumber.TabIndex = 2;
-            this.patientNumber.Text = "01097363250";
-            this.patientNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.patientNumberPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.patientNumberPanel.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.patientNumberPanel.Location = new System.Drawing.Point(0, 0);
+            this.patientNumberPanel.Name = "patientNumberPanel";
+            this.patientNumberPanel.Size = new System.Drawing.Size(304, 68);
+            this.patientNumberPanel.TabIndex = 2;
+            this.patientNumberPanel.Text = "01097363250";
+            this.patientNumberPanel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // showMoreButton
             // 
@@ -90,6 +92,7 @@
             this.showMoreButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.showMoreButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.showMoreButton.ImageIndex = 0;
+            this.showMoreButton.ImageList = this.eyeImage;
             this.showMoreButton.Location = new System.Drawing.Point(3, 150);
             this.showMoreButton.Name = "showMoreButton";
             this.showMoreButton.Size = new System.Drawing.Size(304, 95);
@@ -100,23 +103,23 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.panel1.Controls.Add(this.patientName);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(304, 67);
-            this.panel1.TabIndex = 2;
+            //this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            //this.panel1.Controls.Add(this.patientName);
+            //this.panel1.Location = new System.Drawing.Point(3, 3);
+            //this.panel1.Name = "panel1";
+            //this.panel1.Size = new System.Drawing.Size(304, 67);
+            //this.panel1.TabIndex = 2;
             // 
             // patientName
             // 
-            this.patientName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.patientName.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.patientName.Location = new System.Drawing.Point(0, 0);
-            this.patientName.Name = "patientName";
-            this.patientName.Size = new System.Drawing.Size(304, 67);
-            this.patientName.TabIndex = 0;
-            this.patientName.Text = "رنا محى الدين ربيع احمد";
-            this.patientName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //this.patientName.Dock = System.Windows.Forms.DockStyle.Fill;
+            //this.patientName.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            //this.patientName.Location = new System.Drawing.Point(0, 0);
+            //this.patientName.Name = "patientName";
+            //this.patientName.Size = new System.Drawing.Size(304, 67);
+            //this.patientName.TabIndex = 0;
+            //this.patientName.Text = "رنا محى الدين ربيع احمد";
+            //this.patientName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // eyeImage
             // 
@@ -125,30 +128,51 @@
             this.eyeImage.TransparentColor = System.Drawing.Color.Transparent;
             this.eyeImage.Images.SetKeyName(0, "eye.png");
             // 
-            // customCard
+            // patientNamePanel
+            // 
+            this.patientNamePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.patientNamePanel.Controls.Add(this.patientNameLabel);
+            this.patientNamePanel.Location = new System.Drawing.Point(3, 3);
+            this.patientNamePanel.Name = "patientNamePanel";
+            this.patientNamePanel.Size = new System.Drawing.Size(304, 67);
+            this.patientNamePanel.TabIndex = 2;
+            // 
+            // patientNameLabel
+            // 
+            this.patientNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.patientNameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.patientNameLabel.Location = new System.Drawing.Point(0, 0);
+            this.patientNameLabel.Name = "patientNameLabel";
+            this.patientNameLabel.Size = new System.Drawing.Size(304, 67);
+            this.patientNameLabel.TabIndex = 0;
+            this.patientNameLabel.Text = "رنا محى الدين ربيع احمد";
+            this.patientNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.patientNameLabel.Click += new System.EventHandler(this.patientName_Click);
+            // 
+            // CustomCard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.patientCardTableLayout);
             this.MaximumSize = new System.Drawing.Size(310, 248);
             this.MinimumSize = new System.Drawing.Size(310, 248);
-            this.Name = "customCard";
+            this.Name = "CustomCard";
             this.Size = new System.Drawing.Size(310, 248);
             this.Click += new System.EventHandler(this.customCard_Click);
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.patientCardTableLayout.ResumeLayout(false);
             this.patientDetailCardTopPanel.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.patientNamePanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private TableLayoutPanel tableLayoutPanel1;
+        private TableLayoutPanel patientCardTableLayout;
         private Panel patientDetailCardTopPanel;
         public Button showMoreButton;
         private ImageList eyeImage;
-        private Label patientNumber;
-        private Panel panel1;
-        private Label patientName;
+        private Label patientNumberPanel;
+        private Panel patientNamePanel;
+        private Label patientNameLabel;
     }
 }

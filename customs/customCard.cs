@@ -1,26 +1,29 @@
 ﻿
+using goclinic.Models;
 using System.ComponentModel;
 
 namespace goclinic.customs
 {
-    public partial class customCard : UserControl
+    public partial class CustomCard : UserControl
     {
-        private string? patientNameString, patientNumberString;
-        private EventHandler? buttonClick;
+        private readonly Patient patient;
 
-        public customCard()
+        public CustomCard(Patient patient)
         {
             InitializeComponent();
+            this.patient = patient;
+            patientNameLabel.Text = patient.Name;
+            patientNumberPanel.Text = patient.PhoneNumber;
         }
 
         [Category("custom")]
-        public string? PatientNameString 
-        { 
-            get => patientNameString;
-            set 
-            { 
-                patientNameString = value;
-                patientName.Text = patientNameString;
+        public string? PatientNameString
+        {
+            get => this.patient.Name;
+            set
+            {
+                this.patient.Name = value;
+                patientNameLabel.Text = this.patient.Name;
             }
         }
 
@@ -29,19 +32,24 @@ namespace goclinic.customs
             this.OnClick(e);
         }
 
-        [Category("custom")]
-        public string? PatientNumberString 
+        private void patientName_Click(object sender, EventArgs e)
         {
-            get => patientNumberString;
+
+        }
+
+        [Category("custom")]
+        public string? PatientNumberString
+        {
+            get => this.patient.PhoneNumber;
             set
             {
-                patientNumberString = value;
-                patientNumber.Text = patientNumberString;
+                this.patient.PhoneNumber = value;
+                patientNumberPanel.Text = this.patient.PhoneNumber;
             }
         }
 
-        
 
-        
+
+
     }
 }
