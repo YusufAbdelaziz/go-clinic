@@ -226,6 +226,7 @@
             this.addPatientButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.addPatientButton.TabIndex = 4;
             this.addPatientButton.TabStop = false;
+            this.addPatientButton.Click += new System.EventHandler(this.AddPatientButton);
             // 
             // backButton
             // 
@@ -264,7 +265,6 @@
             this.searchButton.TabIndex = 1;
             this.searchButton.UseVisualStyleBackColor = true;
             this.searchButton.Click += new System.EventHandler(this.SearchForPatientsButtonClick);
-
             // 
             // phoneNumberValue
             // 

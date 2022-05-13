@@ -1,15 +1,16 @@
 ﻿using goclinic.Models;
+using goclinic.Repos;
 
 namespace goclinic
 {
-    public partial class AddPatient1 : Form
+    public partial class AddPatient : Form
     {
-        public AddPatient1()
+        public AddPatient()
         {
             InitializeComponent();
         }
 
-        private void firstNextStebButton2_Click(object sender, EventArgs e)
+        private void FirstFormNextButtonClick(object sender, EventArgs e)
         {
 
             if (String.IsNullOrEmpty(nameTextBox.Text) || String.IsNullOrEmpty(phoneTextBox.Text)
@@ -28,7 +29,7 @@ namespace goclinic
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ForthFormConfirmButtonClick(object sender, EventArgs e)
         {
 
             if (String.IsNullOrEmpty(RelativesComboBox.ToString()) || String.IsNullOrEmpty(ChronicDiseaseInFamilyComboBox.ToString())
@@ -38,23 +39,29 @@ namespace goclinic
             }
             else
             {
-                Patient patient = getDataForm();
-                //MessageBox.Show(viewData(patient));
-                // AddPatient4 form Back button
-                this.Hide();                                         //Hide AddPatient2 form
-                PatientdAdded NewSign = new PatientdAdded();            //Creat an object from AddPatient1 form
-                NewSign.ShowDialog();                              //Display the AddPatient1 form 
+                Patient patient = GetDataForm();
+                this.Hide();                                     
+                PatientdAdded newSign = new PatientdAdded();         
+                newSign.ShowDialog();
+                var patientRepo = new PatientRepositiory();
+                patientRepo.AddNewPatient(patient);
+                var resultsAndPatientPage = new ResultsAndPatient();
+                this.Hide();
+                resultsAndPatientPage.ShowDialog();
                 this.Close();
-
-
             }
-            //Close the AddPatient2 form
+            
         }
 
 
 
-
-        private void backButton2_Click(object sender, EventArgs e)
+        private void FirstFormBackButtonToResultsPage(object sender, EventArgs e) {
+            var resultsAndPatientPage = new ResultsAndPatient();
+            this.Hide();
+            resultsAndPatientPage.ShowDialog();
+            this.Close();
+        }
+        private void SecondFormBackButtonClick(object sender, EventArgs e)
         {
             AddPatient2Container.Hide();
             steps1Container.Hide();
@@ -62,7 +69,7 @@ namespace goclinic
             steps1Container.Show();
         }
 
-        private void nextButton2_Click(object sender, EventArgs e)
+        private void SecondFormNextButtonClick(object sender, EventArgs e)
         {
             if (String.IsNullOrEmpty(currentDiseaseTextBox.Text) || String.IsNullOrEmpty(nutritionalHistoryTextBox.Text)
                 || String.IsNullOrEmpty(newBornTextBox.Text) || String.IsNullOrEmpty(developmentTextBox.Text)
@@ -80,7 +87,7 @@ namespace goclinic
 
         }
 
-        private void backButton3_Click(object sender, EventArgs e)
+        private void ThirdFormBackButtonClick(object sender, EventArgs e)
         {
             AddPatient3Container.Hide();
             AddPatient2Container.Show();
@@ -88,7 +95,7 @@ namespace goclinic
             steps2Container.Show();
         }
 
-        private void nextButton3_Click(object sender, EventArgs e)
+        private void ThirdFormNextButtonClick(object sender, EventArgs e)
         {
 
             if (String.IsNullOrEmpty(medicationTextBox.Text) || String.IsNullOrEmpty(chronicDiseasesTextBox.Text)
@@ -106,7 +113,7 @@ namespace goclinic
 
         }
 
-        private void backButton4_Click(object sender, EventArgs e)
+        private void ForthFormBackButtonClick(object sender, EventArgs e)
         {
             AddPatient4Container.Hide();
             AddPatient3Container.Show();
@@ -121,7 +128,7 @@ namespace goclinic
         }
 
 
-        private Patient getDataForm()
+        private Patient GetDataForm()
         {
 
             Illness illness = new Illness(currentDisease: currentDiseaseTextBox.Text, diet: nutritionalHistoryTextBox.Text,
@@ -147,6 +154,5 @@ namespace goclinic
 
             return patient;
         }
-
     }
 }

@@ -103,7 +103,6 @@ namespace goclinic.Models
             return GenderTypes.Unknown;
         }
 
-        private static GenderTypes MapBinaryValueToGender(byte gender)
         public static BloodTypes MapStringToBloodType(string? bloodtype)
         {
             if (bloodtype == "A-") return BloodTypes.ANegative;
@@ -117,9 +116,7 @@ namespace goclinic.Models
 
             if (bloodtype == "O-") return BloodTypes.ONegative;
             if (bloodtype == "O+") return BloodTypes.OPositive;
-            if (gender == 0) return GenderTypes.Female;
-            if (gender == 1) return GenderTypes.Male;
-            return GenderTypes.Unknown;
+            
 
             return BloodTypes.Unknown;
         }

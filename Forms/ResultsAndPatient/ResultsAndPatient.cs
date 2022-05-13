@@ -1,12 +1,17 @@
 ﻿using goclinic.customs;
-using goclinic.Forms;
 using goclinic.Models;
 using goclinic.Repos;
+using System.ComponentModel;
+using System.Reflection;
 
 namespace goclinic
 {
     public partial class ResultsAndPatient : Form
     {
+        private EventHandler? GeneralPatientDetailsPanelClickEventHandler;
+        private EventHandler? GeneralComplaintHistoryPanelClickEventHandler;
+        private EventHandler? MedicalHistoryPanelClickEventHandler;
+        private EventHandler? FamilyMedicalHistoryPanelClickHandler;
         public ResultsAndPatient()
         {
             InitializeComponent();
@@ -14,6 +19,15 @@ namespace goclinic
             {
                 backButton.Visible = false;
             }
+        }
+
+        private void AddPatientButton(object sender, EventArgs e)
+        {
+
+            var addPatientForm = new AddPatient();
+            this.Hide();
+            addPatientForm.ShowDialog();
+            this.Close();
         }
 
         private void BackButtonClick(object sender, EventArgs e)
@@ -35,7 +49,7 @@ namespace goclinic
 
         }
 
-        private void SearchForPatientsButtonClick(object sender, EventArgs? e )
+        private void SearchForPatientsButtonClick(object sender, EventArgs? e)
         {
             resultsFlowLayoutPanel.Controls.Clear();
             resultsFlowLayoutPanel.Visible = true;
@@ -65,15 +79,37 @@ namespace goclinic
 
         }
 
+        private void ClearAllEventHandlersFromPanels()
+        {
+            if (GeneralPatientDetailsPanelClickEventHandler != null && GeneralComplaintHistoryPanelClickEventHandler != null && MedicalHistoryPanelClickEventHandler != null && FamilyMedicalHistoryPanelClickHandler != null) { 
+                 generalPatientDetailsPanel.Click -= GeneralPatientDetailsPanelClickEventHandler;
+                generalComplaintHistoryPanel.Click -= GeneralComplaintHistoryPanelClickEventHandler;
+                medicalHistoryPanel.Click -= MedicalHistoryPanelClickEventHandler;
+                familyMedicalHistoryPanel.Click -= FamilyMedicalHistoryPanelClickHandler;
+                GeneralPatientDetailsPanelClickEventHandler = null;
+                GeneralComplaintHistoryPanelClickEventHandler = null;
+                MedicalHistoryPanelClickEventHandler = null;
+                FamilyMedicalHistoryPanelClickHandler = null;
+            }
+        }
 
-
+        private void AddAllEventHandlersToPanels(Patient patient) {
+            GeneralPatientDetailsPanelClickEventHandler = new EventHandler((sender, e) => GeneralPatientDetailsPanelClick(patient));
+            generalPatientDetailsPanel.Click += GeneralPatientDetailsPanelClickEventHandler;
+            GeneralComplaintHistoryPanelClickEventHandler = new EventHandler((sender, e) => PatientGeneralComplaintHistoryPanelClick(patient.History!.Health));
+            generalComplaintHistoryPanel.Click += GeneralComplaintHistoryPanelClickEventHandler;
+            MedicalHistoryPanelClickEventHandler = new EventHandler((sender, e) => PatientMedicalHistoryPanelClick(patient.History!.Illness));
+            medicalHistoryPanel.Click += MedicalHistoryPanelClickEventHandler;
+            FamilyMedicalHistoryPanelClickHandler = new EventHandler((sender, e) => PatientFamilyMedicalHistoryPanelClick(patient.History!.Family));
+            familyMedicalHistoryPanel.Click += FamilyMedicalHistoryPanelClickHandler;
+        }
         private void PopulatePatientDetailsPanels(Patient patient)
         {
-            generalPatientDetailsPanel.Click += new EventHandler((sender, e) => GeneralPatientDetailsPanelClick(patient));
-            generalComplaintHistoryPanel.Click += new EventHandler((sender, e) => PatientGeneralComplaintHistoryPanelClick(patient.History!.Health));
-            medicalHistoryPanel.Click += new EventHandler((sender, e) => PatientMedicalHistoryPanelClick(patient.History!.Illness));
-            familyMedicalHistoryPanel.Click += new EventHandler((sender, e) => PatientFamilyMedicalHistoryPanelClick(patient.History!.Family));
+
+            ClearAllEventHandlersFromPanels();
+            AddAllEventHandlersToPanels(patient);
         }
+
 
         private void PatientGeneralComplaintHistoryPanelClick(Health health)
         {
@@ -125,7 +161,7 @@ namespace goclinic
 
         private void phoneNumberValue_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter) SearchForPatientsButtonClick(sender , null);
+            if (e.KeyCode == Keys.Enter) SearchForPatientsButtonClick(sender, null);
         }
     }
 }

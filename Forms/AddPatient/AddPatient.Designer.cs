@@ -1,6 +1,6 @@
 ﻿namespace goclinic
 {
-    partial class AddPatient1
+    partial class AddPatient
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddPatient1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddPatient));
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.AddPatient1Container = new System.Windows.Forms.Panel();
             this.firstNextStebButton2 = new System.Windows.Forms.Button();
-            this.backHomeButton2 = new System.Windows.Forms.Button();
+            this.firstFormBackToResultsPageButton = new System.Windows.Forms.Button();
             this.infoContainer2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
             this.genderComboBox2 = new System.Windows.Forms.ComboBox();
@@ -202,7 +202,6 @@
             this.tableLayoutPanel85 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel86 = new System.Windows.Forms.TableLayoutPanel();
             this.button2 = new System.Windows.Forms.Button();
-            this.backButton4 = new System.Windows.Forms.Button();
             this.steps4Container = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel88 = new System.Windows.Forms.TableLayoutPanel();
             this.label35 = new System.Windows.Forms.Label();
@@ -221,6 +220,7 @@
             this.listView31 = new System.Windows.Forms.ListView();
             this.tableLayoutPanel94 = new System.Windows.Forms.TableLayoutPanel();
             this.label38 = new System.Windows.Forms.Label();
+            this.backButton4 = new System.Windows.Forms.Button();
             this.nextButton3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel72 = new System.Windows.Forms.TableLayoutPanel();
@@ -375,7 +375,7 @@
             // 
             this.AddPatient1Container.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
             this.AddPatient1Container.Controls.Add(this.firstNextStebButton2);
-            this.AddPatient1Container.Controls.Add(this.backHomeButton2);
+            this.AddPatient1Container.Controls.Add(this.firstFormBackToResultsPageButton);
             this.AddPatient1Container.Controls.Add(this.infoContainer2);
             this.AddPatient1Container.Controls.Add(this.steps1Container);
             this.AddPatient1Container.Location = new System.Drawing.Point(121, 126);
@@ -387,7 +387,7 @@
             // 
             this.firstNextStebButton2.BackColor = System.Drawing.Color.Black;
             this.firstNextStebButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.firstNextStebButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.firstNextStebButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.firstNextStebButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
             this.firstNextStebButton2.Location = new System.Drawing.Point(23, 613);
             this.firstNextStebButton2.Name = "firstNextStebButton2";
@@ -395,20 +395,21 @@
             this.firstNextStebButton2.TabIndex = 14;
             this.firstNextStebButton2.Text = "الخطوة التالية";
             this.firstNextStebButton2.UseVisualStyleBackColor = false;
-            this.firstNextStebButton2.Click += new System.EventHandler(this.firstNextStebButton2_Click);
+            this.firstNextStebButton2.Click += new System.EventHandler(this.FirstFormNextButtonClick);
             // 
-            // backHomeButton2
+            // firstFormBackToResultsPageButton
             // 
-            this.backHomeButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.backHomeButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.backHomeButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.backHomeButton2.ForeColor = System.Drawing.Color.Black;
-            this.backHomeButton2.Location = new System.Drawing.Point(725, 612);
-            this.backHomeButton2.Name = "backHomeButton2";
-            this.backHomeButton2.Size = new System.Drawing.Size(279, 53);
-            this.backHomeButton2.TabIndex = 15;
-            this.backHomeButton2.Text = "رجوع إلى الصفحة الرئيسية";
-            this.backHomeButton2.UseVisualStyleBackColor = false;
+            this.firstFormBackToResultsPageButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.firstFormBackToResultsPageButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.firstFormBackToResultsPageButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.firstFormBackToResultsPageButton.ForeColor = System.Drawing.Color.Black;
+            this.firstFormBackToResultsPageButton.Location = new System.Drawing.Point(725, 612);
+            this.firstFormBackToResultsPageButton.Name = "firstFormBackToResultsPageButton";
+            this.firstFormBackToResultsPageButton.Size = new System.Drawing.Size(279, 53);
+            this.firstFormBackToResultsPageButton.TabIndex = 15;
+            this.firstFormBackToResultsPageButton.Text = "رجوع إلى الصفحة الرئيسية";
+            this.firstFormBackToResultsPageButton.UseVisualStyleBackColor = false;
+            this.firstFormBackToResultsPageButton.Click += new System.EventHandler(this.FirstFormBackButtonToResultsPage);
             // 
             // infoContainer2
             // 
@@ -448,7 +449,7 @@
             this.genderComboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.genderComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.genderComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genderComboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.genderComboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.genderComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
             this.genderComboBox2.FormattingEnabled = true;
             this.genderComboBox2.ImeMode = System.Windows.Forms.ImeMode.Alpha;
@@ -461,7 +462,7 @@
             this.genderComboBox2.MaxDropDownItems = 2;
             this.genderComboBox2.Name = "genderComboBox2";
             this.genderComboBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.genderComboBox2.Size = new System.Drawing.Size(486, 47);
+            this.genderComboBox2.Size = new System.Drawing.Size(486, 39);
             this.genderComboBox2.Sorted = true;
             this.genderComboBox2.TabIndex = 5;
             // 
@@ -471,7 +472,7 @@
             this.bloodComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bloodComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.bloodComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bloodComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bloodComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bloodComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
             this.bloodComboBox.FormattingEnabled = true;
             this.bloodComboBox.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -487,7 +488,7 @@
             this.bloodComboBox.Location = new System.Drawing.Point(3, 3);
             this.bloodComboBox.Name = "bloodComboBox";
             this.bloodComboBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bloodComboBox.Size = new System.Drawing.Size(487, 47);
+            this.bloodComboBox.Size = new System.Drawing.Size(487, 39);
             this.bloodComboBox.TabIndex = 6;
             // 
             // tableLayoutPanel26
@@ -509,13 +510,13 @@
             this.bloodText.AutoSize = true;
             this.bloodText.BackColor = System.Drawing.Color.Transparent;
             this.bloodText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.bloodText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bloodText.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bloodText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.bloodText.Location = new System.Drawing.Point(367, 0);
+            this.bloodText.Location = new System.Drawing.Point(357, 0);
             this.bloodText.Name = "bloodText";
-            this.bloodText.Size = new System.Drawing.Size(122, 60);
+            this.bloodText.Size = new System.Drawing.Size(132, 60);
             this.bloodText.TabIndex = 6;
-            this.bloodText.Text = "فصيلة الدم";
+            this.bloodText.Text = "*فصيلة الدم";
             this.bloodText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // genderText
@@ -523,13 +524,13 @@
             this.genderText.AutoSize = true;
             this.genderText.BackColor = System.Drawing.Color.Transparent;
             this.genderText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.genderText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.genderText.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.genderText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.genderText.Location = new System.Drawing.Point(914, 0);
+            this.genderText.Location = new System.Drawing.Point(910, 0);
             this.genderText.Name = "genderText";
-            this.genderText.Size = new System.Drawing.Size(68, 60);
+            this.genderText.Size = new System.Drawing.Size(72, 60);
             this.genderText.TabIndex = 9;
-            this.genderText.Text = "النوع";
+            this.genderText.Text = "*النوع";
             this.genderText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel27
@@ -555,10 +556,10 @@
             this.logIndatePicker.CalendarTitleForeColor = System.Drawing.Color.Gray;
             this.logIndatePicker.Dock = System.Windows.Forms.DockStyle.Fill;
             this.logIndatePicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.logIndatePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.logIndatePicker.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.logIndatePicker.Location = new System.Drawing.Point(3, 3);
             this.logIndatePicker.Name = "logIndatePicker";
-            this.logIndatePicker.Size = new System.Drawing.Size(486, 49);
+            this.logIndatePicker.Size = new System.Drawing.Size(486, 38);
             this.logIndatePicker.TabIndex = 4;
             // 
             // dateBirthPicker
@@ -569,10 +570,10 @@
             this.dateBirthPicker.CalendarTitleForeColor = System.Drawing.Color.Gray;
             this.dateBirthPicker.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateBirthPicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dateBirthPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.dateBirthPicker.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.dateBirthPicker.Location = new System.Drawing.Point(495, 3);
             this.dateBirthPicker.Name = "dateBirthPicker";
-            this.dateBirthPicker.Size = new System.Drawing.Size(487, 49);
+            this.dateBirthPicker.Size = new System.Drawing.Size(487, 38);
             this.dateBirthPicker.TabIndex = 3;
             // 
             // tableLayoutPanel30
@@ -596,11 +597,11 @@
             this.logInText.AutoSize = true;
             this.logInText.BackColor = System.Drawing.Color.Transparent;
             this.logInText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.logInText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.logInText.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.logInText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.logInText.Location = new System.Drawing.Point(328, 0);
+            this.logInText.Location = new System.Drawing.Point(345, 0);
             this.logInText.Name = "logInText";
-            this.logInText.Size = new System.Drawing.Size(161, 60);
+            this.logInText.Size = new System.Drawing.Size(144, 60);
             this.logInText.TabIndex = 10;
             this.logInText.Text = "تاريخ التسجيل";
             this.logInText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -610,11 +611,11 @@
             this.dateBirthText.AutoSize = true;
             this.dateBirthText.BackColor = System.Drawing.Color.Transparent;
             this.dateBirthText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dateBirthText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.dateBirthText.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.dateBirthText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.dateBirthText.Location = new System.Drawing.Point(836, 0);
+            this.dateBirthText.Location = new System.Drawing.Point(854, 0);
             this.dateBirthText.Name = "dateBirthText";
-            this.dateBirthText.Size = new System.Drawing.Size(146, 60);
+            this.dateBirthText.Size = new System.Drawing.Size(128, 60);
             this.dateBirthText.TabIndex = 7;
             this.dateBirthText.Text = "تاريخ الميلاد";
             this.dateBirthText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -638,10 +639,10 @@
             this.nameTextBox.BackColor = System.Drawing.Color.White;
             this.nameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.nameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nameTextBox.Location = new System.Drawing.Point(495, 3);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(487, 49);
+            this.nameTextBox.Size = new System.Drawing.Size(487, 38);
             this.nameTextBox.TabIndex = 1;
             this.nameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -650,10 +651,10 @@
             this.phoneTextBox.BackColor = System.Drawing.Color.White;
             this.phoneTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.phoneTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.phoneTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.phoneTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.phoneTextBox.Location = new System.Drawing.Point(3, 3);
             this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(486, 49);
+            this.phoneTextBox.Size = new System.Drawing.Size(486, 38);
             this.phoneTextBox.TabIndex = 2;
             this.phoneTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -676,11 +677,11 @@
             this.phoneText.AutoSize = true;
             this.phoneText.BackColor = System.Drawing.Color.Transparent;
             this.phoneText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.phoneText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.phoneText.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.phoneText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.phoneText.Location = new System.Drawing.Point(334, 0);
+            this.phoneText.Location = new System.Drawing.Point(350, 0);
             this.phoneText.Name = "phoneText";
-            this.phoneText.Size = new System.Drawing.Size(155, 60);
+            this.phoneText.Size = new System.Drawing.Size(139, 60);
             this.phoneText.TabIndex = 5;
             this.phoneText.Text = "* رقم الموبيل";
             this.phoneText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -690,11 +691,11 @@
             this.nameText.AutoSize = true;
             this.nameText.BackColor = System.Drawing.Color.Transparent;
             this.nameText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.nameText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nameText.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nameText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.nameText.Location = new System.Drawing.Point(893, 0);
+            this.nameText.Location = new System.Drawing.Point(900, 0);
             this.nameText.Name = "nameText";
-            this.nameText.Size = new System.Drawing.Size(89, 60);
+            this.nameText.Size = new System.Drawing.Size(82, 60);
             this.nameText.TabIndex = 4;
             this.nameText.Text = "* الاسم";
             this.nameText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -732,11 +733,11 @@
             this.contactInfoText.AutoSize = true;
             this.contactInfoText.BackColor = System.Drawing.Color.Transparent;
             this.contactInfoText.Dock = System.Windows.Forms.DockStyle.Right;
-            this.contactInfoText.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.contactInfoText.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.contactInfoText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.contactInfoText.Location = new System.Drawing.Point(590, 0);
+            this.contactInfoText.Location = new System.Drawing.Point(634, 0);
             this.contactInfoText.Name = "contactInfoText";
-            this.contactInfoText.Size = new System.Drawing.Size(392, 69);
+            this.contactInfoText.Size = new System.Drawing.Size(348, 69);
             this.contactInfoText.TabIndex = 2;
             this.contactInfoText.Text = "معلومات التواصل الرئيسية";
             // 
@@ -814,7 +815,7 @@
             // 
             this.step4Text1.AutoSize = true;
             this.step4Text1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step4Text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.step4Text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.step4Text1.ForeColor = System.Drawing.Color.Black;
             this.step4Text1.Location = new System.Drawing.Point(3, 0);
             this.step4Text1.Name = "step4Text1";
@@ -840,7 +841,7 @@
             // 
             this.step3Text1.AutoSize = true;
             this.step3Text1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step3Text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.step3Text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.step3Text1.ForeColor = System.Drawing.Color.Black;
             this.step3Text1.Location = new System.Drawing.Point(3, 0);
             this.step3Text1.Name = "step3Text1";
@@ -867,7 +868,7 @@
             this.step2Text1.AutoSize = true;
             this.step2Text1.BackColor = System.Drawing.Color.White;
             this.step2Text1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step2Text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.step2Text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.step2Text1.ForeColor = System.Drawing.Color.Black;
             this.step2Text1.Location = new System.Drawing.Point(3, 0);
             this.step2Text1.Name = "step2Text1";
@@ -998,7 +999,7 @@
             // 
             this.step1Text1.AutoSize = true;
             this.step1Text1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step1Text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.step1Text1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.step1Text1.ForeColor = System.Drawing.Color.White;
             this.step1Text1.Location = new System.Drawing.Point(3, 0);
             this.step1Text1.Name = "step1Text1";
@@ -1314,7 +1315,7 @@
             // 
             this.backButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
             this.backButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.backButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.backButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.backButton2.ForeColor = System.Drawing.Color.Black;
             this.backButton2.Location = new System.Drawing.Point(821, 613);
             this.backButton2.Name = "backButton2";
@@ -1322,13 +1323,13 @@
             this.backButton2.TabIndex = 26;
             this.backButton2.Text = "الخطوة السابقة";
             this.backButton2.UseVisualStyleBackColor = false;
-            this.backButton2.Click += new System.EventHandler(this.backButton2_Click);
+            this.backButton2.Click += new System.EventHandler(this.SecondFormBackButtonClick);
             // 
             // nextButton2
             // 
             this.nextButton2.BackColor = System.Drawing.Color.Black;
             this.nextButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.nextButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nextButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nextButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
             this.nextButton2.Location = new System.Drawing.Point(23, 613);
             this.nextButton2.Name = "nextButton2";
@@ -1336,7 +1337,7 @@
             this.nextButton2.TabIndex = 25;
             this.nextButton2.Text = "الخطوة التالية";
             this.nextButton2.UseVisualStyleBackColor = false;
-            this.nextButton2.Click += new System.EventHandler(this.nextButton2_Click);
+            this.nextButton2.Click += new System.EventHandler(this.SecondFormNextButtonClick);
             // 
             // panel4
             // 
@@ -1376,7 +1377,7 @@
             this.bloodTransferComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bloodTransferComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.bloodTransferComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bloodTransferComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bloodTransferComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bloodTransferComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
             this.bloodTransferComboBox.FormattingEnabled = true;
             this.bloodTransferComboBox.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -1386,7 +1387,7 @@
             this.bloodTransferComboBox.Location = new System.Drawing.Point(3, 3);
             this.bloodTransferComboBox.Name = "bloodTransferComboBox";
             this.bloodTransferComboBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bloodTransferComboBox.Size = new System.Drawing.Size(487, 47);
+            this.bloodTransferComboBox.Size = new System.Drawing.Size(487, 39);
             this.bloodTransferComboBox.TabIndex = 7;
             // 
             // accidentsTextBox
@@ -1394,10 +1395,10 @@
             this.accidentsTextBox.BackColor = System.Drawing.Color.White;
             this.accidentsTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.accidentsTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.accidentsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.accidentsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.accidentsTextBox.Location = new System.Drawing.Point(496, 3);
             this.accidentsTextBox.Name = "accidentsTextBox";
-            this.accidentsTextBox.Size = new System.Drawing.Size(486, 49);
+            this.accidentsTextBox.Size = new System.Drawing.Size(486, 38);
             this.accidentsTextBox.TabIndex = 4;
             this.accidentsTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -1420,13 +1421,13 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label14.Location = new System.Drawing.Point(396, 0);
+            this.label14.Location = new System.Drawing.Point(401, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(93, 60);
+            this.label14.Size = new System.Drawing.Size(88, 60);
             this.label14.TabIndex = 6;
-            this.label14.Text = "نقل الدم";
+            this.label14.Text = "*نقل الدم";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label15
@@ -1434,13 +1435,13 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label15.Location = new System.Drawing.Point(774, 0);
+            this.label15.Location = new System.Drawing.Point(804, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(208, 60);
+            this.label15.Size = new System.Drawing.Size(178, 60);
             this.label15.TabIndex = 9;
-            this.label15.Text = "الحوادث والعمليات";
+            this.label15.Text = "*الحوادث والعمليات";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel34
@@ -1463,10 +1464,10 @@
             this.newBornTextBox.BackColor = System.Drawing.Color.White;
             this.newBornTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.newBornTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.newBornTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.newBornTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.newBornTextBox.Location = new System.Drawing.Point(495, 3);
             this.newBornTextBox.Name = "newBornTextBox";
-            this.newBornTextBox.Size = new System.Drawing.Size(487, 49);
+            this.newBornTextBox.Size = new System.Drawing.Size(487, 38);
             this.newBornTextBox.TabIndex = 3;
             this.newBornTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -1475,10 +1476,10 @@
             this.developmentTextBox.BackColor = System.Drawing.Color.White;
             this.developmentTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.developmentTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.developmentTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.developmentTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.developmentTextBox.Location = new System.Drawing.Point(3, 3);
             this.developmentTextBox.Name = "developmentTextBox";
-            this.developmentTextBox.Size = new System.Drawing.Size(486, 49);
+            this.developmentTextBox.Size = new System.Drawing.Size(486, 38);
             this.developmentTextBox.TabIndex = 2;
             this.developmentTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -1503,13 +1504,13 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label16.Location = new System.Drawing.Point(304, 0);
+            this.label16.Location = new System.Drawing.Point(329, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(185, 60);
+            this.label16.Size = new System.Drawing.Size(160, 60);
             this.label16.TabIndex = 10;
-            this.label16.Text = "التاريخ التطوري";
+            this.label16.Text = "*التاريخ التطوري";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label17
@@ -1517,13 +1518,13 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label17.Location = new System.Drawing.Point(764, 0);
+            this.label17.Location = new System.Drawing.Point(795, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(218, 60);
+            this.label17.Size = new System.Drawing.Size(187, 60);
             this.label17.TabIndex = 7;
-            this.label17.Text = "تاريخ حديثي الولادة";
+            this.label17.Text = "*تاريخ حديثي الولادة";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel36
@@ -1545,10 +1546,10 @@
             this.currentDiseaseTextBox.BackColor = System.Drawing.Color.White;
             this.currentDiseaseTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.currentDiseaseTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.currentDiseaseTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.currentDiseaseTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.currentDiseaseTextBox.Location = new System.Drawing.Point(495, 3);
             this.currentDiseaseTextBox.Name = "currentDiseaseTextBox";
-            this.currentDiseaseTextBox.Size = new System.Drawing.Size(487, 49);
+            this.currentDiseaseTextBox.Size = new System.Drawing.Size(487, 38);
             this.currentDiseaseTextBox.TabIndex = 1;
             this.currentDiseaseTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -1557,10 +1558,10 @@
             this.nutritionalHistoryTextBox.BackColor = System.Drawing.Color.White;
             this.nutritionalHistoryTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nutritionalHistoryTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.nutritionalHistoryTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nutritionalHistoryTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nutritionalHistoryTextBox.Location = new System.Drawing.Point(3, 3);
             this.nutritionalHistoryTextBox.Name = "nutritionalHistoryTextBox";
-            this.nutritionalHistoryTextBox.Size = new System.Drawing.Size(486, 49);
+            this.nutritionalHistoryTextBox.Size = new System.Drawing.Size(486, 38);
             this.nutritionalHistoryTextBox.TabIndex = 2;
             this.nutritionalHistoryTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -1583,13 +1584,13 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label18.Location = new System.Drawing.Point(322, 0);
+            this.label18.Location = new System.Drawing.Point(342, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(167, 60);
+            this.label18.Size = new System.Drawing.Size(147, 60);
             this.label18.TabIndex = 5;
-            this.label18.Text = "التاريخ الغذائي";
+            this.label18.Text = "*التاريخ الغذائي";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label19
@@ -1597,13 +1598,13 @@
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label19.Location = new System.Drawing.Point(720, 0);
+            this.label19.Location = new System.Drawing.Point(764, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(262, 60);
+            this.label19.Size = new System.Drawing.Size(218, 60);
             this.label19.TabIndex = 4;
-            this.label19.Text = "التاريخ الحاضر للمرض";
+            this.label19.Text = "*التاريخ الحاضر للمرض";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel39
@@ -1706,7 +1707,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
@@ -1732,7 +1733,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(3, 0);
             this.label3.Name = "label3";
@@ -1759,7 +1760,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Black;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
@@ -1890,7 +1891,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(3, 0);
             this.label5.Name = "label5";
@@ -2373,8 +2374,8 @@
             this.AddPatient4Container.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
             this.AddPatient4Container.Controls.Add(this.panel3);
             this.AddPatient4Container.Controls.Add(this.button2);
-            this.AddPatient4Container.Controls.Add(this.backButton4);
             this.AddPatient4Container.Controls.Add(this.steps4Container);
+            this.AddPatient4Container.Controls.Add(this.backButton4);
             this.AddPatient4Container.Location = new System.Drawing.Point(121, 126);
             this.AddPatient4Container.Name = "AddPatient4Container";
             this.AddPatient4Container.Size = new System.Drawing.Size(1029, 686);
@@ -2415,7 +2416,7 @@
             this.CurrentInFamilyComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CurrentInFamilyComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CurrentInFamilyComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CurrentInFamilyComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CurrentInFamilyComboBox.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CurrentInFamilyComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
             this.CurrentInFamilyComboBox.FormattingEnabled = true;
             this.CurrentInFamilyComboBox.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -2425,7 +2426,7 @@
             this.CurrentInFamilyComboBox.Location = new System.Drawing.Point(3, 3);
             this.CurrentInFamilyComboBox.Name = "CurrentInFamilyComboBox";
             this.CurrentInFamilyComboBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CurrentInFamilyComboBox.Size = new System.Drawing.Size(487, 47);
+            this.CurrentInFamilyComboBox.Size = new System.Drawing.Size(487, 45);
             this.CurrentInFamilyComboBox.TabIndex = 10;
             // 
             // ChronicDiseasesInFamilyTextBox
@@ -2433,7 +2434,7 @@
             this.ChronicDiseasesInFamilyTextBox.BackColor = System.Drawing.Color.White;
             this.ChronicDiseasesInFamilyTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ChronicDiseasesInFamilyTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ChronicDiseasesInFamilyTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ChronicDiseasesInFamilyTextBox.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ChronicDiseasesInFamilyTextBox.Location = new System.Drawing.Point(496, 3);
             this.ChronicDiseasesInFamilyTextBox.Multiline = true;
             this.ChronicDiseasesInFamilyTextBox.Name = "ChronicDiseasesInFamilyTextBox";
@@ -2460,13 +2461,13 @@
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label31.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label31.Location = new System.Drawing.Point(172, 0);
+            this.label31.Location = new System.Drawing.Point(187, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(317, 60);
+            this.label31.Size = new System.Drawing.Size(302, 60);
             this.label31.TabIndex = 6;
-            this.label31.Text = "وجود نفس المرض في العائلة";
+            this.label31.Text = "*وجود نفس المرض في العائلة";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label32
@@ -2474,13 +2475,13 @@
             this.label32.AutoSize = true;
             this.label32.BackColor = System.Drawing.Color.Transparent;
             this.label32.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label32.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label32.Location = new System.Drawing.Point(677, 0);
+            this.label32.Location = new System.Drawing.Point(702, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(305, 60);
+            this.label32.Size = new System.Drawing.Size(280, 60);
             this.label32.TabIndex = 9;
-            this.label32.Text = "الأمراض الورائية في العائلة";
+            this.label32.Text = "*الأمراض الورائية في العائلة";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel81
@@ -2503,7 +2504,7 @@
             this.RelativesComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.RelativesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.RelativesComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RelativesComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.RelativesComboBox.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.RelativesComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
             this.RelativesComboBox.FormattingEnabled = true;
             this.RelativesComboBox.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -2513,7 +2514,7 @@
             this.RelativesComboBox.Location = new System.Drawing.Point(495, 3);
             this.RelativesComboBox.Name = "RelativesComboBox";
             this.RelativesComboBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.RelativesComboBox.Size = new System.Drawing.Size(487, 47);
+            this.RelativesComboBox.Size = new System.Drawing.Size(487, 45);
             this.RelativesComboBox.TabIndex = 11;
             // 
             // ChronicDiseaseInFamilyComboBox
@@ -2522,7 +2523,7 @@
             this.ChronicDiseaseInFamilyComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ChronicDiseaseInFamilyComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ChronicDiseaseInFamilyComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ChronicDiseaseInFamilyComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ChronicDiseaseInFamilyComboBox.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ChronicDiseaseInFamilyComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
             this.ChronicDiseaseInFamilyComboBox.FormattingEnabled = true;
             this.ChronicDiseaseInFamilyComboBox.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -2532,7 +2533,7 @@
             this.ChronicDiseaseInFamilyComboBox.Location = new System.Drawing.Point(3, 3);
             this.ChronicDiseaseInFamilyComboBox.Name = "ChronicDiseaseInFamilyComboBox";
             this.ChronicDiseaseInFamilyComboBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ChronicDiseaseInFamilyComboBox.Size = new System.Drawing.Size(486, 47);
+            this.ChronicDiseaseInFamilyComboBox.Size = new System.Drawing.Size(486, 45);
             this.ChronicDiseaseInFamilyComboBox.TabIndex = 10;
             // 
             // tableLayoutPanel82
@@ -2554,13 +2555,13 @@
             this.label33.AutoSize = true;
             this.label33.BackColor = System.Drawing.Color.Transparent;
             this.label33.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label33.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label33.Location = new System.Drawing.Point(153, 0);
+            this.label33.Location = new System.Drawing.Point(182, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(336, 60);
+            this.label33.Size = new System.Drawing.Size(307, 60);
             this.label33.TabIndex = 5;
-            this.label33.Text = "وجود أمراض مزمنة في العائلة";
+            this.label33.Text = "*وجود أمراض مزمنة في العائلة";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label34
@@ -2568,13 +2569,13 @@
             this.label34.AutoSize = true;
             this.label34.BackColor = System.Drawing.Color.Transparent;
             this.label34.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label34.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label34.Location = new System.Drawing.Point(802, 0);
+            this.label34.Location = new System.Drawing.Point(814, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(180, 60);
+            this.label34.Size = new System.Drawing.Size(168, 60);
             this.label34.TabIndex = 4;
-            this.label34.Text = "قرابة الاب والام";
+            this.label34.Text = "*قرابة الاب والام";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel83
@@ -2595,11 +2596,11 @@
             this.medicalHistoryFamily.AutoSize = true;
             this.medicalHistoryFamily.BackColor = System.Drawing.Color.Transparent;
             this.medicalHistoryFamily.Dock = System.Windows.Forms.DockStyle.Right;
-            this.medicalHistoryFamily.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.medicalHistoryFamily.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.medicalHistoryFamily.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.medicalHistoryFamily.Location = new System.Drawing.Point(642, 0);
+            this.medicalHistoryFamily.Location = new System.Drawing.Point(693, 0);
             this.medicalHistoryFamily.Name = "medicalHistoryFamily";
-            this.medicalHistoryFamily.Size = new System.Drawing.Size(340, 69);
+            this.medicalHistoryFamily.Size = new System.Drawing.Size(289, 69);
             this.medicalHistoryFamily.TabIndex = 2;
             this.medicalHistoryFamily.Text = "التاريخ المرضي للعائلة";
             // 
@@ -2640,7 +2641,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Black;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
             this.button2.Location = new System.Drawing.Point(22, 614);
             this.button2.Name = "button2";
@@ -2648,21 +2649,7 @@
             this.button2.TabIndex = 28;
             this.button2.Text = "تأكيد";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // backButton4
-            // 
-            this.backButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
-            this.backButton4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.backButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.backButton4.ForeColor = System.Drawing.Color.Black;
-            this.backButton4.Location = new System.Drawing.Point(821, 613);
-            this.backButton4.Name = "backButton4";
-            this.backButton4.Size = new System.Drawing.Size(185, 50);
-            this.backButton4.TabIndex = 26;
-            this.backButton4.Text = "الخطوة السابقة";
-            this.backButton4.UseVisualStyleBackColor = false;
-            this.backButton4.Click += new System.EventHandler(this.backButton4_Click);
+            this.button2.Click += new System.EventHandler(this.ForthFormConfirmButtonClick);
             // 
             // steps4Container
             // 
@@ -2706,7 +2693,7 @@
             this.label35.AutoSize = true;
             this.label35.BackColor = System.Drawing.Color.Black;
             this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label35.ForeColor = System.Drawing.Color.White;
             this.label35.Location = new System.Drawing.Point(3, 0);
             this.label35.Name = "label35";
@@ -2733,7 +2720,7 @@
             this.label36.AutoSize = true;
             this.label36.BackColor = System.Drawing.Color.Black;
             this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label36.ForeColor = System.Drawing.Color.White;
             this.label36.Location = new System.Drawing.Point(3, 0);
             this.label36.Name = "label36";
@@ -2760,7 +2747,7 @@
             this.label37.AutoSize = true;
             this.label37.BackColor = System.Drawing.Color.Black;
             this.label37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label37.ForeColor = System.Drawing.Color.White;
             this.label37.Location = new System.Drawing.Point(3, 0);
             this.label37.Name = "label37";
@@ -2894,7 +2881,7 @@
             // 
             this.label38.AutoSize = true;
             this.label38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label38.ForeColor = System.Drawing.Color.White;
             this.label38.Location = new System.Drawing.Point(3, 0);
             this.label38.Name = "label38";
@@ -2903,11 +2890,25 @@
             this.label38.Text = "خطوة 1";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // backButton4
+            // 
+            this.backButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            this.backButton4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.backButton4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.backButton4.ForeColor = System.Drawing.Color.Black;
+            this.backButton4.Location = new System.Drawing.Point(821, 613);
+            this.backButton4.Name = "backButton4";
+            this.backButton4.Size = new System.Drawing.Size(185, 50);
+            this.backButton4.TabIndex = 26;
+            this.backButton4.Text = "الخطوة السابقة";
+            this.backButton4.UseVisualStyleBackColor = false;
+            this.backButton4.Click += new System.EventHandler(this.ForthFormBackButtonClick);
+            // 
             // nextButton3
             // 
             this.nextButton3.BackColor = System.Drawing.Color.Black;
             this.nextButton3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.nextButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nextButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nextButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
             this.nextButton3.Location = new System.Drawing.Point(23, 613);
             this.nextButton3.Name = "nextButton3";
@@ -2915,7 +2916,7 @@
             this.nextButton3.TabIndex = 25;
             this.nextButton3.Text = "الخطوة التالية";
             this.nextButton3.UseVisualStyleBackColor = false;
-            this.nextButton3.Click += new System.EventHandler(this.nextButton3_Click);
+            this.nextButton3.Click += new System.EventHandler(this.ThirdFormNextButtonClick);
             // 
             // panel2
             // 
@@ -2951,7 +2952,7 @@
             this.allergyTextBox.BackColor = System.Drawing.Color.White;
             this.allergyTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.allergyTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.allergyTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.allergyTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.allergyTextBox.Location = new System.Drawing.Point(3, 3);
             this.allergyTextBox.Multiline = true;
             this.allergyTextBox.Name = "allergyTextBox";
@@ -2965,7 +2966,7 @@
             this.RepetitionComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.RepetitionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.RepetitionComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RepetitionComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.RepetitionComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.RepetitionComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
             this.RepetitionComboBox.FormattingEnabled = true;
             this.RepetitionComboBox.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -2975,7 +2976,7 @@
             this.RepetitionComboBox.Location = new System.Drawing.Point(496, 3);
             this.RepetitionComboBox.Name = "RepetitionComboBox";
             this.RepetitionComboBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.RepetitionComboBox.Size = new System.Drawing.Size(486, 47);
+            this.RepetitionComboBox.Size = new System.Drawing.Size(486, 39);
             this.RepetitionComboBox.TabIndex = 9;
             // 
             // tableLayoutPanel73
@@ -2997,13 +2998,13 @@
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label26.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label26.Location = new System.Drawing.Point(330, 0);
+            this.label26.Location = new System.Drawing.Point(333, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(159, 60);
+            this.label26.Size = new System.Drawing.Size(156, 60);
             this.label26.TabIndex = 6;
-            this.label26.Text = "وجود حساسية";
+            this.label26.Text = "*وجود حساسية";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label27
@@ -3011,13 +3012,13 @@
             this.label27.AutoSize = true;
             this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label27.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label27.Location = new System.Drawing.Point(788, 0);
+            this.label27.Location = new System.Drawing.Point(802, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(194, 60);
+            this.label27.Size = new System.Drawing.Size(180, 60);
             this.label27.TabIndex = 9;
-            this.label27.Text = "تكرار نفس الحالة";
+            this.label27.Text = "*تكرار نفس الحالة";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel74
@@ -3039,7 +3040,7 @@
             this.medicationTextBox.BackColor = System.Drawing.Color.White;
             this.medicationTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.medicationTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.medicationTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.medicationTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.medicationTextBox.Location = new System.Drawing.Point(495, 3);
             this.medicationTextBox.Multiline = true;
             this.medicationTextBox.Name = "medicationTextBox";
@@ -3052,7 +3053,7 @@
             this.chronicDiseasesTextBox.BackColor = System.Drawing.Color.White;
             this.chronicDiseasesTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.chronicDiseasesTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chronicDiseasesTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.chronicDiseasesTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.chronicDiseasesTextBox.Location = new System.Drawing.Point(3, 3);
             this.chronicDiseasesTextBox.Multiline = true;
             this.chronicDiseasesTextBox.Name = "chronicDiseasesTextBox";
@@ -3079,13 +3080,13 @@
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label28.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label28.Location = new System.Drawing.Point(295, 0);
+            this.label28.Location = new System.Drawing.Point(313, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(194, 60);
+            this.label28.Size = new System.Drawing.Size(176, 60);
             this.label28.TabIndex = 5;
-            this.label28.Text = "الامراض المزمنة";
+            this.label28.Text = "*الامراض المزمنة";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label29
@@ -3093,13 +3094,13 @@
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label29.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label29.Location = new System.Drawing.Point(898, 0);
+            this.label29.Location = new System.Drawing.Point(892, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(84, 60);
+            this.label29.Size = new System.Drawing.Size(90, 60);
             this.label29.TabIndex = 4;
-            this.label29.Text = "الادوية";
+            this.label29.Text = "*الادوية";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel76
@@ -3120,11 +3121,11 @@
             this.label30.AutoSize = true;
             this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label30.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))));
-            this.label30.Location = new System.Drawing.Point(738, 0);
+            this.label30.Location = new System.Drawing.Point(782, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(244, 69);
+            this.label30.Size = new System.Drawing.Size(200, 69);
             this.label30.TabIndex = 2;
             this.label30.Text = "التاريخ المرضي";
             // 
@@ -3165,7 +3166,7 @@
             // 
             this.backButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
             this.backButton3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.backButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.backButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.backButton3.ForeColor = System.Drawing.Color.Black;
             this.backButton3.Location = new System.Drawing.Point(821, 613);
             this.backButton3.Name = "backButton3";
@@ -3173,7 +3174,7 @@
             this.backButton3.TabIndex = 28;
             this.backButton3.Text = "الخطوة السابقة";
             this.backButton3.UseVisualStyleBackColor = false;
-            this.backButton3.Click += new System.EventHandler(this.backButton3_Click);
+            this.backButton3.Click += new System.EventHandler(this.ThirdFormBackButtonClick);
             // 
             // steps3Container
             // 
@@ -3216,7 +3217,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label22.ForeColor = System.Drawing.Color.Black;
             this.label22.Location = new System.Drawing.Point(3, 0);
             this.label22.Name = "label22";
@@ -3243,7 +3244,7 @@
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Black;
             this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label23.ForeColor = System.Drawing.Color.White;
             this.label23.Location = new System.Drawing.Point(3, 0);
             this.label23.Name = "label23";
@@ -3270,7 +3271,7 @@
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Black;
             this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label24.ForeColor = System.Drawing.Color.White;
             this.label24.Location = new System.Drawing.Point(3, 0);
             this.label24.Name = "label24";
@@ -3403,7 +3404,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label25.ForeColor = System.Drawing.Color.White;
             this.label25.Location = new System.Drawing.Point(3, 0);
             this.label25.Name = "label25";
@@ -3424,7 +3425,7 @@
             this.AddPatient3Container.Size = new System.Drawing.Size(1029, 686);
             this.AddPatient3Container.TabIndex = 8;
             // 
-            // AddPatient1
+            // AddPatient
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSize = true;
@@ -3440,7 +3441,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1400, 900);
             this.MinimumSize = new System.Drawing.Size(1400, 900);
-            this.Name = "AddPatient1";
+            this.Name = "AddPatient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "قائمة إضافة مريض جديد";
             this.AddPatient1Container.ResumeLayout(false);
@@ -3647,7 +3648,7 @@
         private TableLayoutPanel tableLayoutPanel21;
         private TableLayoutPanel tableLayoutPanel14;
         private Button firstNextStebButton2;
-        private Button backHomeButton2;
+        private Button firstFormBackToResultsPageButton;
         private Panel AddPatient2Container;
         private Button backButton2;
         private Button nextButton2;
@@ -3800,7 +3801,6 @@
         private Label label25;
         private Panel AddPatient3Container;
         private Button button2;
-        private TextBox bloodTransferTextBox;
         private ComboBox bloodTransferComboBox;
         private TextBox accidentsTextBox;
         private ComboBox RepetitionComboBox;
