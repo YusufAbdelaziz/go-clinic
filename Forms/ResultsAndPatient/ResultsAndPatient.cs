@@ -164,7 +164,7 @@ namespace goclinic
             MessageBox.Show(dataShown);
         }
 
-        private void phoneNumberValue_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        private void CaptureKeyboardEnterKeyOnPhoneNumberValueChange(object sender, PreviewKeyDownEventArgs e)
         {
             if (e.KeyCode == Keys.Enter) SearchForPatientsButtonClick(sender, null);
         }

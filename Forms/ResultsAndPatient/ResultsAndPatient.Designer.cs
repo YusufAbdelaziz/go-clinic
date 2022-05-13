@@ -275,7 +275,7 @@
             this.phoneNumberValue.Name = "phoneNumberValue";
             this.phoneNumberValue.Size = new System.Drawing.Size(1166, 36);
             this.phoneNumberValue.TabIndex = 0;
-            this.phoneNumberValue.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.phoneNumberValue_PreviewKeyDown);
+            this.phoneNumberValue.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.CaptureKeyboardEnterKeyOnPhoneNumberValueChange);
             // 
             // patientDetailsPanel
             // 
