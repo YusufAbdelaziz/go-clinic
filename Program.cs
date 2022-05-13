@@ -1,5 +1,6 @@
 
 using goclinic.Models;
+using goclinic.Forms;
 
 namespace goclinic
 {
@@ -11,12 +12,10 @@ namespace goclinic
         [STAThread]
         static void Main()
         {
-            User.Instance.InitFromData("Yusuf", 3);
-            Console.WriteLine(User.Instance.Name);
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new AddPatient1());
+            Application.Run(new Loginform());
         }
     }
 }

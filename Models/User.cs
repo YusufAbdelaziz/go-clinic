@@ -1,25 +1,21 @@
 ﻿
-
 namespace goclinic.Models
 {
-    internal class User
+    public class User
     {
-        private User() { }
-        private static User? instance = null;
+        public User(string username, string phoneNumber, int id, string password)
+        {
+            this.UserName = username;
+            this.Id = id;
+            this.Phonenumber = phoneNumber;
+            this.Password = password;
+        }
         public int Id { get; set; }
-        public string? Name { get; set; }
-        public static User Instance { 
-            get {
-                if (instance == null) {
-                    instance = new User(); 
-                }
-                return instance;
-            }
-        }
+        public string UserName { get; set; }
 
-        public void InitFromData(string name, int id) {
-            this.Name = name;
-            this.Id = id;   
-        }
+        public string Phonenumber { get; set; }
+
+        public string Password { get; set; }
+
     }
 }

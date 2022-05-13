@@ -3800,7 +3800,7 @@
         private Label label25;
         private Panel AddPatient3Container;
         private Button button2;
-        private TextBox bloodTransferTextBox;
+        //private TextBox bloodTransferTextBox;
         private ComboBox bloodTransferComboBox;
         private TextBox accidentsTextBox;
         private ComboBox RepetitionComboBox;
