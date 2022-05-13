@@ -29,12 +29,12 @@ namespace goclinic.Forms
 
                
 
-                int loginResults = connection.QuerySingle<int>($"select count(*) from userInfo where username = '{usernameTextBox.Texts}' AND password = '{passwordTextBox.Texts}';");
+                int loginResults = connection.QuerySingle<int>($"select count(*) from userInfo where username = N'{usernameTextBox.Texts}' AND password = N'{passwordTextBox.Texts}';");
                
                 if (loginResults == 1)
                 {
-                    var userId = connection.QuerySingle<int>($"select userID from userInfo where username = '{usernameTextBox.Texts}' AND password = '{passwordTextBox.Texts}';");
-                    var phonenumber = connection.QuerySingle<string>($"select number from userInfo where username = '{usernameTextBox.Texts}' AND password = '{passwordTextBox.Texts}';");
+                    var userId = connection.QuerySingle<int>($"select userID from userInfo where username = N'{usernameTextBox.Texts}' AND password = N'{passwordTextBox.Texts}';");
+                    var phonenumber = connection.QuerySingle<string>($"select number from userInfo where username = N'{usernameTextBox.Texts}' AND password = N'{passwordTextBox.Texts}';");
                     User user = new User(id: userId, phoneNumber: phonenumber, password: passwordTextBox.Texts, username: usernameTextBox.Texts);
                     MessageBox.Show("تم الدخول بنجاح");
                     Form resultsAndPatients = new ResultsAndPatient();

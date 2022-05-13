@@ -25,14 +25,14 @@ namespace goclinic.Forms
         {
             using (IDbConnection connection = new SqlConnection(DBHelper.CnnVal("Users")))
             {
-                int usernameExists = connection.ExecuteScalar<int>($"select count(*) from userInfo where username = '{usernameTextBox.Texts}';");
+                int usernameExists = connection.ExecuteScalar<int>($"select count(*) from userInfo where username = N'{usernameTextBox.Texts}';");
                 if (usernameExists == 1)
                 {
                     MessageBox.Show("اسم المسنخدم موجود, الرجاء اختيار اسم مستخدم اخر.");
                 }
                 else
                 {
-                    var signupResults = connection.Query($"insert into userInfo(username, password, number) values( '{usernameTextBox.Texts}', '{passwordTextBox.Texts}', '{numberTextBox.Texts}');");
+                    var signupResults = connection.Query($"insert into userInfo(username, password, number) values( N'{usernameTextBox.Texts}', N'{passwordTextBox.Texts}', N'{numberTextBox.Texts}');");
                     MessageBox.Show("تم الاضافة");
                     Form login = new Loginform();
                     this.Hide();
