@@ -32,5 +32,7 @@ namespace goclinic.Models
             this.Id = id;
             this.Phonenumber = phoneNumber;
         }
+
+
     }
 }

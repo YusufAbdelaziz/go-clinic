@@ -148,7 +148,7 @@
             this.passwordTextBox.Multiline = false;
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Padding = new System.Windows.Forms.Padding(7);
-            this.passwordTextBox.PasswordChar = false;
+            this.passwordTextBox.PasswordChar = true;
             this.passwordTextBox.PlaceholderText = "كلمة السر";
             this.passwordTextBox.Radius = 30;
             this.passwordTextBox.Size = new System.Drawing.Size(500, 50);
@@ -169,7 +169,7 @@
             this.createUserButton.TabIndex = 23;
             this.createUserButton.Text = "تسجيل مستخدم جديد";
             this.createUserButton.UseVisualStyleBackColor = false;
-            this.createUserButton.Click += new System.EventHandler(this.createUserButton_Click);
+            this.createUserButton.Click += new System.EventHandler(this.CreateUserButtonClick);
             // 
             // openLoginButton
             // 
@@ -185,7 +185,7 @@
             this.openLoginButton.TabIndex = 24;
             this.openLoginButton.Text = "تسجيل الدخول";
             this.openLoginButton.UseVisualStyleBackColor = false;
-            this.openLoginButton.Click += new System.EventHandler(this.openLoginButton_Click);
+            this.openLoginButton.Click += new System.EventHandler(this.OpenLoginButtonClick);
             // 
             // Signupform
             // 

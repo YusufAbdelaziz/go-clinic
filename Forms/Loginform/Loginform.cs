@@ -1,9 +1,5 @@
-﻿using System.Data.SqlClient;
-using System.Data;
-using Dapper;
-using goclinic.Repos;
-using System.Linq;
-using goclinic.Models;
+﻿using goclinic.Repos;
+
 
 namespace goclinic.Forms
 {
@@ -14,7 +10,7 @@ namespace goclinic.Forms
             InitializeComponent();
         }
 
-        private void openSignupButton_Click(object sender, EventArgs e)
+        private void OpenSignupButtonClick(object sender, EventArgs e)
         {
             Form signup = new Signupform();
             this.Hide();
@@ -22,20 +18,11 @@ namespace goclinic.Forms
             this.Close();
         }
 
-        private void signinButton_Click(object sender, EventArgs e)
+        private void SigninButtonClick(object sender, EventArgs e)
         {
-            using (IDbConnection connection = new SqlConnection(DBHelper.CnnVal("Users")))
-            {
-
-
-
-                int loginResults = connection.QuerySingle<int>($"select count(*) from userInfo where username = N'{usernameTextBox.Texts}' AND password = N'{passwordTextBox.Texts}';");
-
-                if (loginResults == 1)
+            bool loginResults = UserRepository.LoginQueryAndMakeUser(username: usernameTextBox.Texts, password: passwordTextBox.Texts);
+                if (loginResults)
                 {
-                    var userId = connection.QuerySingle<int>($"select userID from userInfo where username = N'{usernameTextBox.Texts}' AND password = N'{passwordTextBox.Texts}';");
-                    var phonenumber = connection.QuerySingle<string>($"select number from userInfo where username = N'{usernameTextBox.Texts}' AND password = N'{passwordTextBox.Texts}';");
-                    User.Instance.InitFromData(id: userId, phoneNumber: phonenumber, name: usernameTextBox.Texts);
                     MessageBox.Show("تم الدخول بنجاح");
                     Form resultsAndPatients = new ResultsAndPatient();
                     this.Hide();
@@ -47,8 +34,8 @@ namespace goclinic.Forms
                     MessageBox.Show("اسم المستخدم خطأ او كلمة السر");
                 }
 
-            }
-
         }
+
     }
 }
+
