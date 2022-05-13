@@ -34,6 +34,8 @@
             this.patientDetailCardTopPanel = new System.Windows.Forms.Panel();
             this.patientNumberPanel = new System.Windows.Forms.Label();
             this.showMoreButton = new System.Windows.Forms.Button();
+            //this.panel1 = new System.Windows.Forms.Panel();
+            //this.patientName = new System.Windows.Forms.Label();
             this.eyeImage = new System.Windows.Forms.ImageList(this.components);
             this.patientNamePanel = new System.Windows.Forms.Panel();
             this.patientNameLabel = new System.Windows.Forms.Label();
@@ -98,6 +100,26 @@
             this.showMoreButton.Text = "عرض المزيد";
             this.showMoreButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.showMoreButton.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            //this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(232)))));
+            //this.panel1.Controls.Add(this.patientName);
+            //this.panel1.Location = new System.Drawing.Point(3, 3);
+            //this.panel1.Name = "panel1";
+            //this.panel1.Size = new System.Drawing.Size(304, 67);
+            //this.panel1.TabIndex = 2;
+            // 
+            // patientName
+            // 
+            //this.patientName.Dock = System.Windows.Forms.DockStyle.Fill;
+            //this.patientName.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            //this.patientName.Location = new System.Drawing.Point(0, 0);
+            //this.patientName.Name = "patientName";
+            //this.patientName.Size = new System.Drawing.Size(304, 67);
+            //this.patientName.TabIndex = 0;
+            //this.patientName.Text = "رنا محى الدين ربيع احمد";
+            //this.patientName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // eyeImage
             // 

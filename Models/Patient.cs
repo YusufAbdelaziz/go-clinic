@@ -1,4 +1,5 @@
-﻿
+﻿using System;
+using System.Runtime.InteropServices;
 namespace goclinic.Models
 {
     public enum GenderTypes
@@ -24,7 +25,7 @@ namespace goclinic.Models
     public class Patient
     {
 
-        public Patient(int id, string name, DateTime birthDate, GenderTypes gender, BloodTypes bloodType, string phoneNumber, DateTime registrationDate)
+        public Patient([Optional] int id, string name, DateTime birthDate, GenderTypes gender, BloodTypes bloodType, string phoneNumber, DateTime registrationDate, [Optional] History history)
         {
             this.BirthDate = birthDate;
             this.Gender = gender;
@@ -33,6 +34,7 @@ namespace goclinic.Models
             this.BloodType = bloodType;
             this.PhoneNumber = phoneNumber;
             this.RegistrationDate = registrationDate;
+            this.History = history;
         }
         public int? Id { get; set; }
         public string? Name { get; set; }
@@ -40,8 +42,8 @@ namespace goclinic.Models
         public string? PhoneNumber { get; set; }
         public DateTime? BirthDate { get; set; }
 
-        public DateTime? RegistrationDate { get; set; }
-        public GenderTypes? Gender { get; set; }
+        public DateTime RegistrationDate { get; set; }
+        public GenderTypes Gender { get; set; }
 
         public BloodTypes? BloodType { get; set; }
 
@@ -92,6 +94,34 @@ namespace goclinic.Models
             if (gender == 1) return GenderTypes.Male;
             return GenderTypes.Unknown;
 
+        }
+
+        public static GenderTypes MapStringToGender(string? genderString)
+        {
+            if (genderString == "Male") return GenderTypes.Male;
+            if (genderString == "Female") return GenderTypes.Female;
+            return GenderTypes.Unknown;
+        }
+
+        private static GenderTypes MapBinaryValueToGender(byte gender)
+        public static BloodTypes MapStringToBloodType(string? bloodtype)
+        {
+            if (bloodtype == "A-") return BloodTypes.ANegative;
+            if (bloodtype == "A+") return BloodTypes.APositive;
+
+            if (bloodtype == "B-") return BloodTypes.BNegative;
+            if (bloodtype == "B+") return BloodTypes.BPositive;
+
+            if (bloodtype == "AB-") return BloodTypes.ABNegative;
+            if (bloodtype == "AB+") return BloodTypes.ABPostive;
+
+            if (bloodtype == "O-") return BloodTypes.ONegative;
+            if (bloodtype == "O+") return BloodTypes.OPositive;
+            if (gender == 0) return GenderTypes.Female;
+            if (gender == 1) return GenderTypes.Male;
+            return GenderTypes.Unknown;
+
+            return BloodTypes.Unknown;
         }
 
         public int ConvertGenderToInt() {
