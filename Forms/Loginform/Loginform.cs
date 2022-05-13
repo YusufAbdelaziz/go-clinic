@@ -2,7 +2,8 @@
 using System.Data;
 using Dapper;
 using goclinic.Repos;
-using System.Linq; 
+using System.Linq;
+using goclinic.Models;
 
 namespace goclinic.Forms
 {
@@ -25,11 +26,16 @@ namespace goclinic.Forms
         {
             using (IDbConnection connection = new SqlConnection(DBHelper.CnnVal("Users")))
             {
-                
-                int loginResults = connection.ExecuteScalar<int>($"select count(*) from userInfo where username = '{usernameTextBox.Texts}%' AND password = '{passwordTextBox.Texts}%';");
+
+               
+
+                int loginResults = connection.QuerySingle<int>($"select count(*) from userInfo where username = '{usernameTextBox.Texts}' AND password = '{passwordTextBox.Texts}';");
                
                 if (loginResults == 1)
                 {
+                    var userId = connection.QuerySingle<int>($"select userID from userInfo where username = '{usernameTextBox.Texts}' AND password = '{passwordTextBox.Texts}';");
+                    var phonenumber = connection.QuerySingle<string>($"select number from userInfo where username = '{usernameTextBox.Texts}' AND password = '{passwordTextBox.Texts}';");
+                    User user = new User(id: userId, phoneNumber: phonenumber, password: passwordTextBox.Texts, username: usernameTextBox.Texts);
                     MessageBox.Show("تم الدخول بنجاح");
                     Form resultsAndPatients = new ResultsAndPatient();
                     this.Hide();
@@ -42,21 +48,6 @@ namespace goclinic.Forms
                 }
 
             }
-
-
-
-            //string sqlQuery = "select count(*) from userInfo where username = '" + usernameTextBox.Texts + "' AND password = '" 
-            //    + passwordTextBox.Texts + "';";
-            //SqlCommand sc = new SqlCommand(sqlQuery, con);
-            //string? count = sc.ExecuteScalar().ToString();
-            //if(count == "1")
-            //{
-            //    MessageBox.Show("login successfull");
-            //} else
-            //{
-            //    MessageBox.Show("wrong password/username");
-            //}
-            //con.Close();
 
         }
     }
