@@ -3,10 +3,10 @@ using goclinic.Repos;
 
 namespace goclinic.Forms
 {
-    public partial class Signupform : Form
+    public partial class تسجيل : Form
     {
 
-        public Signupform()
+        public تسجيل()
         {
             InitializeComponent();
         }
