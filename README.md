@@ -34,3 +34,7 @@ MS SQL Server is needed and should be kept running.
 ## Demo
 
 The demo can be downloaded from [here](https://drive.google.com/file/d/1B4WcZGbIaLJY2vBKiRAHKtdvdGL21SvS/view?usp=sharing).
+
+## Sprint 1 tasks
+
+First sprint tasks can be viewed from [here](https://drive.google.com/file/d/13ZQ01FArtO9XAc8Qt1U42Ss0wbtNeehO/view?usp=sharing)
