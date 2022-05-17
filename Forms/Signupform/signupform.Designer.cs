@@ -207,7 +207,7 @@
             this.MaximumSize = new System.Drawing.Size(611, 611);
             this.Name = "تسجيل";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "signupform";
+            this.Text = "تسجيل مستخدم جديد";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
