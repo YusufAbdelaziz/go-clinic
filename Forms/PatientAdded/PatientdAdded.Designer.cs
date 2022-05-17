@@ -36,11 +36,11 @@
             // 
             this.successfully.AutoSize = true;
             this.successfully.BackColor = System.Drawing.Color.Transparent;
-            this.successfully.Font = new System.Drawing.Font("Cairo", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.successfully.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.successfully.ForeColor = System.Drawing.Color.White;
-            this.successfully.Location = new System.Drawing.Point(8, 83);
+            this.successfully.Location = new System.Drawing.Point(50, 83);
             this.successfully.Name = "successfully";
-            this.successfully.Size = new System.Drawing.Size(441, 75);
+            this.successfully.Size = new System.Drawing.Size(357, 46);
             this.successfully.TabIndex = 0;
             this.successfully.Text = "تم إضافة المريض بنجاح";
             this.successfully.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

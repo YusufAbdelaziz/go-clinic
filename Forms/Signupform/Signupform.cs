@@ -3,17 +3,17 @@ using goclinic.Repos;
 
 namespace goclinic.Forms
 {
-    public partial class تسجيل : Form
+    public partial class SignupForm : Form
     {
 
-        public تسجيل()
+        public SignupForm()
         {
             InitializeComponent();
         }
 
         private void OpenLoginButtonClick(object sender, EventArgs e)
         {
-            Form login = new Loginform();
+            Form login = new LoginForm();
             this.Hide();
             login.ShowDialog();
             this.Close();
@@ -35,7 +35,7 @@ namespace goclinic.Forms
                 else
                 {
                     MessageBox.Show("تم الاضافة");
-                    Form login = new Loginform();
+                    Form login = new LoginForm();
                     this.Hide();
                     login.ShowDialog();
                     this.Close();

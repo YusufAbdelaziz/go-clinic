@@ -3,16 +3,16 @@
 
 namespace goclinic.Forms
 {
-    public partial class Loginform : Form
+    public partial class LoginForm : Form
     {
-        public Loginform()
+        public LoginForm()
         {
             InitializeComponent();
         }
 
         private void OpenSignupButtonClick(object sender, EventArgs e)
         {
-            Form signup = new تسجيل();
+            Form signup = new SignupForm();
             this.Hide();
             signup.ShowDialog();
             this.Close();
@@ -20,7 +20,13 @@ namespace goclinic.Forms
 
         private void SigninButtonClick(object sender, EventArgs e)
         {
-            bool loginResults = UserRepository.LoginQueryAndMakeUser(username: usernameTextBox.Texts, password: passwordTextBox.Texts);
+            if (String.IsNullOrEmpty(usernameTextBox.Texts) || String.IsNullOrEmpty(passwordTextBox.Texts))
+            {
+                MessageBox.Show("من فضلك ادخل جميع البيانات المطلوبة");
+            }
+            else
+            {
+                bool loginResults = UserRepository.LoginQueryAndMakeUser(username: usernameTextBox.Texts, password: passwordTextBox.Texts);
                 if (loginResults)
                 {
                     MessageBox.Show("تم الدخول بنجاح");
@@ -33,6 +39,7 @@ namespace goclinic.Forms
                 {
                     MessageBox.Show("اسم المستخدم خطأ او كلمة السر");
                 }
+            }
 
         }
 
