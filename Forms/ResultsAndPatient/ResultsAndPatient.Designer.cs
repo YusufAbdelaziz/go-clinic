@@ -432,6 +432,7 @@
             this.MaximumSize = new System.Drawing.Size(1399, 991);
             this.MinimumSize = new System.Drawing.Size(1399, 991);
             this.Name = "ResultsAndPatient";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GoClinic";
             this.sidebarLayoutPanel.ResumeLayout(false);
             this.namePanel.ResumeLayout(false);

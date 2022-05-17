@@ -12,7 +12,7 @@ namespace goclinic.Forms
 
         private void OpenSignupButtonClick(object sender, EventArgs e)
         {
-            Form signup = new Signupform();
+            Form signup = new تسجيل();
             this.Hide();
             signup.ShowDialog();
             this.Close();
